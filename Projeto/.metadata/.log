@@ -1,0 +1,148 @@
+!SESSION 2014-01-24 13:49:39.892 -----------------------------------------------
+eclipse.buildId=3.4.0.201310051614-RELEASE-e43
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.springsource.ggts.ide
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-01-24 13:50:31.468
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\luziana'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-01-24 13:50:32.895
+!MESSAGE Result of converting legacy STS 2.x workspace preferences to 3.x
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-01-24 13:50:32.896
+!MESSAGE Converted legacy STS plugin preferences
+!SUBENTRY 1 unknown 0 0 2014-01-24 13:50:32.896
+!MESSAGE OK
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-01-24 13:50:32.896
+!MESSAGE Converted legacy Roo plugin state locations
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-01-24 13:50:32.896
+!MESSAGE Converted legacy STS plugin state locations
+
+!ENTRY org.grails.ide.eclipse.core 4 0 2014-01-24 13:52:22.311
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at org.grails.ide.eclipse.core.wizard.GrailsImportWizardCore.perform(GrailsImportWizardCore.java:252)
+	at org.grails.ide.eclipse.ui.internal.wizard.inport.GrailsImportWizard$1.run(GrailsImportWizard.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: OK
+Contains: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto overlaps the workspace location: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2014-01-24 13:52:22.311
+!MESSAGE Invalid project description.
+!SUBENTRY 2 unknown 0 0 2014-01-24 13:52:22.311
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2014-01-24 13:52:22.311
+!MESSAGE C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto overlaps the workspace location: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto
+
+!ENTRY org.eclipse.core.resources 4 77 2014-01-24 13:52:22.321
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2014-01-24 13:52:22.321
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2014-01-24 13:52:22.321
+!MESSAGE C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto overlaps the workspace location: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto
+
+!ENTRY org.grails.ide.eclipse.core 4 0 2014-01-24 13:53:16.041
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at org.grails.ide.eclipse.core.wizard.GrailsImportWizardCore.perform(GrailsImportWizardCore.java:252)
+	at org.grails.ide.eclipse.ui.internal.wizard.inport.GrailsImportWizard$1.run(GrailsImportWizard.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: OK
+Contains: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto overlaps the workspace location: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2014-01-24 13:53:16.041
+!MESSAGE Invalid project description.
+!SUBENTRY 2 unknown 0 0 2014-01-24 13:53:16.051
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2014-01-24 13:53:16.051
+!MESSAGE C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto overlaps the workspace location: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto
+
+!ENTRY org.eclipse.core.resources 4 77 2014-01-24 13:53:16.051
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2014-01-24 13:53:16.051
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2014-01-24 13:53:16.051
+!MESSAGE C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto overlaps the workspace location: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto
+
+!ENTRY org.grails.ide.eclipse.core 4 0 2014-01-24 13:53:40.381
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at org.grails.ide.eclipse.core.wizard.GrailsImportWizardCore.perform(GrailsImportWizardCore.java:252)
+	at org.grails.ide.eclipse.ui.internal.wizard.inport.GrailsImportWizard$1.run(GrailsImportWizard.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: OK
+Contains: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto overlaps the workspace location: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2014-01-24 13:53:40.381
+!MESSAGE Invalid project description.
+!SUBENTRY 2 unknown 0 0 2014-01-24 13:53:40.381
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2014-01-24 13:53:40.381
+!MESSAGE C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto overlaps the workspace location: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto
+
+!ENTRY org.eclipse.core.resources 4 77 2014-01-24 13:53:40.391
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2014-01-24 13:53:40.391
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2014-01-24 13:53:40.391
+!MESSAGE C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto overlaps the workspace location: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto
+
+!ENTRY org.grails.ide.eclipse.core 4 0 2014-01-24 13:54:01.134
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1334)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1378)
+	at org.grails.ide.eclipse.commands.GrailsCommandUtils.eclipsifyProject(GrailsCommandUtils.java:192)
+	at org.grails.ide.eclipse.commands.GrailsCommandUtils.eclipsifyProject(GrailsCommandUtils.java:110)
+	at org.grails.ide.eclipse.core.wizard.GrailsImportWizardCore.perform(GrailsImportWizardCore.java:260)
+	at org.grails.ide.eclipse.ui.internal.wizard.inport.GrailsImportWizard$1.run(GrailsImportWizard.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: OK
+Contains: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto overlaps the workspace location: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2014-01-24 13:54:01.134
+!MESSAGE Invalid project description.
+!SUBENTRY 2 unknown 0 0 2014-01-24 13:54:01.134
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2014-01-24 13:54:01.134
+!MESSAGE C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto overlaps the workspace location: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto
+
+!ENTRY org.eclipse.core.resources 4 77 2014-01-24 13:54:01.134
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2014-01-24 13:54:01.134
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2014-01-24 13:54:01.134
+!MESSAGE C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto overlaps the workspace location: C:\Users\luziana\Documents\GitHub\Projeto_Integrador\Projeto
+!SESSION 2014-01-24 13:59:02.715 -----------------------------------------------
+eclipse.buildId=3.4.0.201310051614-RELEASE-e43
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.springsource.ggts.ide
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-01-24 14:00:59.850
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\luziana'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
