@@ -10,17 +10,17 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>.link7</name>
+			<name>.link2</name>
 			<type>2</type>
 			<location>/home/luziana/springsource/ggts-3.4.0.RELEASE/plugins/org.grails.ide.eclipse.resources_3.4.0.201310051518-RELEASE/dsl-support</location>
 		</link>
 		<link>
-			<name>.link8</name>
+			<name>.link3</name>
 			<type>2</type>
 			<location>/home/luziana/grails/scripts</location>
 		</link>
 		<link>
-			<name>.link9</name>
+			<name>.link4</name>
 			<type>2</type>
 			<location>/home/luziana/.grails/2.2.2/projects/Projeto/plugin-classes</location>
 		</link>
