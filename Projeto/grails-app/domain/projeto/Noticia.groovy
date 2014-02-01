@@ -5,8 +5,10 @@ class Noticia {
     String descricao
 
 static constraints = {
+	titulo(nullable:false, blank:false)
 descricao(nullable:false, blank:false, maxSize:10000)
-titulo(nullable:false, blank:false)
+
+
 
 }
 

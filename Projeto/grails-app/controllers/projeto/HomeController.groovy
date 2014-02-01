@@ -2,5 +2,5 @@ package projeto
 
 class HomeController {
 
-    def index() { }
+    def home() { }
 }
