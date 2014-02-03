@@ -1,6 +1,7 @@
 package projeto
 
 class Noticia {
+	int id
 	String titulo
     String descricao
 

@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-org.codehaus.groovy.eclipse.dsl.projects.ignore=Projeto
+org.codehaus.groovy.eclipse.dsl.projects.ignore=Projeto,Congic,projeto

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/2002/REC-xhtml1-20020801/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+ 
+
+<head>
+<title>Bloq do Curso de Grails Capacita&ccedil;&atilde;o CPS</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+ 
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><style type="text/css">
+<!--
+body {
+background-image: url(images/bg.jpg);
+}
+-->
+</style></head>
+
+<body>
+
+<div id="top">
+<div id="head_container">
+<div align="right"><a href="index.html" id="logo">Blog Curso Grails</a></div>
+</div>
+</div>
+
+ 
+
+<div id="wrapper">
+<div id="main_container">
+
+<div id="menu_container">
+<div class="content">
+
+
+<h1> Administração </h1>
+
+<p>
+<a href="post/create.gsp">Inclusão de Post</a>
+</p>
+
+            </div>
+
+
+</div>
+<%
+def postInstanceList = Post.list()
+%>
+<g:each in="${postInstanceList}" status="i" var="postInstance">
+
+            <div id="content_container">
+
+<div class="content">
+<h1>${postInstance.titulo}</h1>
+<p>${postInstance.conteudo}<p>
+
+<div class="meta">postado em <a href="#"></a>${postInstance.dataPublicacao} | <a href= <g:createLink controller="comentario" action="list" params=[post:${postInstance.id}] /> >   CoMENT&Aacute;RIOS   </a>
+
+ ( ${Comentario.countByPost(postInstance)} ) <a href= <g:createLink controller="comentario" action="create" params=[post:${postInstance.id}] /> >Inclua seu comentário</a>   </div>
+
+             </div>
+</g:each>
+
+<div id="clear"></div>
+
+
+</div>
+</div>
+
+<div id="footer">
+
+<!--
+
+################# DO NOT REMOVE THE ZYMIC LINK! ################
+If you remove this link to zymic.com, you risk legal action being
+taken against you for infringing on our copyright on this design.
+If you would like to remove the link legally, please visit
+http://www.zymic.com/free-templates/copyright-removal/1135/
+-->
+
+Copyright &copy; 2007 <a href="http://www.zymic.com/free-templates/">Free Templates</a> by <a href="http://www.zymic.com">Zymic</a> - <a href="http://www.zymic.com/free-web-hosting/">Free Web Hosting</a> - Best Viewed in <a href="http://www.mozillafirefox.us">Mozilla Firefox</a><br />
+<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://validator.w3.org/check/referer">XHTML</a>
+</div>
+
+ 
+
+</body>
+</html>
