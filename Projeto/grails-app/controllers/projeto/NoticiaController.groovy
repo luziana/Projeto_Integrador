@@ -99,4 +99,9 @@ class NoticiaController {
             redirect(action: "show", id: id)
         }
     }
+	
+	def inicio() {
+			def noticias = Noticia.list()
+			[noticias: noticias]
+		}
 }

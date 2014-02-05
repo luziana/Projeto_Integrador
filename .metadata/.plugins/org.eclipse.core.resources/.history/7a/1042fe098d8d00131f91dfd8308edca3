@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Noticias</title>
+</head>
+<body>
+<g:link action="list">Voltar</g:link>
+<h3>Noticias	</h3>
+<g:each in="${noticias}">
+<h4>Noticia ${it.codigo}</h4>
+<p>Titulo: ${it.noticia.titulo}</p>
+<p>Descrição: ${it.noticia.descricao}</p>
+<ul>
+<g:each in="${it.alunos}" var="aluno">
+<li>${aluno.matricula} - ${aluno.nome}</li>
+</g:each>
+</ul>
+</g:each>
+</body>
+</html>

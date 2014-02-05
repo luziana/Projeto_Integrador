@@ -14,7 +14,7 @@ descricao(nullable:false, blank:false, maxSize:10000)
 }
 
 String toString() {
-return "${titulo+descricao}"
+return "${descricao}"
 }
 
 }

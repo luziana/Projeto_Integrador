@@ -13,7 +13,6 @@ INDEX VERSION 1.126+/home/luziana/Projeto_Integrador/.metadata/.plugins/org.ecli
 1127482059.index
 2398865715.index
 2541278506.index
-3086013669.index
 3235034060.index
 1029475082.index
 2075928642.index
@@ -67,7 +66,6 @@ INDEX VERSION 1.126+/home/luziana/Projeto_Integrador/.metadata/.plugins/org.ecli
 2235829458.index
 4275727521.index
 892980339.index
-3875826922.index
 1737441395.index
 1714592054.index
 4267884898.index
@@ -81,9 +79,9 @@ INDEX VERSION 1.126+/home/luziana/Projeto_Integrador/.metadata/.plugins/org.ecli
 3310963843.index
 4027381724.index
 2149521500.index
-1393205462.index
-798603244.index
 2409005450.index
+798603244.index
+1393205462.index
 3011729097.index
 551192572.index
 1261523886.index
@@ -97,8 +95,8 @@ INDEX VERSION 1.126+/home/luziana/Projeto_Integrador/.metadata/.plugins/org.ecli
 3126061463.index
 3075332389.index
 1520413031.index
-1027256391.index
 427474829.index
+1027256391.index
 2423167915.index
 3442818.index
 1581106439.index

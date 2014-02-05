@@ -1,7 +1,0 @@
-package projeto
-
-class Noticia {
-
-    static constraints = {
-    }
-}

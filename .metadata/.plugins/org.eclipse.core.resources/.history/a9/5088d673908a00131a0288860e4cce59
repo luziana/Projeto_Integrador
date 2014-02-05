@@ -1,7 +1,0 @@
-package projeto
-
-class Login {
-
-    static constraints = {
-    }
-}
