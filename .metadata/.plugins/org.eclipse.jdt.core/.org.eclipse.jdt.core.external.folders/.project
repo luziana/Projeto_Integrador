@@ -12,27 +12,17 @@
 		<link>
 			<name>.link0</name>
 			<type>2</type>
-			<location>/home/luziana/springsource/ggts-3.4.0.RELEASE/plugins/org.grails.ide.eclipse.resources_3.4.0.201310051518-RELEASE/dsl-support</location>
+			<location>/home/juniorlucena/ggts-3.4.0.RELEASE/plugins/org.grails.ide.eclipse.resources_3.4.0.201310051518-RELEASE/dsl-support</location>
 		</link>
 		<link>
 			<name>.link1</name>
 			<type>2</type>
-			<location>/home/luziana/grails/scripts</location>
+			<location>/home/juniorlucena/.gvm/grails/2.2.2/scripts</location>
 		</link>
 		<link>
 			<name>.link2</name>
 			<type>2</type>
-			<location>/home/luziana/springsource/ggts-3.4.0.RELEASE/plugins/org.grails.ide.eclipse.resources_3.4.0.201310051518-RELEASE/dsl-support</location>
-		</link>
-		<link>
-			<name>.link3</name>
-			<type>2</type>
-			<location>/home/luziana/grails/scripts</location>
-		</link>
-		<link>
-			<name>.link4</name>
-			<type>2</type>
-			<location>/home/luziana/.grails/2.2.2/projects/Projeto/plugin-classes</location>
+			<location>/home/juniorlucena/.grails/2.2.2/projects/Projeto/plugin-classes</location>
 		</link>
 	</linkedResources>
 </projectDescription>

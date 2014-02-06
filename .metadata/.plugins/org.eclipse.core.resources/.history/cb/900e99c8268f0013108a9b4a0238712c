@@ -1,0 +1,12 @@
+package projeto
+
+class Programacao {
+	Date data
+	Date horario
+	String categoria
+	String titulo
+	String orador
+	String descricao
+    static constraints = {
+    }
+}

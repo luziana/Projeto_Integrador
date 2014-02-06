@@ -1,0 +1,7 @@
+package projeto
+
+class Programacao {
+
+    static constraints = {
+    }
+}
