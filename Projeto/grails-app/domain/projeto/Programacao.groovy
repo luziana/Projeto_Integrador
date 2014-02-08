@@ -21,7 +21,5 @@ class Programacao {
 		
     }
 	
-	String toString() {
-		return "${data+horario+categoria+titulo+orador+descricao}"
-	}
+	
 }

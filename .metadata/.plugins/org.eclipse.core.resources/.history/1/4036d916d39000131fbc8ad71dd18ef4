@@ -1,0 +1,39 @@
+<%@ page import="projeto.Noticia" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="layout" content="main">
+<g:set var="entityName" value="${message(code: 'noticia.label', default: 'Noticia')}" />
+<title><g:message code="default.list.label" args="[entityName]" /></title>
+</head>
+<body>
+
+<div id="list-noticia" class="content scaffold-list panel panel-default" role="main">
+<div class="panel-heading">
+<h1><g:message code="default.list.label" args="[entityName]" /></h1>
+</div>
+<div class="panel-body">
+<g:if test="${flash.message}">
+<div class="message" role="status">${flash.message}</div>
+</g:if>
+<table class="table table-striped table-bordered table-hover" >
+<thead>
+<tr>
+
+<g:sortableColumn property="name" title="${message(code: 'noticia.name.label', default: 'Name')}" />
+
+<g:sortableColumn property="acronym" title="${message(code: 'noticia.acronym.label', default: 'Acronym')}" />
+
+</tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>
+</div>
+<div class="pagination">
+<g:paginate total="${noticiaInstanceCount ?: 0}" />
+</div>
+</div>
+</body>
+</html>
