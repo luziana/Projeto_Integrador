@@ -1,5 +1,5 @@
-
-<!DOCTYPE html>
+<%@ page import="projeto.Programacao" %>
+<!doctype html>
 <html>
 <head>
 <meta name="layout" content="main">
@@ -7,6 +7,13 @@
 <title><g:message code="default.create.label" args="[entityName]" /></title>
 </head>
 <body>
+		<nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
+		 <div class="collapse navbar-collapse navbar-ex1-collapse">
+   			 <ul class="nav navbar-nav">
+     		 	<li><a  href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
+     		 	<%--<li><g:link action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>--%>
+     		 </ul></div>
+     		 </nav>
 <div class="wrapper">
 <div id="create-programacao" class="panel panel-default content scaffold-create" role="main">
 <div class="panel-heading">
