@@ -18,7 +18,15 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<div class="col-lg-6">
-	<g:datePicker name="data" precision="day"  value="${programacaoInstance?.data}"  />
+	
+	<g:textField name="data" value="${programacaoInstance.data}" required=""/>	
+	<script type="text/javascript">	
+		$(document).ready(function() {	
+		$("#data").datepicker({dateFormat: 'dd/mm/yy'});	
+		})	
+	</script>
+	
+	<%--<g:datePicker name="data" precision="day"  value="${programacaoInstance?.data}"  />--%>
 	</div>
 </div>
 
@@ -38,7 +46,13 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<div class="col-lg-6">
-	<g:datePicker name="horario" precision="day"  value="${programacaoInstance?.horario}"  />
+	<g:textField name="horario" value="${programacaoInstance.horario}" required=""/>	
+	<script type="text/javascript">	
+		$(document).ready(function() {	
+		$("#horario").datepicker({dateFormat: 'dd/mm/yy'});	
+		})	
+	</script>
+	<%--<g:datePicker name="horario" precision="day"  value="${programacaoInstance?.horario}"  />--%>
 	</div>
 </div>
 

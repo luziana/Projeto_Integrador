@@ -14,6 +14,7 @@
 <g:layoutHead/>
 <g:javascript library="application"/>
 <r:require modules="bootstrap"/>
+<r:require module="jquery-ui"/>
 <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/sb-admin.css" rel="stylesheet">
 
