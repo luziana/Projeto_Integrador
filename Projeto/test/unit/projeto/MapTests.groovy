@@ -1,4 +1,4 @@
-package projet
+package projeto
 
 
 
@@ -8,8 +8,8 @@ import org.junit.*
 /**
  * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
  */
-@TestFor(Descricao)
-class DescricaoTests {
+@TestFor(Map)
+class MapTests {
 
     void testSomething() {
        fail "Implement me"
