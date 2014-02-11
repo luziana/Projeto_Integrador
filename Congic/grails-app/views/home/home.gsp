@@ -39,11 +39,23 @@
     <li><a href="#">Evento</a></li>
     <li><a href="#">Áreas Temáticas</a></li>
     <li><a href="#">Submissão de Artigos</a></li>
-    <li><a href="#">Programação</a></li>
+    <li><a href="${createLink(controller:'programacao', action:'programacao')}">Programação</a></li>
     <li><a href="#">Mostra Tecnológica</a></li>
     
     </ul>
     </nav>
+    
+    <div id="noticia">
+
+	</br></br></br><center><h2>Noticias</h2></center></br></br></br>
+		
+	<g:each in="${noticias?}">
+
+		<p>Titulo: ${it.titulo}</p>
+		<p>Descrição: ${it.descricao}</p>
+
+	</g:each>
+</div>
                 
         </body>
 </html>
