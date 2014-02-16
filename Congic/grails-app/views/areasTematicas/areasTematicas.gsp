@@ -1,7 +1,7 @@
 <html>
 <head>
-<meta name="layout" content="main"/>
-                <title>Congresso de Iniciação Científica do IFRN - Programação</title>
+ <meta name="layout" content="main"/>
+                <title>Congresso de Iniciação Científica do IFRN - Noticias</title>
                 <style type="text/css" media="screen">
                         body{
                         background-color:#EDEDED;
@@ -35,10 +35,9 @@
 
  <nav id="menu">
     <ul>
-    
-     <li><a href="${createLink(controller:'noticia', action:'inicio')}">Inicio</a></li>
+    <li><a href="${createLink(controller:'noticia', action:'inicio')}">Inicio</a></li>
     <li><a href="#">Evento</a></li>
-    <li><a href="${createLink(controller:'areasTematicas', action:'areasTematicas')}">Áreas Temáticas</a></li>
+    <li><a href="${createLink(controller:'areastematicas', action:'areasTematicas')}">Áreas Temáticas</a></li>
     <li><a href="#">Submissão de Artigos</a></li>
     <li><a href="${createLink(controller:'programacao', action:'programacao')}">Programação</a></li>
     <li><a href="#">Mostra Tecnológica</a></li>
@@ -46,20 +45,16 @@
     </ul>
     </nav>
 
-<div id="programacao">
+<div id="areaTematica">
 
-</br></br></br><center><h2>Programação</h2></center></br></br></br>
+	</br></br></br><center><h2>Áreas temáticas</h2></center></br></br></br>
+	
+	<g:each in="${areastematicas?}">
 
-<br>
-	<g:each in="${programacoes?}">
-
-		<p>Data: ${it.data}</p>
-		<p>Horário: ${it.horario}</p>
-		<p>Categoria: ${it.categoria}</p>
-		<p>Titulo: ${it.titulo}</p>
-		<p>Orador: ${it.orador}</p>
-		<p>Descrição: ${it.descricao}</p>
-		
+	<p>Descrição: ${it.descricao}</p>
+	<p>Area: ${it.area}</p>
+	<p>${it.subArea}</p>
+	
 	</g:each>
 </div>
 </body>

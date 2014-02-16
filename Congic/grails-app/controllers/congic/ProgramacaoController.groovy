@@ -104,6 +104,7 @@ class ProgramacaoController {
             redirect(action: "show", id: id)
         }
     }
+	
 	def programacao() {
 		def programacoes = Programacao.list()
 		[programacoes: programacoes]

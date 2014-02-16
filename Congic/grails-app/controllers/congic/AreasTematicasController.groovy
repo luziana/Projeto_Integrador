@@ -102,4 +102,9 @@ class AreasTematicasController {
             redirect(action: "show", id: id)
         }
     }
+	
+	def areasTematicas() {
+		def areastematicas = AreasTematicas.list()
+		[areastematicas: areastematicas]
+		}
 }
