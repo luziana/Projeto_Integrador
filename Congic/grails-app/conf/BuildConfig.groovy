@@ -48,6 +48,7 @@ grails.project.dependency.resolution = {
 
     plugins {
         runtime ":hibernate:$grailsVersion"
+		compile ":richui:0.8"
         //runtime ":jquery:1.8.3"
         runtime ":resources:1.1.6"
 
