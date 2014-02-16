@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
         <head>
+        <script type="text/javascript">
+        	 function detectBrowser() {
+	        	  var useragent = navigator.userAgent;
+	        	  var mapdiv = document.getElementById("map_canvas");
+	
+	        	  if (useragent.indexOf('iPhone') != -1 || useragent.indexOf('Android') != -1 ) {
+	        	    mapdiv.style.width = '100%';
+	        	    mapdiv.style.height = '100%';
+	        	  } else {
+	        	    mapdiv.style.width = '600px';
+	        	    mapdiv.style.height = '800px';
+	        	  }
+        	}
+        </script>      
                 <meta name="layout" content="main"/>
                 <title>Congresso de Iniciação Científica do IFRN > Localização</title>
              
@@ -43,9 +57,9 @@
 
 	</g:each>
 </div>
-<div id="map">
-	<p>LOCAL DE INSERÇÃO DO MAPA teste</p>
-	<richui:map type="GoogleMaps" lat="40.689299" lng="-74.044" search="true" />
+<!-- <p>Realis"grails-app/views/localizacao/index.gsp"e sua pesquisa:</p>-->
+<div id="map_canvas">	
+	<richui:map type="GoogleMaps" lat="-6.1097267" lng="-38.2079708,15" search="true" />
 	
 </div>
                 
