@@ -4,12 +4,13 @@
 	<item value="140" key="org.grails.ide.eclipse.ui.dialogsettings.columnWidth0"/>
 	<item value="280" key="org.grails.ide.eclipse.ui.dialogsettings.columnWidth1"/>
 	<list key="grails.import.location.hist">
+		<item value="/home/luziana/Downloads/grails-plugins-grails-spring-security-core-31c9c72"/>
 		<item value="/home/luziana/Projeto_Integrador/Congic"/>
 	</list>
 	<section name="org.grails.ide.eclipse.ui.internal.inplace.GrailsInplaceDialog">
 		<item value="390" key="size.width"/>
 		<item value="119" key="size.height"/>
-		<item value="511" key="location.x"/>
-		<item value="318" key="location.y"/>
+		<item value="854" key="location.x"/>
+		<item value="319" key="location.y"/>
 	</section>
 </section>

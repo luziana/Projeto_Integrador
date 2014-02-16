@@ -1,0 +1,15 @@
+package congic
+
+import grails.plugin.springsecurity.annotation.Secured
+
+@Secured (['ROLE_ADMIN'])
+class NoticiaController {
+	static scaffold = true
+    
+		
+    
+	def inicio() {
+		def noticias = Noticia.list()
+		[noticias: noticias]
+		}
+}

@@ -1,0 +1,18 @@
+!SESSION 2014-02-15 11:33:51.614 -----------------------------------------------
+eclipse.buildId=3.4.0.201310051614-RELEASE-e43
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -data /home/luziana/Projeto_Integrador/Congic/grails-app -os linux -ws gtk -arch x86_64 -product org.springsource.ggts.ide
+
+!ENTRY org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-02-15 11:34:23.011
+!MESSAGE Result of converting legacy STS 2.x workspace preferences to 3.x
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-02-15 11:34:23.011
+!MESSAGE Converted legacy STS plugin preferences
+!SUBENTRY 1 unknown 0 0 2014-02-15 11:34:23.011
+!MESSAGE OK
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-02-15 11:34:23.011
+!MESSAGE Converted legacy Roo plugin state locations
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-02-15 11:34:23.011
+!MESSAGE Converted legacy STS plugin state locations

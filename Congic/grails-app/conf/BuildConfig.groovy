@@ -7,10 +7,10 @@ grails.project.source.level = 1.6
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
 // uncomment (and adjust settings) to fork the JVM to isolate classpaths
-//grails.project.fork = [
-//   run: [maxMemory:1024, minMemory:64, debug:false, maxPerm:256]
-//]
-
+grails.project.fork = [
+   run: [maxMemory:1024, minMemory:64, debug:false, maxPerm:256]
+]
+grails.project.dependency.resolver = "maven"
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
     inherits("global") {
@@ -36,6 +36,8 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
+		
+			mavenRepo 'http://repo.spring.io/milestone'
     }
 
     dependencies {
@@ -46,7 +48,7 @@ grails.project.dependency.resolution = {
 
     plugins {
         runtime ":hibernate:$grailsVersion"
-        runtime ":jquery:1.8.3"
+        //runtime ":jquery:1.8.3"
         runtime ":resources:1.1.6"
 
         // Uncomment these (or add new ones) to enable additional resources capabilities
@@ -56,8 +58,12 @@ grails.project.dependency.resolution = {
 
         build ":tomcat:$grailsVersion"
 
+			compile ':spring-security-core:2.0-RC2'	
+		
         runtime ":database-migration:1.3.2"
-
+		runtime ":jquery:1.10.2.2"
+		runtime ":resources:1.2.1"
+			runtime ':twitter-bootstrap:3.0.3'
         compile ':cache:1.0.1'
     }
 }

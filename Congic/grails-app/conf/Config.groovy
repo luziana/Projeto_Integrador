@@ -12,8 +12,10 @@
 // }
 
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
-grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format
-grails.mime.use.accept.header = false
+
+//grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format
+//grails.mime.use.accept.header = false
+
 grails.mime.types = [
     all:           '*/*',
     atom:          'application/atom+xml',
@@ -35,12 +37,35 @@ grails.mime.types = [
 // What URL patterns should be processed by the resources plugin
 grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']
 
+grails.views.default.codec="html"
+
+grails.controllers.defaultScope ='singleton'
+
+grails{
+	views{
+		gsp{
+			encoding ='UTF-8'
+			htmlcodec = 'xml'
+			codec{
+				expression ='html'
+				scriptlet ='html'
+				taglib = 'none'
+				staticparts='none'
+			}
+		}
+		
+		filteringCodecForContentType{
+			
+		}
+	}
+}
+
 // The default codec used to encode data with ${}
-grails.views.default.codec = "none" // none, html, base64
-grails.views.gsp.encoding = "UTF-8"
+//grails.views.default.codec = "none" // none, html, base64
+//grails.views.gsp.encoding = "UTF-8"
 grails.converters.encoding = "UTF-8"
 // enable Sitemesh preprocessing of GSP pages
-grails.views.gsp.sitemesh.preprocess = true
+//grails.views.gsp.sitemesh.preprocess = true
 // scaffolding templates configuration
 grails.scaffolding.templates.domainSuffix = 'Instance'
 
@@ -89,3 +114,21 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+grails.plugins.springsecurity.password.algorithm='SHA-512'
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'congic.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'congic.UserRole'
+grails.plugin.springsecurity.authority.className = 'congic.Role'
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/':                              ['permitAll'],
+	'/index':                         ['permitAll'],
+	'/index.gsp':                     ['permitAll'],
+	'/**/js/**':                      ['permitAll'],
+	'/**/css/**':                     ['permitAll'],
+	'/**/images/**':                  ['permitAll'],
+	'/**/favicon.ico':                ['permitAll']
+]
+
+grails.plugins.springsecurity.auth.loginFormUrl = '/'

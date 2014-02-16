@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_RToBoJD6EeOITrNxFjG6AQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_RToBoZD6EeOITrNxFjG6AQ" bindingContexts="_RTvWcZD6EeOITrNxFjG6AQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;main.gsp&quot; tooltip=&quot;Projeto/grails-app/views/layouts/main.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/layouts/main.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;index.gsp&quot; tooltip=&quot;Projeto/grails-app/views/index.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/index.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;show.gsp&quot; tooltip=&quot;Projeto/grails-app/views/programacao/show.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/programacao/show.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;show.gsp&quot; tooltip=&quot;Projeto/grails-app/views/noticia/show.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/noticia/show.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;list.gsp&quot; tooltip=&quot;Projeto/grails-app/views/noticia/list.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/noticia/list.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;list.gsp&quot; tooltip=&quot;Projeto/grails-app/views/programacao/list.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/programacao/list.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;edit.gsp&quot; tooltip=&quot;Projeto/grails-app/views/programacao/edit.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/programacao/edit.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;create.gsp&quot; tooltip=&quot;Projeto/grails-app/views/programacao/create.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/programacao/create.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;BuildConfig.groovy&quot; tooltip=&quot;Projeto/grails-app/conf/BuildConfig.groovy&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/conf/BuildConfig.groovy&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;main.gsp&quot; tooltip=&quot;Projeto/grails-app/views/programacao/main.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/programacao/main.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;_form.gsp&quot; tooltip=&quot;Projeto/grails-app/views/programacao/_form.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/programacao/_form.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;Programacao.groovy&quot; tooltip=&quot;Projeto/grails-app/domain/projeto/Programacao.groovy&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/domain/projeto/Programacao.groovy&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;create.gsp&quot; tooltip=&quot;Projeto/grails-app/views/noticia/create.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/noticia/create.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;DataSource.groovy&quot; tooltip=&quot;Projeto/grails-app/conf/DataSource.groovy&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/conf/DataSource.groovy&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;inicio.gsp&quot; tooltip=&quot;Projeto/grails-app/views/noticia/inicio.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/noticia/inicio.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.springsource.ide.eclipse.dashboard.ui.dashboard.elementFactory&quot; id=&quot;org.springsource.ide.eclipse.commons.gettingstarted.dashboard.DashboardEditor&quot; name=&quot;Dashboard&quot; tooltip=&quot;Dashboard&quot;>&#xA;&lt;persistable openDashboard=&quot;true&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;main.gsp&quot; tooltip=&quot;Projeto/grails-app/views/layouts/main.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/layouts/main.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;index.gsp&quot; tooltip=&quot;Projeto/grails-app/views/index.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/index.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;show.gsp&quot; tooltip=&quot;Projeto/grails-app/views/programacao/show.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/programacao/show.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;show.gsp&quot; tooltip=&quot;Projeto/grails-app/views/noticia/show.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/noticia/show.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;list.gsp&quot; tooltip=&quot;Projeto/grails-app/views/noticia/list.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/noticia/list.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;list.gsp&quot; tooltip=&quot;Projeto/grails-app/views/programacao/list.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/programacao/list.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;edit.gsp&quot; tooltip=&quot;Projeto/grails-app/views/programacao/edit.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/programacao/edit.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;create.gsp&quot; tooltip=&quot;Projeto/grails-app/views/programacao/create.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/programacao/create.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;BuildConfig.groovy&quot; tooltip=&quot;Projeto/grails-app/conf/BuildConfig.groovy&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/conf/BuildConfig.groovy&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;main.gsp&quot; tooltip=&quot;Projeto/grails-app/views/programacao/main.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/programacao/main.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;_form.gsp&quot; tooltip=&quot;Projeto/grails-app/views/programacao/_form.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/programacao/_form.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;Programacao.groovy&quot; tooltip=&quot;Projeto/grails-app/domain/projeto/Programacao.groovy&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/domain/projeto/Programacao.groovy&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot; name=&quot;create.gsp&quot; tooltip=&quot;Projeto/grails-app/views/noticia/create.gsp&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/views/noticia/create.gsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;DataSource.groovy&quot; tooltip=&quot;Projeto/grails-app/conf/DataSource.groovy&quot;>&#xA;&lt;persistable path=&quot;/Projeto/grails-app/conf/DataSource.groovy&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_RToBoZD6EeOITrNxFjG6AQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_RToBopD6EeOITrNxFjG6AQ" label="%trimmedwindow.label.eclipseSDK" x="698" y="27" width="660" height="741">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_RToBoZD6EeOITrNxFjG6AQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_RToBopD6EeOITrNxFjG6AQ" label="%trimmedwindow.label.eclipseSDK" x="698" y="27" width="660" height="737">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workingSets/>"/>
@@ -78,7 +78,7 @@
           <tags>persp.actionSet:org.eclipse.wst.server.ui.internal.webbrowser.actionSet</tags>
           <tags>persp.actionSet:org.eclipse.debug.ui.breakpointActionSet</tags>
           <tags>persp.actionSet:org.grails.ide.eclipse.ui.actionSet</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_RToBpZD6EeOITrNxFjG6AQ" selectedElement="_RToBrpD6EeOITrNxFjG6AQ" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_RToBpZD6EeOITrNxFjG6AQ" selectedElement="_RToBppD6EeOITrNxFjG6AQ" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_RToBppD6EeOITrNxFjG6AQ" containerData="2500" selectedElement="_RToBp5D6EeOITrNxFjG6AQ">
               <children xsi:type="basic:PartStack" xmi:id="_RToBp5D6EeOITrNxFjG6AQ" elementId="left" containerData="8000" selectedElement="_RToBq5D6EeOITrNxFjG6AQ">
                 <tags>newtablook</tags>
@@ -147,148 +147,10 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_RTopZJD6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.editorss" selectedElement="_RTopZZD6EeOITrNxFjG6AQ">
-      <children xsi:type="basic:PartStack" xmi:id="_RTopZZD6EeOITrNxFjG6AQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_RTpPwJD6EeOITrNxFjG6AQ">
+      <children xsi:type="basic:PartStack" xmi:id="_RTopZZD6EeOITrNxFjG6AQ" elementId="org.eclipse.e4.primaryDataStack">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_RTopZpD6EeOITrNxFjG6AQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="show.gsp" iconURI="platform:/plugin/org.grails.ide.eclipse.editor.gsp/icons/full/obj16/grails_file_obj.png" tooltip="Projeto/grails-app/views/noticia/show.gsp" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Projeto/grails-app/views/noticia/show.gsp&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;40&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.grails.ide.eclipse.editor.gsp.editor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTopZ5D6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTopaJD6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTopaZD6EeOITrNxFjG6AQ" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTopapD6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.source.EditorContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTopa5D6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.source.RulerContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_RTopbJD6EeOITrNxFjG6AQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="show.gsp" iconURI="platform:/plugin/org.grails.ide.eclipse.editor.gsp/icons/full/obj16/grails_file_obj.png" tooltip="Projeto/grails-app/views/programacao/show.gsp" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Projeto/grails-app/views/programacao/show.gsp&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;16&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.grails.ide.eclipse.editor.gsp.editor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTopbZD6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTopbpD6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTopb5D6EeOITrNxFjG6AQ" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTopcJD6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.source.EditorContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTopcZD6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.source.RulerContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_RTopcpD6EeOITrNxFjG6AQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="index.gsp" iconURI="platform:/plugin/org.grails.ide.eclipse.editor.gsp/icons/full/obj16/grails_file_obj.png" tooltip="Projeto/grails-app/views/index.gsp" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Projeto/grails-app/views/index.gsp&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;206&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.grails.ide.eclipse.editor.gsp.editor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTopc5D6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTopdJD6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTopdZD6EeOITrNxFjG6AQ" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTopdpD6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.source.EditorContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTopd5D6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.source.RulerContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_RTpPwJD6EeOITrNxFjG6AQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main.gsp" iconURI="platform:/plugin/org.grails.ide.eclipse.editor.gsp/icons/full/obj16/grails_file_obj.png" tooltip="Projeto/grails-app/views/layouts/main.gsp" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.grails.ide.eclipse.editor.gsp.editor&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Projeto/grails-app/views/layouts/main.gsp&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;167&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;717&quot; selectionTopPixel=&quot;14&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.grails.ide.eclipse.editor.gsp.editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTpPwZD6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTpPwpD6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTpPw5D6EeOITrNxFjG6AQ" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTpPxJD6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.EditorContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.source.EditorContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_RTpPxZD6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.gspsource.source.RulerContext</tags>
-            <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.source.RulerContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-          </menus>
-        </children>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_RTpPxpD6EeOITrNxFjG6AQ" elementId="org.eclipse.jdt.ui.PackageExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Package Explorer" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/eview16/package.gif" closeable="true">
@@ -307,6 +169,7 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_RTpPypD6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.navigator.ProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -331,7 +194,7 @@
         <tags>menuContribution:popup</tags>
         <tags>popup:org.eclipse.ui.navigator.ProjectExplorer#PopupMenu</tags>
       </menus>
-      <toolbar xmi:id="_RTpQPpD6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.navigator.ProjectExplorer"/>
+      <toolbar xmi:id="_RTpQPpD6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.navigator.ProjectExplorer" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_RTpQRJD6EeOITrNxFjG6AQ" elementId="org.eclipse.wst.server.ui.ServersView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Servers" iconURI="platform:/plugin/org.eclipse.wst.server.ui/icons/cview16/servers_view.gif" closeable="true">
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot;/>"/>
@@ -361,7 +224,7 @@
         <tags>menuContribution:popup</tags>
         <tags>popup:org.eclipse.wst.server.ui.ServersView</tags>
       </menus>
-      <toolbar xmi:id="_RTpQVJD6EeOITrNxFjG6AQ" elementId="org.eclipse.wst.server.ui.ServersView"/>
+      <toolbar xmi:id="_RTpQVJD6EeOITrNxFjG6AQ" elementId="org.eclipse.wst.server.ui.ServersView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_RTpQXJD6EeOITrNxFjG6AQ" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Task List" iconURI="platform:/plugin/org.eclipse.mylyn.tasks.ui/icons/eview16/task-list.gif" tooltip="Task List" closeable="true">
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view linkWithEditor=&quot;true&quot; presentation=&quot;org.eclipse.mylyn.tasks.ui.categorized&quot;>&#xA;&lt;sorter groupBy=&quot;CATEGORY_QUERY&quot;>&#xA;&lt;sorter>&#xA;&lt;sort0 sortDirection=&quot;1&quot; sortKey=&quot;PRIORITY&quot;/>&#xA;&lt;sort1 sortDirection=&quot;1&quot; sortKey=&quot;RANK&quot;/>&#xA;&lt;sort2 sortDirection=&quot;1&quot; sortKey=&quot;DATE_CREATED&quot;/>&#xA;&lt;sort3 sortDirection=&quot;1&quot; sortKey=&quot;NONE&quot;/>&#xA;&lt;sort4 sortDirection=&quot;1&quot; sortKey=&quot;NONE&quot;/>&#xA;&lt;sort5 sortDirection=&quot;1&quot; sortKey=&quot;NONE&quot;/>&#xA;&lt;sort6 sortDirection=&quot;1&quot; sortKey=&quot;NONE&quot;/>&#xA;&lt;sort7 sortDirection=&quot;1&quot; sortKey=&quot;NONE&quot;/>&#xA;&lt;/sorter>&#xA;&lt;/sorter>&#xA;&lt;filteredTreeFindHistory/>&#xA;&lt;/view>"/>
@@ -411,7 +274,7 @@
         <tags>menuContribution:popup</tags>
         <tags>popup:org.eclipse.mylyn.tasks.ui.views.tasks</tags>
       </menus>
-      <toolbar xmi:id="_RTp20JD6EeOITrNxFjG6AQ" elementId="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+      <toolbar xmi:id="_RTp20JD6EeOITrNxFjG6AQ" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_RTp23pD6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.views.ContentOutline" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Outline" iconURI="platform:/plugin/org.eclipse.ui.views/icons/full/eview16/outline_co.gif" closeable="true">
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
@@ -529,7 +392,7 @@
         <tags>popup:org.grails.ide.eclipse.editor.gsp.editor.source.OutlineContext</tags>
         <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.OutlineContext</tags>
       </menus>
-      <toolbar xmi:id="_RTp295D6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.views.ContentOutline"/>
+      <toolbar xmi:id="_RTp295D6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.views.ContentOutline" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_RTp2_pD6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.texteditor.TemplatesView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Templates" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/eview16/templates.gif" closeable="true">
       <tags>View</tags>
@@ -579,7 +442,7 @@
         <tags>menuContribution:popup</tags>
         <tags>popup:org.eclipse.debug.ui.ProcessConsoleType.#ContextMenu</tags>
       </menus>
-      <toolbar xmi:id="_RTp3CpD6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.console.ConsoleView"/>
+      <toolbar xmi:id="_RTp3CpD6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.console.ConsoleView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_RTp3GJD6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.views.AllMarkersView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Markers" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/problems_view.gif" tooltip="0 errors, 4 warnings, 5 others" closeable="true">
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.allSeverityField&quot; categoryGroup=&quot;org.eclipse.ui.ide.type&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.allMarkersGenerator&quot; partName=&quot;Markers&quot;>&#xA;&lt;columnWidths org.eclipse.ui.ide.allSeverityField=&quot;300&quot; org.eclipse.ui.ide.locationField=&quot;90&quot; org.eclipse.ui.ide.markerType=&quot;128&quot; org.eclipse.ui.ide.pathField=&quot;120&quot; org.eclipse.ui.ide.resourceField=&quot;90&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.allSeverityField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xA;&lt;/view>"/>
@@ -632,18 +495,18 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RTp3J5D6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTp3KJD6EeOITrNxFjG6AQ" elementId="new.group"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTp3KZD6EeOITrNxFjG6AQ" elementId="newWizardDropDown"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTp3KpD6EeOITrNxFjG6AQ" elementId="new.ext" visible="false"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTp3K5D6EeOITrNxFjG6AQ" elementId="save.group" visible="false"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTp3LJD6EeOITrNxFjG6AQ" elementId="save"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTp3LZD6EeOITrNxFjG6AQ" elementId="saveAll"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTp3LpD6EeOITrNxFjG6AQ" elementId="save.ext" visible="false"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_RTp3L5D6EeOITrNxFjG6AQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.gif" tooltip="Print" command="_RUdIE5D6EeOITrNxFjG6AQ"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTp3MJD6EeOITrNxFjG6AQ" elementId="print.ext" visible="false"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTp3MZD6EeOITrNxFjG6AQ" elementId="build.group"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTp3MpD6EeOITrNxFjG6AQ" elementId="build.ext" visible="false"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTp3M5D6EeOITrNxFjG6AQ" elementId="additions"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HMoHkJZMEeOJuLSb9ipwAw" elementId="new.group"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HMouoJZMEeOJuLSb9ipwAw" elementId="newWizardDropDown"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HMouoZZMEeOJuLSb9ipwAw" elementId="new.ext" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HMouopZMEeOJuLSb9ipwAw" elementId="save.group" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HMpVsJZMEeOJuLSb9ipwAw" elementId="save"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HMpVsZZMEeOJuLSb9ipwAw" elementId="saveAll"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HMp8wJZMEeOJuLSb9ipwAw" elementId="save.ext" visible="false"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_HMqj0JZMEeOJuLSb9ipwAw" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.gif" tooltip="Print" enabled="false" command="_RUdIE5D6EeOITrNxFjG6AQ"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HMzGsJZMEeOJuLSb9ipwAw" elementId="print.ext" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HMzGsZZMEeOJuLSb9ipwAw" elementId="build.group"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HMzGspZMEeOJuLSb9ipwAw" elementId="build.ext" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HMztwJZMEeOJuLSb9ipwAw" elementId="additions"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RTp3NJD6EeOITrNxFjG6AQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -651,43 +514,43 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RTqd75D6EeOITrNxFjG6AQ" elementId="org.eclipse.debug.ui.breakpointActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqd8JD6EeOITrNxFjG6AQ" elementId="breakpointGroup"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqd8ZD6EeOITrNxFjG6AQ" elementId="org.eclipse.debug.ui.actions.SkipAllBreakpoints"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRs00JZMEeOJuLSb9ipwAw" elementId="breakpointGroup"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRs00ZZMEeOJuLSb9ipwAw" elementId="org.eclipse.debug.ui.actions.SkipAllBreakpoints"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RTqd8pD6EeOITrNxFjG6AQ" elementId="com.springsource.sts.ide.ui.actionSet.workbench">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqd85D6EeOITrNxFjG6AQ" elementId="main"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqd9JD6EeOITrNxFjG6AQ" elementId="com.springsource.sts.ide.ui.action.dashboard"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRtb4JZMEeOJuLSb9ipwAw" elementId="main"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRtb4ZZMEeOJuLSb9ipwAw" elementId="com.springsource.sts.ide.ui.action.dashboard"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RTqd9ZD6EeOITrNxFjG6AQ" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqd9pD6EeOITrNxFjG6AQ" elementId="debug"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqd95D6EeOITrNxFjG6AQ" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqd-JD6EeOITrNxFjG6AQ" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqd-ZD6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqd-pD6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.ui.internal.inplace.GrailsRunToolbarAction"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqd-5D6EeOITrNxFjG6AQ" elementId="org.springsource.ide.eclipse.commons.launch.relaunch.action"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqd_JD6EeOITrNxFjG6AQ" elementId="org.springsource.ide.eclipse.commons.launch.relaunch.action"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRuC8JZMEeOJuLSb9ipwAw" elementId="debug"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRuC8ZZMEeOJuLSb9ipwAw" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRuqAJZMEeOJuLSb9ipwAw" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRuqAZZMEeOJuLSb9ipwAw" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRuqApZMEeOJuLSb9ipwAw" elementId="org.grails.ide.eclipse.ui.internal.inplace.GrailsRunToolbarAction"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRvREJZMEeOJuLSb9ipwAw" elementId="org.springsource.ide.eclipse.commons.launch.relaunch.action"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRv4IJZMEeOJuLSb9ipwAw" elementId="org.springsource.ide.eclipse.commons.launch.relaunch.action"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RTqd_ZD6EeOITrNxFjG6AQ" elementId="org.eclipse.jdt.ui.JavaElementCreationActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqd_pD6EeOITrNxFjG6AQ" elementId="JavaWizards"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqd_5D6EeOITrNxFjG6AQ" elementId="opengroovyprojectwizard"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeAJD6EeOITrNxFjG6AQ" elementId="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeAZD6EeOITrNxFjG6AQ" elementId="org.eclipse.jdt.ui.actions.OpenPackageWizard"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeApD6EeOITrNxFjG6AQ" elementId="org.eclipse.jdt.ui.actions.NewTypeDropDown"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRwfMJZMEeOJuLSb9ipwAw" elementId="JavaWizards"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRxGQJZMEeOJuLSb9ipwAw" elementId="opengroovyprojectwizard"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRxGQZZMEeOJuLSb9ipwAw" elementId="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRxtUJZMEeOJuLSb9ipwAw" elementId="org.eclipse.jdt.ui.actions.OpenPackageWizard"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRyUYJZMEeOJuLSb9ipwAw" elementId="org.eclipse.jdt.ui.actions.NewTypeDropDown"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RTqeA5D6EeOITrNxFjG6AQ" elementId="org.eclipse.search.searchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeBJD6EeOITrNxFjG6AQ" elementId="Search"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeBZD6EeOITrNxFjG6AQ" elementId="openType"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeBpD6EeOITrNxFjG6AQ" elementId="org.eclipse.mylyn.tasks.ui.openTask"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeB5D6EeOITrNxFjG6AQ" elementId="org.eclipse.search.OpenSearchDialogPage"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRy7cJZMEeOJuLSb9ipwAw" elementId="Search"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRy7cZZMEeOJuLSb9ipwAw" elementId="openType"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HRzigJZMEeOJuLSb9ipwAw" elementId="org.eclipse.mylyn.tasks.ui.openTask"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HR0JkJZMEeOJuLSb9ipwAw" elementId="org.eclipse.search.OpenSearchDialogPage"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RTqeCJD6EeOITrNxFjG6AQ" elementId="org.eclipse.wst.server.ui.internal.webbrowser.actionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeCZD6EeOITrNxFjG6AQ" elementId="browser"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeCpD6EeOITrNxFjG6AQ" elementId="org.eclipse.wst.server.ui.internal.webbrowser.action.open"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HR0JkZZMEeOJuLSb9ipwAw" elementId="browser"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HR0woJZMEeOJuLSb9ipwAw" elementId="org.eclipse.wst.server.ui.internal.webbrowser.action.open"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RTqeC5D6EeOITrNxFjG6AQ" elementId="group.nav" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -695,18 +558,15 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RTqeDZD6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeDpD6EeOITrNxFjG6AQ" elementId="history.group"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeD5D6EeOITrNxFjG6AQ" elementId="group.application" visible="false"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeEJD6EeOITrNxFjG6AQ" elementId="backardHistory"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeEZD6EeOITrNxFjG6AQ" elementId="forwardHistory"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeEpD6EeOITrNxFjG6AQ" elementId="pin.group"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_RTqeE5D6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.gif" tooltip="Pin Editor" enabled="false" command="_RUSwEZD6EeOITrNxFjG6AQ"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeFJD6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.edit.text.gotoNextAnnotation"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeFZD6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.edit.text.gotoPreviousAnnotation"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeFpD6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition"/>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_RTqeF5D6EeOITrNxFjG6AQ" elementId="org.grails.ide.eclipse.editor.gsp.editor" visible="false">
-        <tags>Draggable</tags>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HMztwZZMEeOJuLSb9ipwAw" elementId="history.group"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HM0U0JZMEeOJuLSb9ipwAw" elementId="group.application" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HM0U0ZZMEeOJuLSb9ipwAw" elementId="backardHistory"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HM074JZMEeOJuLSb9ipwAw" elementId="forwardHistory"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HM074ZZMEeOJuLSb9ipwAw" elementId="pin.group"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_HM1i8JZMEeOJuLSb9ipwAw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.gif" tooltip="Pin Editor" enabled="false" command="_RUSwEZD6EeOITrNxFjG6AQ"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HR1XsJZMEeOJuLSb9ipwAw" elementId="org.eclipse.ui.edit.text.gotoNextAnnotation"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HR1XsZZMEeOJuLSb9ipwAw" elementId="org.eclipse.ui.edit.text.gotoPreviousAnnotation"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HR1-wJZMEeOJuLSb9ipwAw" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RTqeGJD6EeOITrNxFjG6AQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -718,8 +578,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RTqeHJD6EeOITrNxFjG6AQ" elementId="org.eclipse.ui.workbench.help" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeHZD6EeOITrNxFjG6AQ" elementId="group.help"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_RTqeHpD6EeOITrNxFjG6AQ" elementId="group.application" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HM3YIJZMEeOJuLSb9ipwAw" elementId="group.help"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_HM3_MJZMEeOJuLSb9ipwAw" elementId="group.application" visible="false"/>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_RTqeH5D6EeOITrNxFjG6AQ" elementId="PerspectiveSpacer" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
         <tags>stretch</tags>

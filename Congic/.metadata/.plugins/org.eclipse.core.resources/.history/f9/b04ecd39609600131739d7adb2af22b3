@@ -1,0 +1,9 @@
+package congic
+
+class SecureController {
+
+    def index() {
+		render 'Secure access only'
+		
+	}
+}
