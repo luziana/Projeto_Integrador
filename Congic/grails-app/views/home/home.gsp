@@ -34,9 +34,10 @@
    <%--             
                  <nav id="menu">
     <ul>
-    <li><a href="${createLink(controller:'noticia', action:'inicio')}">Inicio</a></li>
+    
+   <li><a href="${createLink(controller:'noticia', action:'inicio')}">Inicio</a></li>
     <li><a href="#">Evento</a></li>
-    <li><a href="#">Áreas Temáticas</a></li>
+    <li><a href="${createLink(controller:'areasTematicas', action:'areasTematicas')}">Áreas Temáticas</a></li>
     <li><a href="#">Submissão de Artigos</a></li>
     <li><a href="${createLink(controller:'programacao', action:'programacao')}">Programação</a></li>
     <li><a href="#">Mostra Tecnológica</a></li>
