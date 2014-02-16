@@ -14,6 +14,7 @@
 		<g:layoutHead/>
 		<g:javascript library="application"/>
 		<r:require modules="bootstrap"/>
+		<resource:include components="map" />
 		
 		<link href="css/boostrap.main.css" rel="stylesheet">
 		
