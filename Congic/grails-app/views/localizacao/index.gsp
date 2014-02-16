@@ -31,6 +31,9 @@
                     border-bottom:3px solid #EA0000;
                     }
                 </style>
+                
+                <resource:include components="map" key="AIzaSyBS0q7wbuQAkt36ZfITUGAvULWEkgQhFi0"/>
+                
                 </head>
                 <body>
                  <nav id="menu">
@@ -44,7 +47,7 @@
     
     </ul>
     </nav>
-       <p>LOCAL DE INSERÇÃO DO MAPA</p>
+       
     <div id="noticia">
 
 	</br></br></br><center><h2>Noticias</h2></center></br></br></br>
@@ -57,7 +60,8 @@
 	</g:each>
 </div>
 <div id="map">
-	
+	<p>LOCAL DE INSERÇÃO DO MAPA teste</p>
+	<richui:map type="GoogleMaps" lat="40.689299" lng="-74.044" search="true" />
 </div>
                 
         </body>

@@ -1,12 +1,21 @@
 package congic
 
+import javax.swing.text.View;
+
 import org.springframework.dao.DataIntegrityViolationException
+
 import grails.plugin.springsecurity.annotation.Secured
 
 @Secured (['ROLE_ADMIN'])
 
 class LocalizacaoController {
-
+	
+	//static scaffold = true
+	def index(){
+		
+	}
+}
+/*
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {
@@ -103,3 +112,4 @@ class LocalizacaoController {
         }
     }
 }
+*/
