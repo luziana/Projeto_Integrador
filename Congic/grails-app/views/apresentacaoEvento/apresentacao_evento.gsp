@@ -2,7 +2,7 @@
 <html>
         <head>
                 <meta name="layout" content="main"/>
-                <title>Congresso de Iniciação Científica do IFRN</title>
+                <title>Congresso de Iniciação Científica do IFRN - Apresentação Evento</title>
                 
                 </head>
                 <body>
@@ -21,7 +21,7 @@
 					   </ul>
 					</li>
 		
-				    	 <li><a href="${createLink(controller:'areastematicas', action:'areasTematicas')}">Áreas Tematicas</a></li>
+				    	<li><a href="${createLink(controller:'areastematicas', action:'areasTematicas')}">Áreas Temáticas</a></li>
 				    	<li><a href="#">Submissão de Artigos</a></li>
 				    	<li><a href="#"></a></li>
 				    	<li><a href="${createLink(controller:'programacao', action:'programacao')}">Programação</a></li>
@@ -47,14 +47,15 @@
     </nav>
     --%>
     
-    <div id="noticia">
+    <div id="apresentacao">
 
-	</br></br></br><center><h2>Noticias</h2></center></br></br></br>
+	<g:each in="${apresentacao?}">
+
 		
-	<g:each in="${noticias?}">
-
-		<p>Titulo: ${it.titulo}</p>
-		<p>Descrição: ${it.descricao}</p>
+		<p>Descrição: ${it.descricaoEvento}</p>
+		<p>Temática: ${it.tematica}</p>
+		<p>Data: ${it.data}</p>
+		<p>Histórico: ${it.historico}</p>
 
 	</g:each>
 </div>

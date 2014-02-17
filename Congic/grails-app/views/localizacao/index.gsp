@@ -32,7 +32,7 @@
 					    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Evento<span class="caret"></span>
 					    </a>
 					    <ul class="dropdown-menu">
-					      <li><a href="${createLink(controller:'localizacao', action:'index')}">Localização</a></li>
+						  <li><a href="${createLink(controller:'apresentacaoevento', action:'apresentacao_evento')}">Apresentação do Evento</a></li>					      <li><a href="${createLink(controller:'localizacao', action:'index')}">Localização</a></li>
 					      <li><a href="#">teste</a></li>
 					      <li><a href="#">Submissão de Artigos</a></li>
 					      <li><a href="#">Submissão de Artigos</a></li>

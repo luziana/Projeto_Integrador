@@ -12,6 +12,7 @@
 					    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Evento<span class="caret"></span>
 					    </a>
 					    <ul class="dropdown-menu">
+					      <li><a href="${createLink(controller:'apresentacaoevento', action:'apresentacao_evento')}">Apresentação do Evento</a></li>
 					      <li><a href="${createLink(controller:'localizacao', action:'index')}">Localização</a></li>
 					      <li><a href="#">teste</a></li>
 					      <li><a href="#">Submissão de Artigos</a></li>
@@ -19,15 +20,14 @@
 					   </ul>
 					</li>
 		
-				    	<li><a href="#">Áreas Temáticas</a></li>
+				    	<li><a href="${createLink(controller:'areastematicas', action:'areasTematicas')}">Áreas Temáticas</a></li>
 				    	<li><a href="#">Submissão de Artigos</a></li>
 				    	<li><a href="#"></a></li>
 				    	<li><a href="${createLink(controller:'programacao', action:'programacao')}">Programação</a></li>
 				    	<li><a href="#">Mostra Tecnológica</a></li>			  
 				 
 				</ul>
-			</nav>
- 			
+			</nav> 			
 <div id="noticia">
 
 	</br></br></br><center><h2>Inicio</h2></center></br></br></br>
