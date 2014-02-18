@@ -114,21 +114,3 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
-
-grails.plugins.springsecurity.password.algorithm='SHA-512'
-
-// Added by the Spring Security Core plugin:
-grails.plugin.springsecurity.userLookup.userDomainClassName = 'congic.User'
-grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'congic.UserRole'
-grails.plugin.springsecurity.authority.className = 'congic.Role'
-grails.plugin.springsecurity.controllerAnnotations.staticRules = [
-	'/':                              ['permitAll'],
-	'/index':                         ['permitAll'],
-	'/index.gsp':                     ['permitAll'],
-	'/**/js/**':                      ['permitAll'],
-	'/**/css/**':                     ['permitAll'],
-	'/**/images/**':                  ['permitAll'],
-	'/**/favicon.ico':                ['permitAll']
-]
-
-grails.plugins.springsecurity.auth.loginFormUrl = '/'

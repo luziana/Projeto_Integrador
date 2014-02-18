@@ -3,10 +3,6 @@ package congic
 
 import org.springframework.dao.DataIntegrityViolationException
 
-
-import grails.plugin.springsecurity.annotation.Secured
-
-@Secured (['ROLE_ADMIN'])
 class ProgramacaoController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -104,7 +100,6 @@ class ProgramacaoController {
             redirect(action: "show", id: id)
         }
     }
-	
 	def programacao() {
 		def programacoes = Programacao.list()
 		[programacoes: programacoes]

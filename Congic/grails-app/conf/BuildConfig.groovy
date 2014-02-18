@@ -48,7 +48,6 @@ grails.project.dependency.resolution = {
 
     plugins {
         runtime ":hibernate:$grailsVersion"
-		compile ":richui:0.8"
         //runtime ":jquery:1.8.3"
         runtime ":resources:1.1.6"
 
@@ -59,7 +58,7 @@ grails.project.dependency.resolution = {
 
         build ":tomcat:$grailsVersion"
 
-			compile ':spring-security-core:2.0-RC2'	
+//			compile ':spring-security-core:2.0-RC2'	
 		
         runtime ":database-migration:1.3.2"
 		runtime ":jquery:1.10.2.2"

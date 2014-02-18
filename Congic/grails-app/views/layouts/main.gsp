@@ -14,7 +14,6 @@
 		<g:layoutHead/>
 		<g:javascript library="application"/>
 		<r:require modules="bootstrap"/>
-		<resource:include components="map" />
 		
 		<link href="css/boostrap.main.css" rel="stylesheet">
 		
@@ -22,8 +21,6 @@
 		
 	</head>
 	<body>
-	
-
 		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
