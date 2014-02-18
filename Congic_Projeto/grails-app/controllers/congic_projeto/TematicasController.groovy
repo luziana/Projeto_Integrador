@@ -126,7 +126,7 @@ class TematicasController {
 	}
 
 	def tematicas(){
-		def tematicas = Apresentacao.list()
+		def tematicas = Tematicas.list()
 		[tematicas: tematicas]
 	}
 }

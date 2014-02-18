@@ -36,8 +36,8 @@
 			<g:each in="${tematicas?}">
 
 			<p>Descrição: ${it.descricao}</p>
-			<p>Titulo: ${it.area}</p>
-			<p>Titulo: ${it.subArea}</p>
+			<p>Area: ${it.area}</p>
+			<p>${it.subArea}</p>
 
 			</g:each>
 	

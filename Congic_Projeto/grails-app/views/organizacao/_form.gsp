@@ -1,4 +1,4 @@
-<%@ page import="congic.Organizacao" %>
+<%@ page import="congic_projeto.Organizacao" %>
 
 
 
