@@ -1,12 +1,17 @@
+<!DOCTYPE html>
 <html>
-<head>
- <meta name="layout" content="main"/>
-                <title>Congresso de Iniciação Científica do IFRN - Noticias</title>
-   
-</head>
-<body>
-
- <nav id="menu">
+        <head>
+                <meta name="layout" content="main"/>
+                <title>Congresso de Iniciação Científica do IFRN > Localização</title>
+             
+                
+                <resource:include components="map" key="AIzaSyBS0q7wbuQAkt36ZfITUGAvULWEkgQhFi0"/>
+                
+                
+                
+                </head>
+                <body>
+              <nav id="menu">
                 <ul class="nav nav-tabs">
                 	<li><a href="${createLink(controller:'noticia', action:'inicio')}">Inicio</a></li>
                 	<li class="dropdown">
@@ -28,16 +33,20 @@
 				</ul>
 			</nav>
 
-<div id="noticia">
-
-	</br></br></br><center><h2>Noticias</h2></center></br></br></br>
-	
+	</br></br></br><center><h2>Localização</h2></center></br></br></br>
+		
 	<g:each in="${noticias?}">
 
-	<p>Titulo: ${it.titulo}</p>
-	<p>Descrição: ${it.descricao}</p>
+		<p>Titulo: ${it.titulo}</p>
+		<p>Descrição: ${it.descricao}</p>
 
 	</g:each>
 </div>
-</body>
+<div id="map">
+	<p>LOCAL DE INSERÇÃO DO MAPA teste</p>
+	<richui:map type="GoogleMaps" lat="40.689299" lng="-74.044" search="true" />
+	
+</div>
+                
+        </body>
 </html>

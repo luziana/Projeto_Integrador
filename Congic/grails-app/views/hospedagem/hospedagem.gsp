@@ -1,12 +1,13 @@
+<!DOCTYPE html>
 <html>
-<head>
- <meta name="layout" content="main"/>
-                <title>Congresso de Iniciação Científica do IFRN - Noticias</title>
-   
-</head>
-<body>
-
- <nav id="menu">
+	<head>
+		<meta name="layout" content="main"/>
+        	<title>Congresso de Iniciação Científica do IFRN</title>
+                
+    </head>
+    <body>
+    	
+    	<nav id="menu">
                 <ul class="nav nav-tabs">
                 	<li><a href="${createLink(controller:'noticia', action:'inicio')}">Inicio</a></li>
                 	<li class="dropdown">
@@ -27,17 +28,21 @@
 				 
 				</ul>
 			</nav>
+    
+    	<div id="noticia">
 
-<div id="noticia">
+			</br></br></br><center><h2>Hospedagem</h2></center></br></br></br>
+		
+			<g:each in="${hospedagem?}">
 
-	</br></br></br><center><h2>Noticias</h2></center></br></br></br>
+			<p>Hospedagem: ${it.nome_hospedagem}</p>
+			<p>Endereço: ${it.endereco}</p>
+			<p>Endereço: ${it.contato}</p>
+			
+			</g:each>
 	
-	<g:each in="${noticias?}">
-
-	<p>Titulo: ${it.titulo}</p>
-	<p>Descrição: ${it.descricao}</p>
-
-	</g:each>
-</div>
-</body>
+		</div>
+                
+     </body>
+     
 </html>

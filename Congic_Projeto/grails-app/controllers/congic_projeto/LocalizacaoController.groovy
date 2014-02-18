@@ -4,13 +4,13 @@ import org.springframework.dao.DataIntegrityViolationException
 
 class LocalizacaoController {
 
-    static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
+    //static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {
-        redirect(action: "list", params: params)
+       // redirect(action: "list", params: params)
     }
 
-    def list(Integer max) {
+    /*def list(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         [localizacaoInstanceList: Localizacao.list(params), localizacaoInstanceTotal: Localizacao.count()]
     }
@@ -98,5 +98,5 @@ class LocalizacaoController {
             flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'localizacao.label', default: 'Localizacao'), id])
             redirect(action: "show", id: id)
         }
-    }
+    }*/
 }
