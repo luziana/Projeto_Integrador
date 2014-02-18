@@ -100,4 +100,9 @@ class NoticiaController {
         }
     }
 	
+	def inicio() {
+		def noticias = Noticia.list()
+		[noticias: noticias]
+		}
+	
 }

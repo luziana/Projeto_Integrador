@@ -99,4 +99,10 @@ class HospedagemController {
             redirect(action: "show", id: id)
         }
     }
+	
+	def hospedagem() {
+		def hospedagem = Hospedagem.list()
+		[hospedagem:hospedagem]
+		}
+	
 }
