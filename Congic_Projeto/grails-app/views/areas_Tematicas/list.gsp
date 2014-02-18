@@ -1,13 +1,7 @@
 
-<%@ page import="congic_projeto.Areas_Tematicas" %>
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'areas_Tematicas.label', default: 'Areas_Tematicas')}" />
-		<title><g:message code="default.list.label" args="[entityName]" /></title>
-	</head>
-	<body>
+				<div id="list-areas_Tematicas" class="content scaffold-list panel panel-default" role="main">
+		<div class="panel-heading">
 		<a href="#list-areas_Tematicas" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div class="nav" role="navigation">
 			<ul>

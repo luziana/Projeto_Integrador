@@ -1,7 +1,5 @@
 <%@ page import="congic_projeto.Programacao" %>
 
-
-
 <div class="fieldcontain ${hasErrors(bean: programacaoInstance, field: 'data', 'error')} required">
 	<label for="data">
 		<g:message code="programacao.data.label" default="Data" />

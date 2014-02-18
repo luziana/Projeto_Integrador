@@ -1,12 +1,7 @@
-<%@ page import="congic_projeto.Apresentacao_Evento" %>
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta name="layout" content="main">
+
 		<g:set var="entityName" value="${message(code: 'apresentacao_Evento.label', default: 'Apresentacao_Evento')}" />
-		<title><g:message code="default.create.label" args="[entityName]" /></title>
-	</head>
-	<body>
+				<div id="create-apresentacao_Evento" class="content scaffold-list panel panel-default" role="main">
+		<div class="panel-heading">
 		<a href="#create-apresentacao_Evento" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div class="nav" role="navigation">
 			<ul>
