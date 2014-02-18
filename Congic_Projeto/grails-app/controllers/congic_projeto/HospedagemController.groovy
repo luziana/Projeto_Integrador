@@ -99,9 +99,4 @@ class HospedagemController {
             redirect(action: "show", id: id)
         }
     }
-	
-	def hospedagem() {
-		def hospedagem = Apresentacao.list()
-		[hospedagem:hospedagem]
-		}
 }
