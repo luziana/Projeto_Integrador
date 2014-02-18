@@ -99,4 +99,9 @@ class OrganizacaoController {
             redirect(action: "show", id: id)
         }
     }
+	
+	def organizacao() {
+		def organizacao = Apresentacao.list()
+		[organizacao: organizacao]
+		}
 }
