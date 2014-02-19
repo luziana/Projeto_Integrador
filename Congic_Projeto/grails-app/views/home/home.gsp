@@ -6,11 +6,15 @@
 	</head>
 
 	<body>
-
-		<div class="menu">
-			<g:render template="/home/menu" />
+		<div classe="container">
+			<div class="menu">
+				<g:render template="/home/menu" />
+			</div>
 		</div>
-
+		<div class="myCarousel">
+			<g:render template="/home/carrossel" />
+		</div>
+		
 		<div id="noticia">
 
 		</br>
