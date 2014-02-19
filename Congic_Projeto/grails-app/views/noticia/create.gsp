@@ -2,13 +2,7 @@
 		<g:set var="entityName" value="${message(code: 'noticia.label', default: 'Noticia')}" />
 		<div id="list-noticia" class="content scaffold-create panel panel-default" role="main">
 		<div class="panel-heading">
-		<a href="#create-noticia" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
-			</ul>
-		</div>
+
 		<div id="create-noticia" class="content scaffold-create" role="main">
 			<h1><g:message code="default.create.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
