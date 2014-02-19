@@ -15,7 +15,13 @@
 		
 		<g:layoutHead/>
 		<r:require modules="bootstrap"/>
-		<r:layoutResources />
+		<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<r:layoutResources />
 		
 	</head>
 	<body>
