@@ -100,4 +100,5 @@ class LocalizacaoController {
 		def localizacao = Localizacao.list()
 		[localizacao:localizacao]
 	}
-}
+}	
+

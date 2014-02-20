@@ -12,19 +12,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 		<title><g:layoutTitle default="Grails" /></title>
 		
-	    <%--<link rel="shortcut icon" href="${resource(dir: 'images', file: 'favicon.ico')}"type="image/x-icon">
+	  	<link rel="shortcut icon" href="${resource(dir: 'images', file: 'favicon.ico')}"type="image/x-icon">
 		<link rel="apple-touch-icon" href="${resource(dir: 'images', file: 'apple-touch-icon.png')}">
 		<link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 'apple-touch-icon-retina.png')}">
-	    --%>
-
+	  
 		<!-- Bootstrap core CSS -->
     
 		<link href="${resource(dir: 'css', file: 'bootstrap.css')}" rel="stylesheet"/>	
 		<link href="${resource(dir: 'css', file: 'modern-business.css')}" rel="stylesheet"/>
 		<link href="${resource(dir: 'font-awesome/css', file: 'font-awesome.min.css')}" rel="stylesheet"/>
-
-	   	<r:require modules="bootstrap" />
+	   	
 		<g:layoutHead />
+		<r:require modules="bootstrap" />
 		<r:layoutResources />
 
 		<!-- Add custom CSS here -->

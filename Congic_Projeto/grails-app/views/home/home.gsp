@@ -54,27 +54,40 @@
     </div>
 		
 		 <!-- Listagem de Notícias-->
-		
-	<div id="noticia">
-		
-		</br>
-		</br>
-		</br>
-		<center>
-			<h2>Noticias</h2>
-		</center>
-		</br>
-		</br>
-		</br>
+		 
+		   <div class="section">
 
-		<g:each in="${noticias?}">
+        <div class="container">
 
-			<p>Titulo:${it.titulo}</p>
-			<p>Descrição:${it.descricao}</p>
+            <div class="row">
+            
+            <g:each in="${noticias?}">
+				<div id="noticia" class="col-lg-4 col-md-4">		
+					<h3><i class="fa fa-check-circle"></i>${it.titulo}</h3>
+					<h5>${it.descricao}<h5>
+				</div>
+			</g:each>
+                <%--<div class="col-lg-4 col-md-4">
+                    <h3><i class="fa fa-check-circle"></i> Bootstrap 3 Built</h3>
+                    <p>The 'Modern Business' website template by <a href="http://startbootstrap.com">Start Bootstrap</a> is built with <a href="http://getbootstrap.com">Bootstrap 3</a>. Make sure you're up to date with latest Bootstrap documentation!</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h3><i class="fa fa-pencil"></i> Ready to Style &amp; Edit</h3>
+                    <p>You're ready to go with this pre-built page structure, now all you need to do is add your own custom stylings! You can see some free themes over at <a href="http://bootswatch.com">Bootswatch</a>, or come up with your own using <a href="http://getbootstrap.com/customize/">the Bootstrap customizer</a>!</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h3><i class="fa fa-folder-open"></i> Many Page Options</h3>
+                    <p>This template features many common pages that you might see on a business website. Pages include: about, contact, portfolio variations, blog, pricing, FAQ, 404, services, and general multi-purpose pages.</p>
+                </div>
+            --%>
+            
+            </div>
+            <!-- /.row -->
 
-		</g:each>
+        </div>
+        <!-- /.container -->
 
-	</div>
+    </div>
 	
 	    <!-- /.container -->
 	
