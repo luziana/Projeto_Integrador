@@ -24,19 +24,18 @@
        		<!-- Wrapper for slides -->
        		<div class="carousel-inner">
             	<div class="item active">
-                	<div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                	<div class="fill" style="background-image:url('http://1.bp.blogspot.com/-RDH8oPtxbHE/UCRrcWCHWnI/AAAAAAAAOZg/WXZ5g42fnfE/s1600/FOTO+OBELISCO+PAU+DOS+FERROS(1).jpg');"></div>
                 		<div class="carousel-caption">
-                   			<h1>Modern Business - A Bootstrap 3 Template</h1>
+                   			
                 		</div>
             		</div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="fill" style="background-image:url('http://upload.wikimedia.org/wikipedia/commons/4/4e/Pau_dos_ferros_ifrn_campus.jpg');"></div>
                 <div class="carousel-caption">
-                    <h1>Ready to Style &amp; Add Content</h1>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="fill" style="background-image:url('web-app/images/Congic.jpg');"></div>
                 <div class="carousel-caption">
                     <h1>Additional Layout Options at <a href="http://startbootstrap.com">http://startbootstrap.com</a>
                     </h1>
@@ -64,23 +63,11 @@
             <g:each in="${noticias?}">
 				<div id="noticia" class="col-lg-4 col-md-4">		
 					<h3><i class="fa fa-check-circle"></i>${it.titulo}</h3>
-					<h5>${it.descricao}<h5>
+					<p>${it.descricao}<p>
+					<p>${it.link}<p>
 				</div>
 			</g:each>
-                <%--<div class="col-lg-4 col-md-4">
-                    <h3><i class="fa fa-check-circle"></i> Bootstrap 3 Built</h3>
-                    <p>The 'Modern Business' website template by <a href="http://startbootstrap.com">Start Bootstrap</a> is built with <a href="http://getbootstrap.com">Bootstrap 3</a>. Make sure you're up to date with latest Bootstrap documentation!</p>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <h3><i class="fa fa-pencil"></i> Ready to Style &amp; Edit</h3>
-                    <p>You're ready to go with this pre-built page structure, now all you need to do is add your own custom stylings! You can see some free themes over at <a href="http://bootswatch.com">Bootswatch</a>, or come up with your own using <a href="http://getbootstrap.com/customize/">the Bootstrap customizer</a>!</p>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <h3><i class="fa fa-folder-open"></i> Many Page Options</h3>
-                    <p>This template features many common pages that you might see on a business website. Pages include: about, contact, portfolio variations, blog, pricing, FAQ, 404, services, and general multi-purpose pages.</p>
-                </div>
-            --%>
-            
+                           
             </div>
             <!-- /.row -->
 
@@ -98,7 +85,9 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                	<p>IFRN, Campus Pau dos Ferros</p>
+                
+                <p>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte</p>              
+                	<p>Campus Pau dos Ferros</p>
                     <p>Copyright &copy; Company 2014</p>
                 </div>
             </div>
