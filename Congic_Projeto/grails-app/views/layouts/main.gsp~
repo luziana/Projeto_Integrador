@@ -19,11 +19,13 @@
 
 		<!-- Bootstrap core CSS -->
     
-		<link href="${resource(dir: 'css', file: 'bootstrap.css')}" rel="stylesheet"/>	
-		<link href="${resource(dir: 'css', file: 'modern-business.css')}" rel="stylesheet"/>
-		<link href="${resource(dir: 'font-awesome/css', file: 'font-awesome.min.css')}" rel="stylesheet"/>
+		<link type="text/css" href="${resource(dir: 'css', file: 'bootstrap.css')}" rel="stylesheet"/>	
+		<link type="text/css" href="${resource(dir: 'css', file: 'modern-business.css')}" rel="stylesheet"/>
+		<link type="text/css" href="${resource(dir: 'font-awesome/css', file: 'font-awesome.min.css')}" rel="stylesheet"/>
+
 
 	   	<r:require modules="bootstrap" />
+		<r:require module="jquery-plugins"/>
 		<g:layoutHead />
 		<r:layoutResources />
 
@@ -32,7 +34,7 @@
  		<g:javascript src="jquery-1.10.2.js" />
  		<g:javascript src="bootstrap.js" />
 		<g:javascript src="modern-business.js" />
-
+ 
 	</head>
 
 	<body>
@@ -43,5 +45,4 @@
 		<g:javascript library="application" />
 		<r:layoutResources />
 	</body>
-	
 </html>
