@@ -29,7 +29,6 @@
 		<!-- Add custom CSS here -->
 
  		<g:javascript src="jquery-1.10.2.js" />
- 		<g:javascript src="bootstrap.js" />
 		<g:javascript src="modern-business.js" />
 
 	</head>

@@ -19,6 +19,7 @@
             		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             		<li data-target="#myCarousel" data-slide-to="1"></li>
             		<li data-target="#myCarousel" data-slide-to="2"></li>
+            		<li data-target="#myCarousel" data-slide-to="3"></li>
        			 </ol>
 
        		<!-- Wrapper for slides -->
@@ -29,6 +30,11 @@
                    			
                 		</div>
             		</div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://upload.wikimedia.org/wikipedia/commons/4/4e/Pau_dos_ferros_ifrn_campus.jpg');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
             <div class="item">
                 <div class="fill" style="background-image:url('http://upload.wikimedia.org/wikipedia/commons/4/4e/Pau_dos_ferros_ifrn_campus.jpg');"></div>
                 <div class="carousel-caption">
@@ -64,7 +70,6 @@
 				<div id="noticia" class="col-lg-4 col-md-4">		
 					<h3><i class="fa fa-check-circle"></i>${it.titulo}</h3>
 					<p>${it.descricao}<p>
-					<p>${it.link}<p>
 				</div>
 			</g:each>
                            
