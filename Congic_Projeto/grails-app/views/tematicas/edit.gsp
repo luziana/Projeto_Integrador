@@ -27,7 +27,9 @@
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
-			<g:form method="post" >
+			<div class="panel-body">
+				<div class="col-lg-6">
+					<g:form onsubmit="Form(this);return false" url="[resource:tematicasInstance, action:'update']">
 				<g:hiddenField name="id" value="${tematicasInstance?.id}" />
 				<g:hiddenField name="version" value="${tematicasInstance?.version}" />
 				<fieldset class="form">
@@ -38,6 +40,7 @@
 					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" formnovalidate="" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 				</fieldset>
 			</g:form>
+		</div>
 		</div>
 	</body>
 </html>

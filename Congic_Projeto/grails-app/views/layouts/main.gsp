@@ -27,9 +27,17 @@
 		<r:layoutResources />
 
 		<!-- Add custom CSS here -->
+
+
+ 		<g:javascript src="jquery-1.10.2.js" />
+		<g:javascript src="modern-business.js" />
+			<g:javascript src="ajax.js" />
+	
+
 		
 		<script src="js/jquery-1.10.2.js"></script>
    		<script src="js/modern-business.js"></script>
+
 
 	</head>
 
