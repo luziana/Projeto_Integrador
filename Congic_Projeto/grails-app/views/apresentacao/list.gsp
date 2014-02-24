@@ -4,12 +4,7 @@
 
 <div class="row">
 	<div class="col-lg-16">
-		<div class="panel-heading">
-
-			<g:message code="default.list.label" args="[entityName]" />
-
-		</div>
-
+		
 		<div class="panel-body">
 			<div id="list-apresentacao"
 				class="content scaffold-list panel panel-default" role="main">
@@ -21,7 +16,9 @@
 		
 				
 				<div class="panel panel-default">
-				 <div class="panel-heading">Panel heading</div>
+				 <div class="panel-heading">
+				 		<g:message code="default.list.label" args="[entityName]" />
+				 </div>
 						<table class="table">
 							<thead>
 								<tr role="row">

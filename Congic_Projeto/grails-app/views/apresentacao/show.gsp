@@ -1,23 +1,22 @@
 
 <%@ page import="congic_projeto.Apresentacao" %>
 
-		<g:set var="entityName" value="${message(code: 'apresentacao_Evento.label', default: 'Apresentacao_Evento')}" />
+		<g:set var="entityName" value="${message(code: 'apresentacao_Evento.label', default: 'Apresentação Evento')}" />
 		<div class="row">
-			<div class="col-lg-12">
-					<h1><g:message code="default.show.label" args="[entityName]" /></h1>
-			</div>
+			
 		</div>
 		<div class="col-lg-12">
 			<div class="panel-default">
-				<div class="panel-heading">Headings</div>
+				<div class="panel-heading">
+					<g:message code="default.show.label" args="[entityName]" />
+				</div>
 				<div class="panel-body">
 					<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
 			
 		<div id="show-apresentacao_Evento" class="content scaffold-show" role="main">
-			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
-			
+						
 			<ol class="property-list apresentacao_Evento">
 			
 				<g:if test="${apresentacao_EventoInstance?.descricaoEvento}">
@@ -56,5 +55,6 @@
 				</fieldset>
 			</g:form>
 		</div>
+		
 	</body>
 </html>
