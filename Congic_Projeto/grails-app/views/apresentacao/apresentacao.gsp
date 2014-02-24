@@ -54,13 +54,14 @@
     </div>
     
     
+    
     <!-- Titulo da Página -->
     
     <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                 <h1 class="page-header">X CONGIC, 
-                    <small>conhecendo o Evento!</small>
+                    <small>Conhecendo o evento!</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="${createLink(controller:'home', action:'home')}">Início</a>
@@ -70,14 +71,16 @@
                 </div>
             </div>
             
+            
+            
              <!-- Lado direito Informações -->
             
             <div class="row">
 
-            <div class="col-lg-8">
-            
-                 <g:each in="${hospedagem?}">
-            		<div id="apresentacao" class="col-lg-4 col-md-4">		
+           	 <div class="col-lg-8">
+           	 
+           	 <g:each in="${apresentacao?}">
+            		<div id="apresentacao">		
 						<p>${it.descricaoEvento}</p>
 						<p>${it.tematica}</p>
 						<p>${it.data}</p>
@@ -85,6 +88,7 @@
 						<hr/>
 					</div>
                	</g:each>
+               	
                 
                 <ul class="pager">
                     <li class="previous"><a href="${createLink(controller:'home', action:'home')}">&larr;Voltar</a>
@@ -92,8 +96,8 @@
                     <li class="next"><a href="${createLink(controller:'organizacao', action:'organizacao')}">Avançar &rarr;</a>
                     </li>
                 </ul>
-
-            </div>
+                 
+                </div>
             
             
             <!-- Lado esquerdo -->
@@ -163,10 +167,8 @@
                 <!-- /well -->
             </div>
         </div>
-
-    </div>
-  	
-		
+     </div>
+    
 		<!-- /.container -->
 	
 	<div class="container">

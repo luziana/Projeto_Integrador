@@ -79,13 +79,17 @@
             <div class="col-lg-8">
             
                  <g:each in="${localizacao?}">
-            		<div id="localizacao" class="col-lg-4 col-md-4">		
+            		<div id="localizacao">		
 						<p>${it.descricao}</p>
 						<hr/>
 					</div>
                	</g:each>
                	
+             </div>
+               	
                	<!-- Mapa Localização -->
+               	
+               	<div class="col-lg-8">
                	
                	<center>
 					<div id="map">
