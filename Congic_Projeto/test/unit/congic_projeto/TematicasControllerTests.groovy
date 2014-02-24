@@ -17,35 +17,35 @@ class TematicasControllerTests {
 
     void testIndex() {
         controller.index()
-        assert "/areas_Tematicas/list" == response.redirectedUrl
+        assert "/tematicas/list" == response.redirectedUrl
     }
 
     void testList() {
 
         def model = controller.list()
 
-        assert model.areas_TematicasInstanceList.size() == 0
-        assert model.areas_TematicasInstanceTotal == 0
+        assert model.tematicasInstanceList.size() == 0
+        assert model.tematicasInstanceTotal == 0
     }
 
     void testCreate() {
         def model = controller.create()
 
-        assert model.areas_TematicasInstance != null
+        assert model.tematicasInstance != null
     }
 
     void testSave() {
         controller.save()
 
-        assert model.areas_TematicasInstance != null
-        assert view == '/areas_Tematicas/create'
+        assert model.tematicasInstance != null
+        assert view == '/tematicas/create'
 
         response.reset()
 
         populateValidParams(params)
         controller.save()
 
-        assert response.redirectedUrl == '/areas_Tematicas/show/1'
+        assert response.redirectedUrl == '/tematicas/show/1'
         assert controller.flash.message != null
         assert Tematicas.count() == 1
     }
@@ -54,102 +54,102 @@ class TematicasControllerTests {
         controller.show()
 
         assert flash.message != null
-        assert response.redirectedUrl == '/areas_Tematicas/list'
+        assert response.redirectedUrl == '/tematicas/list'
 
         populateValidParams(params)
-        def areas_Tematicas = new Tematicas(params)
+        def tematicas = new Tematicas(params)
 
-        assert areas_Tematicas.save() != null
+        assert tematicas.save() != null
 
-        params.id = areas_Tematicas.id
+        params.id = tematicas.id
 
         def model = controller.show()
 
-        assert model.areas_TematicasInstance == areas_Tematicas
+        assert model.tematicasInstance == tematicas
     }
 
     void testEdit() {
         controller.edit()
 
         assert flash.message != null
-        assert response.redirectedUrl == '/areas_Tematicas/list'
+        assert response.redirectedUrl == '/tematicas/list'
 
         populateValidParams(params)
-        def areas_Tematicas = new Tematicas(params)
+        def tematicas = new Tematicas(params)
 
-        assert areas_Tematicas.save() != null
+        assert tematicas.save() != null
 
-        params.id = areas_Tematicas.id
+        params.id = tematicas.id
 
         def model = controller.edit()
 
-        assert model.areas_TematicasInstance == areas_Tematicas
+        assert model.tematicasInstance == tematicas
     }
 
     void testUpdate() {
         controller.update()
 
         assert flash.message != null
-        assert response.redirectedUrl == '/areas_Tematicas/list'
+        assert response.redirectedUrl == '/tematicas/list'
 
         response.reset()
 
         populateValidParams(params)
-        def areas_Tematicas = new Tematicas(params)
+        def tematicas = new Tematicas(params)
 
-        assert areas_Tematicas.save() != null
+        assert tematicas.save() != null
 
         // test invalid parameters in update
-        params.id = areas_Tematicas.id
+        params.id = tematicas.id
         //TODO: add invalid values to params object
 
         controller.update()
 
-        assert view == "/areas_Tematicas/edit"
-        assert model.areas_TematicasInstance != null
+        assert view == "/tematicas/edit"
+        assert model.tematicasInstance != null
 
-        areas_Tematicas.clearErrors()
+        tematicas.clearErrors()
 
         populateValidParams(params)
         controller.update()
 
-        assert response.redirectedUrl == "/areas_Tematicas/show/$areas_Tematicas.id"
+        assert response.redirectedUrl == "/tematicas/show/$tematicas.id"
         assert flash.message != null
 
         //test outdated version number
         response.reset()
-        areas_Tematicas.clearErrors()
+        tematicas.clearErrors()
 
         populateValidParams(params)
-        params.id = areas_Tematicas.id
+        params.id = tematicas.id
         params.version = -1
         controller.update()
 
-        assert view == "/areas_Tematicas/edit"
-        assert model.areas_TematicasInstance != null
-        assert model.areas_TematicasInstance.errors.getFieldError('version')
+        assert view == "/tematicas/edit"
+        assert model.tematicasInstance != null
+        assert model.tematicasInstance.errors.getFieldError('version')
         assert flash.message != null
     }
 
     void testDelete() {
         controller.delete()
         assert flash.message != null
-        assert response.redirectedUrl == '/areas_Tematicas/list'
+        assert response.redirectedUrl == '/tematicas/list'
 
         response.reset()
 
         populateValidParams(params)
-        def areas_Tematicas = new Tematicas(params)
+        def tematicas = new Tematicas(params)
 
-        assert areas_Tematicas.save() != null
+        assert tematicas.save() != null
         assert Tematicas.count() == 1
 
-        params.id = areas_Tematicas.id
+        params.id = tematicas.id
 
         controller.delete()
 
         assert Tematicas.count() == 0
-        assert Tematicas.get(areas_Tematicas.id) == null
-        assert response.redirectedUrl == '/areas_Tematicas/list'
+        assert Tematicas.get(tematicas.id) == null
+        assert response.redirectedUrl == '/tematicas/list'
     }
 }
