@@ -54,23 +54,128 @@
             <span class="icon-next"></span>
         </a>
     </div>
+    
+    
+    <!-- Titulo da Página -->
+    
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                <h1 class="page-header">Localize-se, 
+                    <small>Conheça Pau dos Ferros!</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="${createLink(controller:'home', action:'home')}">Início</a>
+                    </li>
+                    <li class="active">Localização</li>
+                </ol>
+                </div>
+            </div>
+            
+            <!-- Lado direito Informações -->
+            
+            <div class="row">
 
-			</br></br></br><center><h2>Localização</h2></center></br></br></br>
-		
-			<%--<g:each in="${localizacao?}">
+            <div class="col-lg-8">
+            
+                 <g:each in="${localizacao?}">
+            		<div id="localizacao" class="col-lg-4 col-md-4">		
+						<p>${it.descricao}</p>
+						<hr/>
+					</div>
+               	</g:each>
+               	
+               	<!-- Mapa Localização -->
+               	
+               	<center>
+					<div id="map">
+						<richui:map type="GoogleMaps" lat="40.689299" lng="-74.044" search="true" />
+					</div>
+				</center>
+				
+				
+				<!-- Ir para outras páginas -->
+                
+                <ul class="pager">
+                    <li class="previous"><a href="${createLink(controller:'organizacao', action:'organizacao')}">&larr;Voltar</a>
+                    </li>
+                    <li class="next"><a href="${createLink(controller:'hospedagem', action:'hospedagem')}">Avançar &rarr;</a>
+                    </li>
+                </ul>
 
-			<p>Titulo: ${it.titulo}</p>
-			<p>Descrição: ${it.descricao}</p>
+            </div>
+            
+            
+            <!-- Lado esquerdo -->
 
-			</g:each>--%>
-		</div>
-		
-		<div id="map">
-			<p>LOCAL DE INSERÇÃO DO MAPA teste</p>
-			<richui:map type="GoogleMaps" lat="40.689299" lng="-74.044" search="true" />
-		</div>
-		
-		<!-- /.container -->
+            <div class="col-lg-4">
+                <div class="well">
+                    <h4>Blog Search</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                    <!-- /input-group -->
+                </div>
+                
+                <div class="well">
+                    <h4><p>Redes Sociais</p></h4>
+                			<ul class="list-unstyled list-inline list-social-icons">
+                    			<li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-3x"></i></a>
+                    			</li>
+                    			<li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                   				</li>
+                    			<li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-3x"></i></a>
+                    			</li>
+                    			<li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-3x"></i></a>
+                    			</li>
+               				</ul>
+                </div>
+                
+                <!-- /well -->
+                <div class="well">
+                    <h4>Popular Blog Categories</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#dinosaurs">Dinosaurs</a>
+                                </li>
+                                <li><a href="#spaceships">Spaceships</a>
+                                </li>
+                                <li><a href="#fried-foods">Fried Foods</a>
+                                </li>
+                                <li><a href="#wild-animals">Wild Animals</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#alien-abductions">Alien Abductions</a>
+                                </li>
+                                <li><a href="#business-casual">Business Casual</a>
+                                </li>
+                                <li><a href="#robots">Robots</a>
+                                </li>
+                                <li><a href="#fireworks">Fireworks</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /well -->
+                <div class="well">
+                    <h4>Side Widget Well</h4>
+                    <p>Bootstrap's default well's work great for side widgets! What is a widget anyways...?</p>
+                </div>
+                <!-- /well -->
+            </div>
+        </div>
+     </div>
+     
+     <!-- /.container -->
 	
 	<div class="container">
 
@@ -79,6 +184,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
+                 	<p>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte</p>
                 	<p>IFRN, Campus Pau dos Ferros</p>
                     <p>Copyright &copy; Company 2014</p>
                 </div>

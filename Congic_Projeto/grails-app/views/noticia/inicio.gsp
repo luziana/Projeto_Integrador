@@ -6,10 +6,7 @@
 </head>
 <body>
 
- <div class="menu">
-			<g:render template="/home/menu" />
-		</div>
-		
+
 		 <!-- Carrossel Imagens-->
 
 			<div id="myCarousel" class="carousel slide">
