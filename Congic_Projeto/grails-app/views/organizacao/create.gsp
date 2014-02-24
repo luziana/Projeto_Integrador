@@ -1,10 +1,8 @@
 
-		<g:set var="entityName" value="${message(code: 'organizacao.label', default: 'Organizacao')}" />
+		<g:set var="entityName" value="${message(code: 'organizacao.label', default: 'Organização')}" />
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">
-					<g:message code="default.create.label" args="[entityName]" />
-				</h1>
+			
 			</div>
 		</div>
 		<div class="row">

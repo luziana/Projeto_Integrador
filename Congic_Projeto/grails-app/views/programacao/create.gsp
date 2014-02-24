@@ -2,9 +2,7 @@
 		<g:set var="entityName" value="${message(code: 'programacao.label', default: 'Programacão')}" />
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">
-					<g:message code="default.create.label" args="[entityName]" />
-				</h1>
+				
 			</div>
 		</div>
 		<div class="row">

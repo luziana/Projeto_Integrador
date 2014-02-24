@@ -1,10 +1,8 @@
 
-		<g:set var="entityName" value="${message(code: 'localizacao.label', default: 'Localizacao')}" />
+		<g:set var="entityName" value="${message(code: 'localizacao.label', default: 'Localização')}" />
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">
-					<g:message code="default.create.label" args="[entityName]" />
-				</h1>
+			
 			</div>
 		</div>
 		<div class="row">
