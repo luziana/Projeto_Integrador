@@ -37,8 +37,13 @@
 				<tbody>
 				<g:each in="${tematicasInstanceList}" status="i" var="tematicasInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+							
 					
-						<td><g:link action="show" id="${tematicasInstance.id}">${fieldValue(bean: tematicasInstance, field: "descricao")}</g:link></td>
+					<td><a href="#" onclick="carregarPagina('<g:createLink action="show" id="${tematicasInstance.id}" />')">
+											${fieldValue(bean: tematicasInstance, field: "descricao")}
+									</a></td>
+					
+					
 					
 						<td>${fieldValue(bean: tematicasInstance, field: "area")}</td>
 					

@@ -13,7 +13,7 @@ class TematicasController {
     def list(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         [tematicasInstanceList: Tematicas.list(params), tematicasInstanceTotal: Tematicas.count()]
-    }
+    }	
 
     def create() {
         [tematicasInstance: new Tematicas(params)]
@@ -85,7 +85,7 @@ class TematicasController {
         def tematicasInstance = Tematicas.get(id)
         if (!tematicasInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'tematicas.label', default: 'Tematicas'), id])
-            redirect(action: "list")
+			redirect(action: "list")
             return
         }
 

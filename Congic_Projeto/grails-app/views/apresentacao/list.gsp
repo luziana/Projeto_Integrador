@@ -39,10 +39,12 @@
 							var="apresentacao_EventoInstance">
 							<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 
-								<td><g:link action="show"
-										id="${apresentacao_EventoInstance.id}">
-										${fieldValue(bean: apresentacao_EventoInstance, field: "descricaoEvento")}
-									</g:link></td>
+								<td><a href="#" onclick="carregarPagina('<g:createLink action="show" id="${apresentacao_EventoInstance.id}" />')">
+											${fieldValue(bean: apresentacao_EventoInstance, field: "descricaoEvento")}
+									</a></td>
+
+
+
 
 								<td>
 									${fieldValue(bean: apresentacao_EventoInstance, field: "tematica")}

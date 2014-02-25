@@ -44,7 +44,13 @@
 				<g:each in="${programacaoInstanceList}" status="i" var="programacaoInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${programacaoInstance.id}">${fieldValue(bean: programacaoInstance, field: "data")}</g:link></td>
+				
+					
+					<td><a href="#" onclick="carregarPagina('<g:createLink action="show" id="${programacaoInstance.id}" />')">
+											${fieldValue(bean: programacaoInstance, field: "data")}
+									</a></td>
+					
+					
 					
 						<td><g:formatDate date="${programacaoInstance.horario}" /></td>
 					

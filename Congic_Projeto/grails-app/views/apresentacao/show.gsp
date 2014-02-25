@@ -47,7 +47,7 @@
 				</g:if>
 			
 			</ol>
-			<g:form onsubmit="Form(this);return false" url="[resource:apresentacao_EventoInstance, action:'delete']" method="DELETE" >
+			<g:form onsubmit="Form(this);return false" url="[resource:apresentacao_EventoInstance, action:'delete']" >
 				<fieldset class="buttons">
 					<g:hiddenField name="id" value="${apresentacao_EventoInstance?.id}" />
 					<g:link class="edit" action="edit" id="${apresentacao_EventoInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
