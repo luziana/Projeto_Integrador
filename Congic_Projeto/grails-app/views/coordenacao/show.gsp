@@ -1,13 +1,22 @@
 
 <%@ page import="congic_projeto.Coordenacao" %>
 
-		<g:set var="entityName" value="${message(code: 'coordenacao.label', default: 'Coordenacao')}" />
-
-		<div id="show-coordenacao" class="content scaffold-show" role="main">
-			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
-			<g:if test="${flash.message}">
+		<g:set var="entityName" value="${message(code: 'coordenacao.label', default: 'Coordenação')}" />
+		<div class="row">
+			
+		</div>
+		<div class="col-lg-12">
+			<div class="panel-default">
+				<div class="panel-heading">
+					<g:message code="default.show.label" args="[entityName]" />
+				</div>
+				<div class="panel-body">
+					<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
+			
+		<div id="show-coordenacao" class="content scaffold-show" role="main">
+		
 			<ol class="property-list coordenacao">
 			
 				<g:if test="${coordenacaoInstance?.nome}">
@@ -29,7 +38,7 @@
 				</g:if>
 			
 			</ol>
-			<g:form>
+			<g:form onsubmit="Form(this);return false" url="[resource:coordenacaoInstance, action:'delete']" method="DELETE" >
 				<fieldset class="buttons">
 					<g:hiddenField name="id" value="${coordenacaoInstance?.id}" />
 					<g:link class="edit" action="edit" id="${coordenacaoInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>

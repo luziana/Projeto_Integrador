@@ -1,6 +1,6 @@
-function carregarPagina(link){
-$(".content").load(link);
-return false;
+function carregarPagina(url){
+$(".content").load(url);
+	return false;
 }
 
 function Form(form){

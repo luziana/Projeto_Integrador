@@ -37,8 +37,11 @@
 				<tbody>
 				<g:each in="${hospedagemInstanceList}" status="i" var="hospedagemInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+							
+					<td><a href="#" onclick="carregarPagina('<g:createLink action="show" id="${hospedagemInstance.id}" />')">
+											${fieldValue(bean: hospedagemInstance, field: "nome_hospedagem")}
+									</a></td>
 					
-						<td><g:link action="show" id="${hospedagemInstance.id}">${fieldValue(bean: hospedagemInstance, field: "nome_hospedagem")}</g:link></td>
 					
 						<td>${fieldValue(bean: hospedagemInstance, field: "endereco")}</td>
 					

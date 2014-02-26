@@ -2,13 +2,22 @@
 <%@ page import="congic_projeto.Hospedagem" %>
 
 		<g:set var="entityName" value="${message(code: 'hospedagem.label', default: 'Hospedagem')}" />
-	
-	
-		<div id="show-hospedagem" class="content scaffold-show" role="main">
-			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
-			<g:if test="${flash.message}">
+		<div class="row">
+			
+		</div>
+		<div class="col-lg-12">
+			<div class="panel-default">
+				<div class="panel-heading">
+					<g:message code="default.show.label" args="[entityName]" />
+				</div>
+				<div class="panel-body">
+					<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
+			
+	
+		<div id="show-hospedagem" class="content scaffold-show" role="main">
+			
 			<ol class="property-list hospedagem">
 			
 				<g:if test="${hospedagemInstance?.nome_hospedagem}">
@@ -39,7 +48,7 @@
 				</g:if>
 			
 			</ol>
-			<g:form>
+			<g:form onsubmit="Form(this);return false" url="[resource:hospedagemInstance, action:'delete']"  >
 				<fieldset class="buttons">
 					<g:hiddenField name="id" value="${hospedagemInstance?.id}" />
 					<g:link class="edit" action="edit" id="${hospedagemInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>

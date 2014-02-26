@@ -156,42 +156,7 @@
         </div>
      </div>
     
-     <!-- /.section-colored -->
-
-    <div class="section-colored">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <%--<h2>Display Some Work on the Home Page Portfolio</h2>--%>
-                    <hr>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <a href="${createLink(controller:'apresentacao', action:'apresentacao')}"><h4><center>O Evento...</center></h4>
-                    	<img class="img-responsive img-home-portfolio" src="http://www2.ifrn.edu.br/congic2013/wp-content/uploads/2013/04/slideshow_01-332x205.jpg"/>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <a href="${createLink(controller:'localizacao', action:'index')}"><h4><center>Conhecendo Pau dos Ferros...</center></h4>
-                        <img class="img-responsive img-home-portfolio" src="http://1.bp.blogspot.com/-xaBeblNxQOc/T66QzZIw1UI/AAAAAAAAeZg/AhlWCj5zTLg/s1600/_DSC1010.JPG"/>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <a href="${createLink(controller:'hospedagem', action:'hospedagem')}"><h4><center>Hospedagens...</center></h4>
-                        <img class="img-responsive img-home-portfolio" src="http://1.bp.blogspot.com/-U28bybjg4fM/UvPeMg6QvlI/AAAAAAAABzY/SS_FDw99Xqo/s1600/hotel.jpg">
-                    </a>
-                </div>
-            </div>
-            <!-- /.row -->
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-
     
-	    <!-- /.container -->
 	
 	<div class="container">
 
