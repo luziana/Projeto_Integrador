@@ -117,4 +117,9 @@ class ImageController {
 				   flash.message = "não foi possível transferir o arquivo"
 			   }
 	   }
+	
+	def imagens(){
+		def imagens = Image.list(id)
+		[imagens : imagens]
+	}
 }

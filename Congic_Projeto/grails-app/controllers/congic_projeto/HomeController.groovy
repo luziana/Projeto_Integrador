@@ -4,6 +4,7 @@ class HomeController {
 
     def home() {
 		def noticias = Noticia.list()
-		[noticias: noticias]
-		}
+		def menu = Menu.get(1)
+		render view: 'home', model: [noticias: noticias, menu: menu]
+	}
 }
