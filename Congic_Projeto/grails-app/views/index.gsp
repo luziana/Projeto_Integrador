@@ -4,13 +4,16 @@
 		<meta name="layout" content="main"/>
 	</head>	
 	<body>
-		</div>
-			<div class="menu">
-				<g:render template="/menu" />
+		
+		
+		
+		<div class="menu">
+				<g:render template="/admin/menu" />
 			</div>
 				
+					
 				<div class="content" id="content"></div>
-				</div>
+				
 				
 				
 			

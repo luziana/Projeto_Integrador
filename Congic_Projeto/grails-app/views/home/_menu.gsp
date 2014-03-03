@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
-                <a id="menu" class="navbar-brand" href="${menu.link}">${menu.nome_link}</a>
+                <a class="navbar-brand" href="http://portal.ifrn.edu.br/campus/paudosferros">Campus Pau dos Ferros</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

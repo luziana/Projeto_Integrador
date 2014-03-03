@@ -44,7 +44,6 @@
 <ul class="dropdown-menu">
 <li><a href="#" onClick="carregarPagina('<g:createLink controller='apresentacao' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
 <li><a href="#" onClick="carregarPagina('<g:createLink controller='apresentacao' action='list' />')"> Listar</a></li>
-<li><a href="#" onClick="carregarPagina('<g:createLink controller='apresentacao' action='show' />')"> Mostrar</a></li>
 
 </ul>
 </li>
@@ -63,7 +62,6 @@
 <ul class="dropdown-menu">
 <li><a href="#" onClick="carregarPagina('<g:createLink controller='programacao' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
 <li><a href="#" onClick="carregarPagina('<g:createLink controller='programacao' action='list' />')"> Listar</a></li>
-<li><a href="#" onClick="carregarPagina('<g:createLink controller='programacao' action='show' />')"> Mostrar</a></li>
 
 </ul>
 </li>
@@ -76,34 +74,12 @@
 
 </ul>
 </li>
-
-<li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="#">Links Menu<span class="caret"></span>
-</a>
-<ul class="dropdown-menu">
-<li><a href="#" onClick="carregarPagina('<g:createLink controller='menu' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
-<li><a href="#" onClick="carregarPagina('<g:createLink controller='menu' action='list' />')"> Listar</a></li>
-
 </ul>
-</li>
 
-<li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="#">Upload Imagens<span class="caret"></span>
-</a>
-<ul class="dropdown-menu">
-<li><a href="#" onClick="carregarPagina('<g:createLink controller='image' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
-<li><a href="#" onClick="carregarPagina('<g:createLink controller='image' action='list' />')"> Listar</a></li>
-<li><a href="#" onClick="carregarPagina('<g:createLink controller='image' action='show' />')"> Mostrar</a></li>
-
-</ul>
-</li>
-</ul>
 
 </nav>
-
-
-  		
-  		  
+ 		  
      </body>
      
 </html>
+
