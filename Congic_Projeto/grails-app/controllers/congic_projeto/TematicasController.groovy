@@ -101,6 +101,8 @@ class TematicasController {
     }
 	def tematicas(){
 		def tematicas = Tematicas.list()
-		[tematicas: tematicas]
+		
+		def menu = Menu.get(1)
+		render view: 'tematicas', model: [tematicas: tematicas, menu: menu]
 	}
 }

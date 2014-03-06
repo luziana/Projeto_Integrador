@@ -10,7 +10,7 @@
      </head>
      <body>
      	<div class="menu">
-			<g:render template="/home/menu" />
+			<g:render template="/home/menu" model="[menu: menu]"/>
 		</div>
 		
 		 <!-- Carrossel Imagens-->

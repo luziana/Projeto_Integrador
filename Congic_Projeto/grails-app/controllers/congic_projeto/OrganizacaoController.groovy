@@ -102,6 +102,9 @@ class OrganizacaoController {
 	
 	def organizacao() {
 		def organizacao = Organizacao.list()
-		[organizacao: organizacao]
+		
+		def menu = Menu.get(1)
+		render view: 'organizacao', model: [organizacao: organizacao, menu: menu]
+		
 		}
 }
