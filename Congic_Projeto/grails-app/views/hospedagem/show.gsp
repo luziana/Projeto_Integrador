@@ -51,7 +51,9 @@
 			<g:form onsubmit="Form(this);return false" url="[resource:hospedagemInstance, action:'delete']"  >
 				<fieldset class="buttons">
 					<g:hiddenField name="id" value="${hospedagemInstance?.id}" />
-					<g:link class="edit" action="edit" id="${hospedagemInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+					<a href="#" onclick="carregarPagina('<g:createLink action="edit" id="${hospedagemInstance.id}" />')">
+											<g:message code="default.button.edit.label" default="Edit" />
+									</a>
 					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 				</fieldset>
 			</g:form>

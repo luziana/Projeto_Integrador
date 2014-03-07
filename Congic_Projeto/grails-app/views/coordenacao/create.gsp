@@ -2,7 +2,7 @@
 		<g:set var="entityName" value="${message(code: 'coordenacao.label', default: 'Coordenação')}" />
 		<div class="row">
 			<div class="col-lg-12">
-				
+			
 			</div>
 		</div>
 		<div class="row">
@@ -23,7 +23,7 @@
 			</div>
 			<div class="panel-body">
 				<div class="col-lg-6">
-					<g:form onsubmit="Form(this);return false" url="[coordenacaoInstance, action:'save']">
+					<g:form onsubmit="Form(this);return false" url="[resource:coordenacaoInstance, action:'save']">
 								<fieldset class="form">
 									<g:render template="form"/>
 								</fieldset>
