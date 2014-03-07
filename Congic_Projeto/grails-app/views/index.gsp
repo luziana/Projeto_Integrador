@@ -8,7 +8,7 @@
 		
 		
 		<div class="menu">
-				<g:render template="/admin/login" />
+				<g:render template="/admin/menu" />
 			</div>
 				
 					

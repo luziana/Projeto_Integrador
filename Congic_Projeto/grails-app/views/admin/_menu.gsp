@@ -6,10 +6,7 @@
                 
     </head>
     <body>
-     	<div class="nav" role="navigation">
-<div id="loginDiv">
-<g:render template="/shared/loginForm" />
-</div>
+
 </div>	
      <nav id="menu">
                 <ul class="nav nav-tabs">
