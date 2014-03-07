@@ -1,12 +1,5 @@
 <%@ page import="congic_projeto.Programacao" %>
 
-<div class="form-group fieldcontain ${hasErrors(bean: programacaoInstance, field: 'data', 'error')} required">
-	<label for="data">
-		<g:message code="programacao.data.label" default="Data" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:datePicker class="form-control" name="data" precision="day"  value="${programacaoInstance?.data}"  />
-</div>
 
 <div class="form-group fieldcontain ${hasErrors(bean: programacaoInstance, field: 'horario', 'error')} required">
 	<label for="horario">

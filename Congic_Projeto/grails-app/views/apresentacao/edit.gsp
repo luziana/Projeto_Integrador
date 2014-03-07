@@ -1,22 +1,20 @@
 
-		<g:set var="entityName" value="${message(code: 'apresentacao_Evento.label', default: 'Apresentacao_Evento')}" />
+		<g:set var="entityName" value="${message(code: 'apresentacao_Evento.label', default: 'Apresentação Evento')}" />
 		<div class="row">
-			<div class="col-lg-12">
-				<h1 class="page-header">
-					<g:message code="default.edit.label" args="[entityName]" />
-				</h1>
-			 </div>
+		
 		</div>
+			<div class="col-lg-12">
+			<div class="panel-default">
+				<div class="panel-heading">
+					<g:message code="default.edit.label" args="[entityName]" />
+				</div>
+				<div class="panel-body">
+					<g:if test="${flash.message}">
+			<div class="message" role="status">${flash.message}</div>
+			</g:if>
 		
 		<div id="edit-apresentacao_Evento" class="content scaffold-edit" role="main">
-			<div class="panel-heading">
-				<g:message code="default.edit.label" args="[entityName]" />
-			</div>
-			<div class="panel-body">
-				<g:if test="${flash.message}">
-					<div class="message" role="status">
-						${flash.message}</div>
-				</g:if>
+		
 				<g:hasErrors bean="${apresentacao_EventoInstance}">
 					<ul class="errors" role="alert">
 						<g:eachError bean="${apresentacao_EventoInstance}" var="error">
@@ -24,7 +22,7 @@
 						</g:eachError>
 					</ul>
 				</g:hasErrors>
-			<g:form onsubmit="Form(this);return false" url="[resource:apresentacao_EventoInstance, action:'update']" method="PUT" >
+			<g:form onsubmit="Form(this);return false" url="[resource:apresentacao_EventoInstance, action:'update']" >
 				<g:hiddenField name="id" value="${apresentacao_EventoInstance?.id}" />
 				<g:hiddenField name="version" value="${apresentacao_EventoInstance?.version}" />
 				<fieldset class="form">

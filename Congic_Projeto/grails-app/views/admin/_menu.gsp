@@ -6,7 +6,11 @@
                 
     </head>
     <body>
-    
+     	<div class="nav" role="navigation">
+<div id="loginDiv">
+<g:render template="/shared/loginForm" />
+</div>
+</div>	
      <nav id="menu">
                 <ul class="nav nav-tabs">
                  <!--<li><a href="${createLink(controller:'noticia', action:'inicio')}">Inicio</a></li>-->
@@ -57,6 +61,15 @@
 </ul>
 </li>
 <li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Coordenação<span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="#" onClick="carregarPagina('<g:createLink controller='coordenacao' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
+<li><a href="#" onClick="carregarPagina('<g:createLink controller='coordenacao' action='list' />')"> Listar</a></li>
+
+</ul>
+</li>
+<li class="dropdown">
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Programação<span class="caret"></span>
 </a>
 <ul class="dropdown-menu">
@@ -71,6 +84,16 @@
 <ul class="dropdown-menu">
 <li><a href="#" onClick="carregarPagina('<g:createLink controller='tematicas' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
 <li><a href="#" onClick="carregarPagina('<g:createLink controller='tematicas' action='list' />')"> Listar</a></li>
+
+</ul>
+</li>
+
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Artigos<span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="#" onClick="carregarPagina('<g:createLink controller='artigos' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
+<li><a href="#" onClick="carregarPagina('<g:createLink controller='artigos' action='list' />')"> Listar</a></li>
 
 </ul>
 </li>

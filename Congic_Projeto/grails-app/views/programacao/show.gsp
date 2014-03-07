@@ -19,14 +19,6 @@
 			
 			<ol class="property-list programacao">
 			
-				<g:if test="${programacaoInstance?.data}">
-				<li class="fieldcontain">
-					<span id="data-label" class="property-label"><g:message code="programacao.data.label" default="Data" /></span>
-					
-						<span class="property-value" aria-labelledby="data-label"><g:formatDate date="${programacaoInstance?.data}" /></span>
-					
-				</li>
-				</g:if>
 			
 				<g:if test="${programacaoInstance?.horario}">
 				<li class="fieldcontain">

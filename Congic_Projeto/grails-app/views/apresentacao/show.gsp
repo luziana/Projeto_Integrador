@@ -50,7 +50,10 @@
 			<g:form onsubmit="Form(this);return false" url="[resource:apresentacao_EventoInstance, action:'delete']" >
 				<fieldset class="buttons">
 					<g:hiddenField name="id" value="${apresentacao_EventoInstance?.id}" />
-					<g:link class="edit" action="edit" id="${apresentacao_EventoInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+					<a href="#" onclick="carregarPagina('<g:createLink action="edit" id="${apresentacao_EventoInstance.id}" />')">
+											<g:message code="default.button.edit.label" default="Edit" />
+									</a>
+					<!--<g:link class="edit" action="edit" id="${apresentacao_EventoInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>-->
 					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 				</fieldset>
 			</g:form>

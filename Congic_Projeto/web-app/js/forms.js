@@ -1,8 +1,3 @@
-function carregarPagina(url){
-$(".content").load(url);
-	return false;
-}
-
 
 function Form(form){
 	var url = form.action;
