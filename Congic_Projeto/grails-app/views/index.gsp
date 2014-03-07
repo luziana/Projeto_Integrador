@@ -12,10 +12,7 @@
 			</div>
 				
 					
-				<div class="content" id="content"></div>
-				
-				
-				
+				<div class="content" id="content"></div>		
 			
 	</body>
 </html>

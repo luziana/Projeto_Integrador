@@ -102,6 +102,9 @@ class ApresentacaoController {
 	
 	def apresentacao() {
 		def apresentacao = Apresentacao.list()
-		[apresentacao: apresentacao]
+		
+		def menu = Menu.get(1)
+		render view: 'apresentacao', model: [apresentacao: apresentacao, menu: menu]
+		
 		}
 }

@@ -98,7 +98,9 @@ class LocalizacaoController {
 	
 	def index(){
 		def localizacao = Localizacao.list()
-		[localizacao:localizacao]
+		
+		def menu = Menu.get(1)
+		render view: 'index', model: [localizacao:localizacao, menu: menu]
 	}
 }	
 
