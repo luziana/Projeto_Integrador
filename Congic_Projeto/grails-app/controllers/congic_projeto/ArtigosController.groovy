@@ -116,4 +116,12 @@ class ArtigosController {
 		  byte[] arquivo = arquivoDownload.arquivo
 		  response.outputStream << arquivo
 	  }
+	
+	def artigos(){
+		
+		def artigos = Artigos.list()
+		def menu = Menu.get(1)
+		render view: 'artigos', model: [artigos: artigos, menu: menu]
+		
+	}
 }
