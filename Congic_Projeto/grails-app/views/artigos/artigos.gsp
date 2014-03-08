@@ -59,8 +59,8 @@
     <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                <h1 class="page-header">Programação, 
-                    <small>participe de cada momento!</small>
+                <h1 class="page-header">Artigos, 
+                    <small>contribuindo para a comunidade científica!</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="${createLink(controller:'home', action:'home')}">Início</a>
