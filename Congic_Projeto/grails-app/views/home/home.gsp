@@ -58,15 +58,17 @@
     
     <div class="container">
             <div class="row">
+            	<g:each in="${tituloPaginas?}">
                 <div class="col-lg-12">
-                <h1 class="page-header">Temário, 
-                    <small>“Inovação e Criatividade no Sertão do Alto Oeste Potiguar”</small>
+                <h1 class="page-header">${it.tituloInicio} 
+                    <small>${it.subtituloInicio}</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="${createLink(controller:'home', action:'home')}">Início</a>
                     </li>
                 </ol>
                 </div>
+                </g:each>
             </div>
             
             <!-- Lado direito Informações -->

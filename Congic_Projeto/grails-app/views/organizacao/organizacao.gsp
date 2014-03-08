@@ -58,9 +58,10 @@
     
     <div class="container">
             <div class="row">
+                <g:each in="${tituloPaginas?}">
                 <div class="col-lg-12">
-                <h1 class="page-header">Organização, 
-                    <small>fazendo valer cada momento!</small>
+                <h1 class="page-header">${it.tituloOrganizacao} 
+                    <small>${it.subtituloOrganizacao}</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="${createLink(controller:'home', action:'home')}">Início</a>
@@ -68,6 +69,7 @@
                     <li class="active">Organização</li>
                 </ol>
                 </div>
+                </g:each>
             </div>
             
             

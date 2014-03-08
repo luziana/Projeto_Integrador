@@ -15,5 +15,6 @@ class Apresentacao {
 		tematica nullable:false, blank:false,unique:true
 		data nullable:false,blank:false,unique:true
 		historico blank:true
+		
     }
 }

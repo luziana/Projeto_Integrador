@@ -107,6 +107,16 @@
 </li>
 
 <li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Titulo Páginas<span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="#" onClick="carregarPagina('<g:createLink controller='tituloPaginas' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
+<li><a href="#" onClick="carregarPagina('<g:createLink controller='tituloPaginas' action='list' />')"> Listar</a></li>
+
+</ul>
+</li>
+
+<li class="dropdown">
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Artigos<span class="caret"></span>
 </a>
 <ul class="dropdown-menu">

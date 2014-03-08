@@ -118,10 +118,10 @@ class ArtigosController {
 	  }
 	
 	def artigos(){
-		
 		def artigos = Artigos.list()
+		def tituloPaginas = TituloPaginas.list()
 		def menu = Menu.get(1)
-		render view: 'artigos', model: [artigos: artigos, menu: menu]
+		render view: 'artigos', model: [tituloPaginas:tituloPaginas, artigos: artigos, menu: menu]
 		
 	}
 }
