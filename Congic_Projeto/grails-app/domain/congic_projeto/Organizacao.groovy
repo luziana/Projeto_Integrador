@@ -1,18 +1,25 @@
 package congic_projeto
 
+import groovy.transform.ToString;
+
 import java.util.List;
 
 import congic_projeto.Coordenacao;
 
 class Organizacao {
-	String equipe
-	List <Coordenacao> coordenacaoPf
-	List <Coordenacao> coordenacaoNatal
+	String cidade
+	static hasMany = [coordenacao: Coordenacao] 
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.cidade;
+	}
+		
     static constraints = {
-		equipe nullable:false,blanck:false,unique:true
-		coordenacaoPf nullable:false,blank:false
-		coordenacaoNatal nullable:false,blank:false
+		cidade nullable:false,blanck:false
     }
+	
 }
 
 

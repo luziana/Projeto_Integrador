@@ -95,7 +95,7 @@
                	
                	<center>
 					<div id="map">
-						<richui:map type="GoogleMaps" lat="40.689299" lng="-74.044" search="true" />
+						<richui:map type="GoogleMaps" lat="40.689299" lng="-74.044" route="true" />
 					</div>
 				</center>
 				

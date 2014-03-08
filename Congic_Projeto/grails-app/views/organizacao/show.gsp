@@ -23,18 +23,28 @@
 			</g:if>
 			<ol class="property-list organizacao">
 			
-				<g:if test="${organizacaoInstance?.equipe}">
+				<g:if test="${organizacaoInstance?.cidade}">
 				<li class="fieldcontain">
-					<span id="equipe-label" class="property-label"><g:message code="organizacao.equipe.label" default="Equipe" /></span>
+					<span id="cidade-label" class="property-label"><g:message code="organizacao.cidade.label" default="Cidade" /></span>
 					
-						<span class="property-value" aria-labelledby="equipe-label"><g:fieldValue bean="${organizacaoInstance}" field="equipe"/></span>
+						<span class="property-value" aria-labelledby="cidade-label"><g:fieldValue bean="${organizacaoInstance}" field="cidade"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${organizacaoInstance?.coordenacao}">
+				<li class="fieldcontain">
+					<span id="coordenacao-label" class="property-label"><g:message code="organizacao.coordenacao.label" default="Coordenacao" /></span>
+					
+						<g:each in="${organizacaoInstance.coordenacao}" var="c">
+						<span class="property-value" aria-labelledby="coordenacao-label"><g:link controller="coordenacao" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>
 			
 			</ol>
-			<g:form onsubmit="Form(this);return false" url="[resource:organizacaoInstance, action:'delete']" >
-			
+			<g:form>
 				<fieldset class="buttons">
 					<g:hiddenField name="id" value="${organizacaoInstance?.id}" />
 					<g:link class="edit" action="edit" id="${organizacaoInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>

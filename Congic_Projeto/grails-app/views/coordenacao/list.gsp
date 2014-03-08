@@ -1,43 +1,46 @@
 
-		<g:set var="entityName" 
-				value="${message(code: 'coordenacao.label', default: 'Coordenacao')}" />
-		
-	<div class="row">
-		<div class="col-lg-12">
-			<div class="panel-heading">
-				
-					<g:message code="default.list.label" args="[entityName]" />
-					
-			</div>
-	
-		<div class="panel-body">
-			<div id="list-coordenacao" class="content scaffold-list panel panel-default" role="main">
-					<g:if test="${flash.message}">
-						<div class="message" role="status">
-						${flash.message}
-						</div>
-					</g:if>
-			<table class="table table-striped table-bordered table-hover dataTable no-footer id="dataTables-example" aria-describedby="dataTables-example_info">
+<%@ page import="congic_projeto.Coordenacao" %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="layout" content="main">
+		<g:set var="entityName" value="${message(code: 'coordenacao.label', default: 'Coordenacao')}" />
+		<title><g:message code="default.list.label" args="[entityName]" /></title>
+	</head>
+	<body>
+		<a href="#list-coordenacao" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+		<div class="nav" role="navigation">
+			<ul>
+				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
+				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+			</ul>
+		</div>
+		<div id="list-coordenacao" class="content scaffold-list" role="main">
+			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
+			<g:if test="${flash.message}">
+			<div class="message" role="status">${flash.message}</div>
+			</g:if>
+			<table>
 				<thead>
-					<tr role="row">
+					<tr>
 					
 						<g:sortableColumn property="nome" title="${message(code: 'coordenacao.nome.label', default: 'Nome')}" />
 					
 						<g:sortableColumn property="cargo" title="${message(code: 'coordenacao.cargo.label', default: 'Cargo')}" />
+					
+						<th><g:message code="coordenacao.organizacao.label" default="Organizacao" /></th>
 					
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${coordenacaoInstanceList}" status="i" var="coordenacaoInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-								
-					<td><a href="#" onclick="carregarPagina('<g:createLink action="show" id="${coordenacaoInstance.id}" />')">
-											${fieldValue(bean: coordenacaoInstance, field: "nome")}
-									</a></td>
 					
-					
+						<td><g:link action="show" id="${coordenacaoInstance.id}">${fieldValue(bean: coordenacaoInstance, field: "nome")}</g:link></td>
 					
 						<td>${fieldValue(bean: coordenacaoInstance, field: "cargo")}</td>
+					
+						<td>${fieldValue(bean: coordenacaoInstance, field: "organizacao")}</td>
 					
 					</tr>
 				</g:each>
