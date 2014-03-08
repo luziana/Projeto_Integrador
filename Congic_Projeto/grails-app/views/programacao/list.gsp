@@ -25,9 +25,7 @@
 			<table class="table table-striped table-bordered table-hover dataTable no-footer id="dataTables-example" aria-describedby="dataTables-example_info">
 				<thead>
 					<tr role="row">
-					
-						<g:sortableColumn property="data" title="${message(code: 'programacao.data.label', default: 'Data')}" />
-					
+										
 						<g:sortableColumn property="horario" title="${message(code: 'programacao.horario.label', default: 'Horario')}" />
 					
 						<g:sortableColumn property="categoria" title="${message(code: 'programacao.categoria.label', default: 'Categoria')}" />
@@ -47,7 +45,7 @@
 				
 					
 					<td><a href="#" onclick="carregarPagina('<g:createLink action="show" id="${programacaoInstance.id}" />')">
-											${fieldValue(bean: programacaoInstance, field: "data")}
+											${fieldValue(bean: programacaoInstance, field: "horario")}
 									</a></td>
 					
 					

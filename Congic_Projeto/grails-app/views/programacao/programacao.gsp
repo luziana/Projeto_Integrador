@@ -7,11 +7,11 @@
 <body>
 
 	<div class="menu">
-<<<<<<< HEAD
+
 			<g:render template="/home/menu" model="[menu: menu]" />
-=======
+
 			<g:render template="/home/menu" model="[menu: menu]"/>
->>>>>>> 44aae0f8e6dc056b599fe4a6caa06e8ff99e9dc7
+
 	</div>
 	
 	 <!-- Carrossel Imagens-->
@@ -81,7 +81,7 @@
 
                  <g:each in="${programacoes?}">
             		<div id="programacao" class="col-lg-4 col-md-4">		
-						<p>Data: ${it.data}</p>
+						
 						<p>Horário: ${it.horario}</p>
 						<p>Categoria: ${it.categoria}</p>
 						<p>Titulo: ${it.titulo}</p>

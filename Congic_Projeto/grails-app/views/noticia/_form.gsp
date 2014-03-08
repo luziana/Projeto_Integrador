@@ -1,5 +1,6 @@
 <%@ page import="congic_projeto.Noticia" %>
 <resource:richTextEditor type="advanced" />
+
 <div class="form-group fieldcontain ${hasErrors(bean: noticiaInstance, field: 'titulo', 'error')} required">
 	<label for="titulo">
 		<g:message code="noticia.titulo.label" default="Titulo" />
@@ -14,4 +15,5 @@
 	</label>
 	<richui:richTextEditor class="form-control" name="descricao" value="${noticiaInstance?.descricao}" width="525" />
 </div>
+
 

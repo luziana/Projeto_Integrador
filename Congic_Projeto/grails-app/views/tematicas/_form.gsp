@@ -24,5 +24,5 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:textField class="form-control" name="subArea" required="" value="${tematicasInstance?.subArea}"/>
+	
 </div>
-

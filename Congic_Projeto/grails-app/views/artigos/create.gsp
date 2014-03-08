@@ -1,20 +1,24 @@
 <%@ page import="congic_projeto.Artigos" %>
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'artigos.label', default: 'Artigos')}" />
-	
-		<div class="row">
-			<div class="col-lg-12">
-			
-			</div>
+		<title><g:message code="default.create.label" args="[entityName]" /></title>
+	</head>
+	<body>
+		<a href="#create-artigos" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+		<div class="nav" role="navigation">
+			<ul>
+				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
+				<li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
+			</ul>
 		</div>
-		<div class="row">
-			<div class="panel-default">
-				<div class="panel-heading">
-					<g:message code="default.create.label" args="[entityName]" />
-					<g:if test="${flash.message}">
-						<div class="message" role="status">
-							${flash.message}</div>
-					</g:if>
+		<div id="create-artigos" class="content scaffold-create" role="main">
+			<h1><g:message code="default.create.label" args="[entityName]" /></h1>
+			<g:if test="${flash.message}">
+			<div class="message" role="status">${flash.message}</div>
+			</g:if>
 			<g:hasErrors bean="${artigosInstance}">
 			<ul class="errors" role="alert">
 				<g:eachError bean="${artigosInstance}" var="error">
@@ -22,9 +26,7 @@
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
-			<div class="panel-body">
-				<div class="col-lg-6">
-				<g:form onsubmit="Form(this);return false" url="[resource:artigosInstance, action:'save']">
+			<g:form action="save"  enctype="multipart/form-data">
 				<fieldset class="form">
 					<g:render template="form"/>
 				</fieldset>

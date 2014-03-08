@@ -1,12 +1,11 @@
 package congic_projeto
 
 class Artigos {
-	String titulo
 	String descricao
-	byte[] arquivo
+	byte[] arquivo	
 	
     static constraints = {
-		titulo(nullable:false, blank:false)
+		arquivo(size:0..131072,nulable: true)
 		descricao(nullable:false, blank:false, maxSize:10000)
     }
 }
