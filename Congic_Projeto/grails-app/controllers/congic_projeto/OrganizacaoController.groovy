@@ -99,4 +99,15 @@ class OrganizacaoController {
             redirect(action: "show", id: id)
         }
     }
+<<<<<<< HEAD
+	
+	def organizacao() {
+		def organizacao = Organizacao.list()
+		def tituloPaginas = TituloPaginas.list()
+		def menu = Menu.get(1)
+		render view: 'organizacao', model: [tituloPaginas:tituloPaginas, organizacao: organizacao, menu: menu]
+		
+		}
+=======
+>>>>>>> 4453d1bbb38a6436968c1cf18ecfc51b05f0fde7
 }

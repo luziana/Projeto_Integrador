@@ -8,5 +8,6 @@ class Artigos {
     static constraints = {
 		titulo(nullable:false, blank:false)
 		descricao(nullable:false, blank:false, maxSize:10000)
+		arquivo	(nullable:true, blank:false)
     }
 }

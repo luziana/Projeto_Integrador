@@ -99,4 +99,13 @@ class TematicasController {
             redirect(action: "show", id: id)
         }
     }
+<<<<<<< HEAD
+=======
+	def tematicas(){
+		def tematicas = Tematicas.list()
+		def tituloPaginas = TituloPaginas.list()
+		def menu = Menu.get(1)
+		render view: 'tematicas', model: [tituloPaginas:tituloPaginas, tematicas: tematicas, menu: menu]
+	}
+>>>>>>> a0ebd5d56bc6bc7992870eff5870599f2f536dab
 }
