@@ -53,8 +53,8 @@
         </a>
     </div>
     
-    <!-- Espaco em brancoS -->
-    
+    <!-- Titulo da Página -->
+       
    <div class="container">
             <div class="row">
                 <g:each in="${tituloPaginas?}">
@@ -85,7 +85,7 @@
                 	<p>${it.descricao}</p>
                     <h4><p>${it.area}</p></h4>
                     <ul>
-                        <li><p>${it.subArea}</p></li>
+<%--                        <li><p>${it.subArea}</p></li>--%>
                     </ul>
                 </div>
                </g:each>
