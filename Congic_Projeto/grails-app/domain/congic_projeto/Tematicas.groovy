@@ -2,13 +2,20 @@ package congic_projeto
 
 class Tematicas {
 	String descricao
-	String area
-	String subArea
+	
+	static belongsTo = null
+	static hasMany = [area: Area]
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.descricao;
+	}
+	
     static constraints = {
 		
 		descricao nullable:false,unique:true,blank:false
-		area nullable:false,unique:true,blank:false
-		subArea nullable:false,blank:false
+		
 		
     }
 }

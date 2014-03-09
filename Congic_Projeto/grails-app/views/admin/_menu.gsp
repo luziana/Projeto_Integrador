@@ -100,9 +100,33 @@
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Áreas Temáticas<span class="caret"></span>
 </a>
 <ul class="dropdown-menu">
-<li><a href="#" onClick="carregarPagina('<g:createLink controller='tematicas' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
-<li><a href="#" onClick="carregarPagina('<g:createLink controller='tematicas' action='list' />')"> Listar</a></li>
-
+	<li><a href="#" onClick="carregarPagina('<g:createLink controller='tematicas' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
+	<li><a href="#" onClick="carregarPagina('<g:createLink controller='tematicas' action='list' />')"> Listar</a></li>
+	<%--menu AREA incluido no menu areas tematicas --%>
+		<nav id="menu">
+                <ul class="nav nav-tabs">
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Areas<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+					<li><a href="#" onClick="carregarPagina('<g:createLink controller='area' action='edit' />')"><span class="glyphicon glyphicon-plus"></span> Editar</a></li>
+					<li><a href="#" onClick="carregarPagina('<g:createLink controller='area' action='list' />')"> Listar</a></li>
+					
+					</ul>
+				</li>
+				<%--menu SUB AREA incluido no menu areas tematicas --%>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Sub Areas<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+					<li><a href="#" onClick="carregarPagina('<g:createLink controller='subArea' action='edit' />')"><span class="glyphicon glyphicon-plus"></span> Editar</a></li>
+					<li><a href="#" onClick="carregarPagina('<g:createLink controller='subArea' action='list' />')"> Listar</a></li>
+					
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		
 </ul>
 </li>
 
@@ -116,7 +140,6 @@
 </ul>
 </li>
 </ul>
-
 
 </nav>
  		  
