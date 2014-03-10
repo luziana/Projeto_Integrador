@@ -102,12 +102,14 @@ class OrganizacaoController {
             redirect(action: "show", id: id)
         }
     }
+
 	
 	def organizacao() {
 		def organizacao = Organizacao.list()
-		
+		def tituloPaginas = TituloPaginas.list()
 		def menu = Menu.get(1)
-		render view: 'organizacao', model: [organizacao: organizacao, menu: menu]
+		render view: 'organizacao', model: [tituloPaginas:tituloPaginas, organizacao: organizacao, menu: menu]
 		
 		}
+
 }

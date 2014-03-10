@@ -105,8 +105,8 @@ class HospedagemController {
 	
 	def hospedagem() {
 		def hospedagem = Hospedagem.list()
+		def tituloPaginas = TituloPaginas.list()
 		def menu = Menu.get(1)
-		render view: 'hospedagem', model: [hospedagem:hospedagem, menu: menu]
+		render view: 'hospedagem', model: [tituloPaginas:tituloPaginas, hospedagem:hospedagem, menu: menu]
 		}
-	
 }

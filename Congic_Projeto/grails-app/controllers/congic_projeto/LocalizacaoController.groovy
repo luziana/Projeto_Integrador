@@ -101,9 +101,9 @@ class LocalizacaoController {
 	
 	def index(){
 		def localizacao = Localizacao.list()
-		
+		def tituloPaginas = TituloPaginas.list()
 		def menu = Menu.get(1)
-		render view: 'index', model: [localizacao : localizacao, menu: menu]
+		render view: 'index', model: [tituloPaginas:tituloPaginas, localizacao : localizacao, menu: menu]
 	}
 }	
 

@@ -6,8 +6,7 @@
 	<div class="col-lg-16">
 		
 		<div class="panel-body">
-			<div id="list-apresentacao"
-				class="content scaffold-list panel panel-default" role="main">
+			<div id="list-apresentacao" class="content scaffold-list panel panel-default" role="main">
 				<g:if test="${flash.message}">
 					<div class="message" role="status">
 						${flash.message}

@@ -1,22 +1,25 @@
 <%@ page import="congic_projeto.Coordenacao" %>
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'coordenacao.label', default: 'Coordenacao')}" />
-		<div class="row">
-		
+		<title><g:message code="default.edit.label" args="[entityName]" /></title>
+	</head>
+	<body>
+		<a href="#edit-coordenacao" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+		<div class="nav" role="navigation">
+			<ul>
+				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
+				<li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
+				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+			</ul>
 		</div>
-			<div class="col-lg-12">
-			<div class="panel-default">
-				<div class="panel-heading">
-					<g:message code="default.edit.label" args="[entityName]" />
-				</div>
-				<div class="panel-body">
-					<g:if test="${flash.message}">
+		<div id="edit-coordenacao" class="content scaffold-edit" role="main">
+			<h1><g:message code="default.edit.label" args="[entityName]" /></h1>
+			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
-		
-	
-		<div id="edit-coordenacao" class="content scaffold-edit" role="main">
-			
 			<g:hasErrors bean="${coordenacaoInstance}">
 			<ul class="errors" role="alert">
 				<g:eachError bean="${coordenacaoInstance}" var="error">
@@ -24,7 +27,7 @@
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
-			<g:form onsubmit="Form(this);return false" url="[resource:coordenacaoInstance, action:'update']" >
+			<g:form method="post" >
 				<g:hiddenField name="id" value="${coordenacaoInstance?.id}" />
 				<g:hiddenField name="version" value="${coordenacaoInstance?.version}" />
 				<fieldset class="form">

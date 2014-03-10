@@ -105,8 +105,8 @@ class ProgramacaoController {
 	
 	def programacao() {
 		def programacoes = Programacao.list()
-		
+		def tituloPaginas = TituloPaginas.list()
 		def menu = Menu.get(1)
-		render view: 'programacao', model: [programacoes: programacoes, menu: menu]
+		render view: 'programacao', model: [tituloPaginas:tituloPaginas, programacoes: programacoes, menu: menu]
 		}
 }

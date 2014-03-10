@@ -60,16 +60,18 @@
     
     <div class="container">
             <div class="row">
+                <g:each in="${tituloPaginas?}">
                 <div class="col-lg-12">
-                <h1 class="page-header">Localize-se, 
-                    <small>Conheça Pau dos Ferros!</small>
-                </h1>
+                <h1 class="page-header">${it.tituloLocalizacao} 
+                    <small>${it.subtituloLocalizacao}</small>
+                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="${createLink(controller:'home', action:'home')}">Início</a>
                     </li>
                     <li class="active">Localização</li>
                 </ol>
                 </div>
+                </g:each>
             </div>
             
             <!-- Lado direito Informações -->
@@ -93,7 +95,7 @@
                	
                	<center>
 					<div id="map">
-						<richui:map type="GoogleMaps" lat="40.689299" lng="-74.044" search="true" />
+						<richui:map type="GoogleMaps" lat="40.689299" lng="-74.044" route="true" />
 					</div>
 				</center>
 				

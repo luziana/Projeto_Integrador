@@ -91,6 +91,7 @@ log4j = {
 }
 
 
+<<<<<<< HEAD
 
 
 
@@ -112,6 +113,8 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 
 
 
+=======
+>>>>>>> 17fbc567b3cacfe3152d72eabba7ffe52435538c
 // Added by the Spring Security Core plugin:
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'congic_projeto.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'congic_projeto.UserRole'
@@ -125,6 +128,9 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/images/**':                  ['permitAll'],
 	'/**/favicon.ico':                ['permitAll']
 ]
+<<<<<<< HEAD
 //grails.plugin.springsecurity.auth.loginFormUrl = '/'
 grails.plugin.springsecurity.logout.postOnly = false
+=======
+>>>>>>> 17fbc567b3cacfe3152d72eabba7ffe52435538c
 

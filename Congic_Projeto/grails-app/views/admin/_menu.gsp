@@ -100,8 +100,42 @@
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Áreas Temáticas<span class="caret"></span>
 </a>
 <ul class="dropdown-menu">
-<li><a href="#" onClick="carregarPagina('<g:createLink controller='tematicas' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
-<li><a href="#" onClick="carregarPagina('<g:createLink controller='tematicas' action='list' />')"> Listar</a></li>
+	<li><a href="#" onClick="carregarPagina('<g:createLink controller='tematicas' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
+	<li><a href="#" onClick="carregarPagina('<g:createLink controller='tematicas' action='list' />')"> Listar</a></li>
+	<%--menu AREA incluido no menu areas tematicas --%>
+		<nav id="menu">
+                <ul class="nav nav-tabs">
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Areas<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+					<li><a href="#" onClick="carregarPagina('<g:createLink controller='area' action='edit' />')"><span class="glyphicon glyphicon-plus"></span> Editar</a></li>
+					<li><a href="#" onClick="carregarPagina('<g:createLink controller='area' action='list' />')"> Listar</a></li>
+					
+					</ul>
+				</li>
+				<%--menu SUB AREA incluido no menu areas tematicas --%>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Sub Areas<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+					<li><a href="#" onClick="carregarPagina('<g:createLink controller='subArea' action='edit' />')"><span class="glyphicon glyphicon-plus"></span> Editar</a></li>
+					<li><a href="#" onClick="carregarPagina('<g:createLink controller='subArea' action='list' />')"> Listar</a></li>
+					
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		
+</ul>
+</li>
+
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Titulo Páginas<span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="#" onClick="carregarPagina('<g:createLink controller='tituloPaginas' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
+<li><a href="#" onClick="carregarPagina('<g:createLink controller='tituloPaginas' action='list' />')"> Listar</a></li>
 
 </ul>
 </li>
@@ -116,6 +150,7 @@
 </ul>
 </li>
 </ul>
+<<<<<<< HEAD
    <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -131,6 +166,8 @@
                     </ul>
                     <!-- /.dropdown-user -->
                 </li>
+=======
+>>>>>>> 17fbc567b3cacfe3152d72eabba7ffe52435538c
 
 </nav>
  		  
