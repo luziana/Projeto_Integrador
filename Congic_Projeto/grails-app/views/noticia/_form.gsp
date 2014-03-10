@@ -13,7 +13,7 @@
 		<g:message code="noticia.descricao.label" default="Descricao" />
 		<span class="required-indicator">*</span>
 	</label>
-	<richui:richTextEditor class="form-control" name="descricao" value="${noticiaInstance?.descricao}" width="525" />
+	<richui:richTextEditor class="form-control" name="descricao" value="${fieldValue(bean:noticiaInstance,field: 'descricao')}" width="525" />
 </div>
 
 

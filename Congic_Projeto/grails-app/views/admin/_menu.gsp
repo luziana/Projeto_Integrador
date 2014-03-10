@@ -90,7 +90,7 @@
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Link Menu<span class="caret"></span>
 </a>
 <ul class="dropdown-menu">
-<li><a href="#" onClick="carregarPagina('<g:createLink controller='menu' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
+<li><a href="#" onClick="carregarPagina('<g:createLink controller='menu' action='edit' />')"><span class="glyphicon glyphicon-plus"></span> Editar</a></li>
 <li><a href="#" onClick="carregarPagina('<g:createLink controller='menu' action='list' />')"> Listar</a></li>
 
 </ul>
@@ -116,7 +116,21 @@
 </ul>
 </li>
 </ul>
-
+   <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil de Usuário</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-fw" data-toggle="modal" data-target="#myModalLocation"> Configurações</i></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><g:link controller="logout"><i class="fa fa-sign-out fa-fw"></i> Sair</a></g:link>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
 
 </nav>
  		  

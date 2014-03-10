@@ -53,12 +53,8 @@
 
 	</br></br></br><center><h2>Noticias</h2></center></br></br></br>
 	
-	<g:each in="${noticias?}">
-
-	<p>Titulo: ${it.titulo}</p>
-	<p>Descrição: ${it.descricao}</p>
-
-	</g:each>
+	<g:render template="not"/>
+	
 </div>
 
 <!-- /.container -->

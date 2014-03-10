@@ -2,6 +2,9 @@ package congic_projeto
 
 import org.springframework.dao.DataIntegrityViolationException
 
+import grails.plugin.springsecurity.annotation.Secured
+
+@Secured(['ROLE_ADMIN'])
 class LocalizacaoController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -100,7 +103,7 @@ class LocalizacaoController {
 		def localizacao = Localizacao.list()
 		
 		def menu = Menu.get(1)
-		render view: 'index', model: [localizacao:localizacao, menu: menu]
+		render view: 'index', model: [localizacao : localizacao, menu: menu]
 	}
 }	
 

@@ -91,3 +91,40 @@ log4j = {
 }
 
 
+
+
+
+
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'congic_projeto.SecUser'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'congic_projeto.SecUserSecRole'
+grails.plugin.springsecurity.authority.className = 'congic_projeto.SecRole'
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/':                              ['permitAll'],
+	'/index':                         ['permitAll'],
+	'/index.gsp':                     ['permitAll'],
+	'/**/js/**':                      ['permitAll'],
+	'/**/css/**':                     ['permitAll'],
+	'/**/images/**':                  ['permitAll'],
+	'/**/favicon.ico':                ['permitAll']
+]
+
+
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'congic_projeto.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'congic_projeto.UserRole'
+grails.plugin.springsecurity.authority.className = 'congic_projeto.Role'
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/':                              ['permitAll'],
+	'/index':                         ['permitAll'],
+	'/index.gsp':                     ['permitAll'],
+	'/**/js/**':                      ['permitAll'],
+	'/**/css/**':                     ['permitAll'],
+	'/**/images/**':                  ['permitAll'],
+	'/**/favicon.ico':                ['permitAll']
+]
+//grails.plugin.springsecurity.auth.loginFormUrl = '/'
+grails.plugin.springsecurity.logout.postOnly = false
+

@@ -2,6 +2,9 @@ package congic_projeto
 
 import org.springframework.dao.DataIntegrityViolationException
 
+import grails.plugin.springsecurity.annotation.Secured
+
+@Secured(['ROLE_ADMIN'])
 class ArtigosController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -99,4 +102,20 @@ class ArtigosController {
             redirect(action: "show", id: id)
         }
     }
+
+	def download = {
+		def arquivoDownload = Artigos.get( params.id )
+		  byte[] arquivo = arquivoDownload.arquivo
+		  response.outputStream << arquivo
+	  }
+	
+	def artigos(){
+			
+		def artigos = Artigos.list()
+		def menu = Menu.get(1)
+		render view: 'artigos', model: [artigos: artigos, menu: menu]
+		
+	}
+
+
 }

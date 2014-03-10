@@ -25,6 +25,7 @@
        		<!-- Wrapper for slides -->
        		<div class="carousel-inner">
             	<div class="item active">
+            	
                 	<div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
                 		<div class="carousel-caption">
                    			<h1>Modern Business - A Bootstrap 3 Template</h1>
@@ -79,14 +80,13 @@
 
                <g:each in="${noticias?}">
 					<div id="noticia" class="col-lg-4 col-md-4">		
-						<h3><i class="fa fa-check-circle"></i>${it.titulo}</h3>
+						<h3><i class="fa fa-check-circle"></i><g:remoteLink action="ajaxTest" update="test1">${it.titulo}</g:remoteLink></h3>
 						<p>${it.descricao}<p>
+						<g:link action="show" id="${it.id}">${it.titulo}</g:link>
 					</div>
 				</g:each>
-                
-            </div>
-            
-            
+           </div>
+           	                       
             <!-- Lado esquerdo -->
 
             <div class="col-lg-4">
