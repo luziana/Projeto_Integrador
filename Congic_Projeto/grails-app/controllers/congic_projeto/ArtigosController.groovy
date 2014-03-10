@@ -110,10 +110,7 @@ class ArtigosController {
 	  }
 	
 	def artigos(){
-<<<<<<< HEAD
-			
-=======
->>>>>>> 17fbc567b3cacfe3152d72eabba7ffe52435538c
+
 		def artigos = Artigos.list()
 		def tituloPaginas = TituloPaginas.list()
 		def menu = Menu.get(1)
