@@ -62,7 +62,7 @@
                 <h1 class="page-header">${it.tituloAreasTematicas} 
                     <small>${it.subtituloAreasTematicas}</small>
                 </h1>
-                <ol class="breadcrumb">
+                <ol class="breadcrumb"></div>
                     <li><a href="${createLink(controller:'home', action:'home')}">Início</a>
                     </li>
                     <li class="active">Áreas Temáticas</li>

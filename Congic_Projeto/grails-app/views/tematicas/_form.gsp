@@ -15,6 +15,7 @@
 		<g:message code="tematicas.area.label" default="Area" />
 		
 	</label>
+</div>
 	
 <ul class="one-to-many">
 <g:each in="${tematicasInstance?.area?}" var="a">
@@ -25,7 +26,7 @@
 </li>
 </ul>
 
-<<<<<<< HEAD
+
 <div class="form-group fieldcontain ${hasErrors(bean: tematicasInstance, field: 'subArea', 'error')} required">
 	<label for="subArea">
 		<g:message code="tematicas.subArea.label" default="Sub Area" />
@@ -33,6 +34,4 @@
 	</label>
 	<g:textField class="form-control" name="subArea" required="" value="${tematicasInstance?.subArea}"/>
 	
-=======
->>>>>>> 17fbc567b3cacfe3152d72eabba7ffe52435538c
 </div>

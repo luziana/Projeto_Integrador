@@ -2,6 +2,10 @@ package congic_projeto
 
 import org.springframework.dao.DataIntegrityViolationException
 
+import grails.plugin.springsecurity.annotation.Secured
+
+@Secured(['ROLE_ADMIN'])
+
 class SubAreaController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]

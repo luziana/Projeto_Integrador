@@ -2,6 +2,9 @@ package congic_projeto
 
 import org.springframework.dao.DataIntegrityViolationException
 
+import grails.plugin.springsecurity.annotation.Secured
+
+@Secured(['ROLE_ADMIN'])
 class TituloPaginasController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -100,4 +103,8 @@ class TituloPaginasController {
         }
     }
 	
+	def tituloPaginas() {
+		def tituloPaginas = TituloPaginas.list()
+		[tituloPaginas:tituloPaginas]
+		}
 }

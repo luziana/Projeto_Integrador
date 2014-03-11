@@ -2,9 +2,6 @@ package congic_projeto
 
 import org.springframework.dao.DataIntegrityViolationException
 
-import grails.plugin.springsecurity.annotation.Secured
-
-@Secured(['ROLE_ADMIN'])
 class ImageController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -22,20 +19,16 @@ class ImageController {
         [imageInstance: new Image(params)]
     }
 
-    def save = {
+    def save() {
         def imageInstance = new Image(params)
- 
-        if (imageInstance.save(flush: true)) {
-            flash.message = "${message(code: 'default.created.message', args: [message(code: 'image.label', default: 'Image'), imageInstance.id])}"
- 
-            upload(imageInstance)
- 
-            redirect(action: "show", id: imageInstance.id)
-        }
-        else {
+        if (!imageInstance.save(flush: true)) {
             render(view: "create", model: [imageInstance: imageInstance])
+            return
         }
-}
+
+        flash.message = message(code: 'default.created.message', args: [message(code: 'image.label', default: 'Image'), imageInstance.id])
+        redirect(action: "show", id: imageInstance.id)
+    }
 
     def show(Long id) {
         def imageInstance = Image.get(id)
@@ -106,23 +99,4 @@ class ImageController {
             redirect(action: "show", id: id)
         }
     }
-	
-	def upload = { imageInstance ->
-		
-			   def nomeOriginal = params.arquivo.originalFilename
-			   imageInstance.arquivo = nomeOriginal
-		
-			   def f = request.getFile("arquivo")
-		
-			   if(!f.empty){
-				   f.transferTo(new File("web-app/images/uploads/${nomeOriginal}"))
-			   }else{
-				   flash.message = "não foi possível transferir o arquivo"
-			   }
-	   }
-	
-	def imagens(){
-		def imagens = Image.list(id)
-		[imagens : imagens]
-	}
 }
