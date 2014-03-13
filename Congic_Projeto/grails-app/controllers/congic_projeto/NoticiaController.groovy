@@ -103,6 +103,11 @@ class NoticiaController {
         }
     }
 	
+	def exibir_noticia_expandida (Long id){
+			
+		
+	}
+	
 	//def busca = {
 	//def noticias = Noticia.findAllByTituloIlike("%${params.titulo}%")
   
