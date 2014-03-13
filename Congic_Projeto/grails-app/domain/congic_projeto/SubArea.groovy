@@ -1,8 +1,9 @@
 package congic_projeto
 
 class SubArea {
-	
+
 	String nome
+	
 	static hasOne = [area: Area]
 	
 	@Override

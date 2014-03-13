@@ -32,15 +32,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${areaInstance?.tematica}">
-				<li class="fieldcontain">
-					<span id="tematica-label" class="property-label"><g:message code="area.tematica.label" default="Tematica" /></span>
-					
-						<span class="property-value" aria-labelledby="tematica-label"><g:link controller="tematicas" action="show" id="${areaInstance?.tematica?.id}">${areaInstance?.tematica?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${areaInstance?.subArea}">
 				<li class="fieldcontain">
 					<span id="subArea-label" class="property-label"><g:message code="area.subArea.label" default="Sub Area" /></span>

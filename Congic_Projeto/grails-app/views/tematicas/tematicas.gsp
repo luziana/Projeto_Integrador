@@ -57,8 +57,9 @@
        
    <div class="container">
             <div class="row">
-                <g:each in="${tituloPaginas?}">
+                
                 <div class="col-lg-12">
+                <g:each in="${tituloPaginas?}">
                 <h1 class="page-header">${it.tituloAreasTematicas} 
                     <small>${it.subtituloAreasTematicas}</small>
                 </h1>
@@ -78,14 +79,14 @@
              <!-- Areas Temáticas-->
 
             <div class="col-lg-8">
-
+            
                <g:each in="${tematicas?}">
             		
                 <div id="tematicas" class="col-lg-6 col-md-6 col-sm-6">
                 	<p>${it.descricao}</p>
                     <h4><p>${it.area}</p></h4>
                     <ul>
-<%--                        <li><p>${it.subArea}</p></li>--%>
+						  <li><p>${it.subArea}</p></li>
                     </ul>
                 </div>
                </g:each>

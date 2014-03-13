@@ -10,14 +10,6 @@
 	<g:textField name="nome" value="${areaInstance?.nome}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: areaInstance, field: 'tematica', 'error')} required">
-	<label for="tematica">
-		<g:message code="area.tematica.label" default="Tematica" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:select id="tematica" name="tematica.id" from="${congic_projeto.Tematicas.list()}" optionKey="id" required="" value="${areaInstance?.tematica?.id}" class="many-to-one"/>
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: areaInstance, field: 'subArea', 'error')} ">
 	<label for="subArea">
 		<g:message code="area.subArea.label" default="Sub Area" />

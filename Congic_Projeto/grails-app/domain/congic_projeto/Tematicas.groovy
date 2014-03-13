@@ -1,10 +1,11 @@
 package congic_projeto
 
 class Tematicas {
+	
 	String descricao
 
-	static belongsTo = null
-	static hasMany = [area: Area]
+	static belongsTo = [area: Area]
+	static hasMany = [area: Area, subArea: SubArea]
 	
 	@Override
 	public String toString() {
@@ -14,7 +15,7 @@ class Tematicas {
 	
     static constraints = {
 		
-		descricao nullable:false,unique:true,blank:false
+		descricao nullable:false,unique:true,blank:true
 		
 		
     }

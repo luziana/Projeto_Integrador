@@ -5,6 +5,8 @@ import org.springframework.dao.DataIntegrityViolationException
 import grails.plugin.springsecurity.annotation.Secured
 
 @Secured(['ROLE_ADMIN'])
+
+
 class TematicasController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]

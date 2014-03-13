@@ -1,10 +1,10 @@
 package congic_projeto
 
 import org.springframework.dao.DataIntegrityViolationException
-
 import grails.plugin.springsecurity.annotation.Secured
 
 @Secured(['ROLE_ADMIN'])
+
 class NoticiaController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -104,23 +104,22 @@ class NoticiaController {
     }
 	
 	//def busca = {
-		//def noticias = Noticia.findAllByTituloIlike("%${params.titulo}%")
-	  
-		//render(contentType: "text/xml") {
-		  // results() {
-			//  noticias.each {
-				// noticia -> result() {
-					//id(noticia.id)
-					//titulo(noticia.titulo)
-				// }
-			 // }
-		  // }
-	//	}
-	// }
-	
-	def inicio() {
-		def noticias = Noticia.list()
-		[noticias: noticias]
-		}
-	
+	//def noticias = Noticia.findAllByTituloIlike("%${params.titulo}%")
+  
+	//render(contentType: "text/xml") {
+	  // results() {
+		//  noticias.each {
+			// noticia -> result() {
+				//id(noticia.id)
+				//titulo(noticia.titulo)
+			// }
+		 // }
+	  // }
+//	}
+// }
+
+def inicio() {
+	def noticias = Noticia.list()
+	[noticias: noticias]
+	}
 }
