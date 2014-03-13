@@ -82,7 +82,10 @@
             		<div id="artigos" class="col-lg-4 col-md-4">		
 						
 						<p>${it.descricao}</p>
-						<img src=&quot;${createLink(controller:'artigos', action:'download', id: arquivo.id)}&quot;/>					 
+						<%--<img src=&quot;${createLink(controller:'artigos', action:'download', id: arquivo.id)}&quot;/>--%>	
+						<%--<li><a href="${createLink(controller:'artigos', action:'download')}">Arquivo</a>--%>
+						
+						<g:link action="download" id="${it.id}">Artigos</g:link>				 
 						<hr/>
 					</div>
                	</g:each>
