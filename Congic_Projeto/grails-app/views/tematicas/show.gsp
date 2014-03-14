@@ -36,9 +36,7 @@
 				<li class="fieldcontain">
 					<span id="area-label" class="property-label"><g:message code="tematicas.area.label" default="Area" /></span>
 					
-						<g:each in="${tematicasInstance.area}" var="a">
-						<span class="property-value" aria-labelledby="area-label"><g:link controller="area" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></span>
-						</g:each>
+						<span class="property-value" aria-labelledby="area-label"><g:link controller="area" action="show" id="${tematicasInstance?.area?.id}">${tematicasInstance?.area?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

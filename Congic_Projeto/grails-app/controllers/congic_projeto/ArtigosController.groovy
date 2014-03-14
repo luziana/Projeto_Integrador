@@ -94,14 +94,17 @@ class ArtigosController {
 			def documento = Artigos.get(params.id)
 			byte[] file = documento.arquivo
 			response.outputStream << file
+<<<<<<< HEAD
 			
+=======
+>>>>>>> 9eadc32cfbba7695bac7930a811cfc362f8be94f
 		}
 
 
 def artigos(){
 
 	def artigos = Artigos.list()
-	def tituloPaginas = TituloPaginas.list()
+	def tituloPaginas = TituloPaginas.list(params.id)
 	def menu = Menu.get(1)
 	render view: 'artigos', model: [tituloPaginas:tituloPaginas, artigos: artigos, menu: menu]
 
