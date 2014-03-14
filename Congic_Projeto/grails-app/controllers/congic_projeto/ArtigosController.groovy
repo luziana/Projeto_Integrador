@@ -95,7 +95,6 @@ class ArtigosController {
 			byte[] file = documento.arquivo
 			response.outputStream << file
 			
-			
 		}
 
 
