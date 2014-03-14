@@ -104,7 +104,7 @@ class TituloPaginasController {
     }
 	
 	def tituloPaginas() {
-		def tituloPaginas = TituloPaginas.list()
-		[tituloPaginas:tituloPaginas]
+		def tituloPaginas = TituloPaginas.get(params.id)
+			model: [tituloPaginas:tituloPaginas]
 		}
 }
