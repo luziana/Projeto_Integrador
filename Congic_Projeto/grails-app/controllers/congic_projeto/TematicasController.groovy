@@ -105,7 +105,7 @@ class TematicasController {
         }
     }
 	
-	def tematicas() {
+	def tematicas(long id) {
 		def tematicas = Tematicas.list()
 		def tituloPaginas = TituloPaginas.list()
 		def menu = Menu.get(1)
