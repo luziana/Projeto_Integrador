@@ -104,10 +104,33 @@ class NoticiaController {
     }
 	
 	def exibir_noticia_expandida (Long id){
-			
+		def noticias = Noticia.get(id)
+		render(view: "exibir_noticia_expandida", model: [noticias: noticias])
+		
 		
 	}
 	
+
+/*	def busca = {
+		def noticias = Noticia.findAllByTitulo("%${params.titulo}%")
+	  
+		render(contentType: "text/xml") {
+		   exibir_noticia_expandida() {
+			  noticias.each {
+				 noticia -> exibir_noticia_expandida() {
+					id(noticia.id)
+					titulo(noticia.titulo)
+					descricao(noticia.descricao)
+				 }
+			  }
+		   }
+		}
+	 }*/
+	def home(Long id) {
+		def noticias = Noticia.get(id)
+		render(view: "home", model: [noticias: noticias])
+		}
+
 	//def busca = {
 	//def noticias = Noticia.findAllByTituloIlike("%${params.titulo}%")
   

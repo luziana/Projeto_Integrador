@@ -82,9 +82,8 @@
 
                <g:each in="${noticias?}">
 					<div id="noticia" class="col-lg-4 col-md-4">		
-						<h3><i class="fa fa-check-circle"></i><g:link action="exibir_noticia_expandida" id="${it.id}">${it.titulo}</g:link></h3>
-						<p>${it.descricao}<p>
-						<%--<g:link action="show" id="${it.id}">${it.titulo}</g:link>--%>
+						<h3><i class="fa fa-check-circle"></i><g:link controller="noticia" action="exibir_noticia_expandida" id="${it.id}">${it.titulo}</g:link></h3>
+						<p>${it.descricao}</p>
 					</div>
 				</g:each>
            </div>
