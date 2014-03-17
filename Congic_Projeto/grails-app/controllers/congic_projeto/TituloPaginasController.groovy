@@ -102,9 +102,4 @@ class TituloPaginasController {
             redirect(action: "show", id: id)
         }
     }
-	
-	def tituloPaginas() {
-		def tituloPaginas = TituloPaginas.get(params.id)
-		render view:'artigos' , model: [tituloPaginas:tituloPaginas]
-		}
 }

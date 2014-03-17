@@ -5,12 +5,14 @@ class Tematicas {
 	String descricao
 
 	static belongsTo = [area: Area]
-	static hasMany = [area: Area, subArea: SubArea]
+	static hasMany = [area: Area]
 	
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return this.descricao;
+		return this.descricao
+		return this.area
+		return this.subarea;
 	}
 	
     static constraints = {

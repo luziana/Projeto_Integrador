@@ -55,13 +55,10 @@
     
     
      <!-- Titulo da Página -->
-    <g:if test="!tituloPaginas">
-    	<h2>Titulos não recuperados</h2>
-    </g:if>
-    <g:else>
+  
     <div class="container">
             <div class="row">
-                <g:each in="${tituloPaginas?}" var="tituloPaginas">
+                <g:each in="${tituloPaginas?}">
                 <div class="col-lg-12">
                 <h1 class="page-header">${it.tituloArtigos} 
                     <small>${it.subtituloArigos}</small>
@@ -74,7 +71,7 @@
                 </div>
                 </g:each>
             </div>
-            </g:else>
+           
              <!-- Lado direito Informações -->
             
             <div class="row">

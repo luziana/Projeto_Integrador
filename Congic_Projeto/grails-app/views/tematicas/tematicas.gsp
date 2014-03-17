@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@page import="java.util.ArrayList.SubList"%>
 <html>
 	<head>
 		<meta name="layout" content="main"/>
@@ -54,23 +55,24 @@
     </div>
     
     <!-- Titulo da Página -->
-       
-   <div class="container">
+     
+      <div class="container">
             <div class="row">
-                
-                <div class="col-lg-12">
                 <g:each in="${tituloPaginas?}">
+                <div class="col-lg-12">
                 <h1 class="page-header">${it.tituloAreasTematicas} 
                     <small>${it.subtituloAreasTematicas}</small>
                 </h1>
-                <ol class="breadcrumb"></div>
-                    <li><a href="${createLink(controller:'home', action:'home')}">Início</a>
+                <ol class="breadcrumb">
+                     <li><a href="${createLink(controller:'home', action:'home')}">Início</a>
                     </li>
-                    <li class="active">Áreas Temáticas</li>
+                     <li class="active">Áreas Temáticas</li>
                 </ol>
                 </div>
-                </g:each>
+                 </g:each>
             </div>
+       
+   
             
             <!-- Lado direito Informações -->
             
@@ -80,16 +82,17 @@
 
             <div class="col-lg-8">
             
-               <g:each in="${tematicas?}">
-            		
-                <div id="tematicas" class="col-lg-6 col-md-6 col-sm-6">
-                	<p>${it.descricao}</p>
-                    <h4><p>${it.area}</p></h4>
+             <g:each in="${tematicas?}">
+            		<br/><p>${it.descricao}</p><br/><br/>
+                    <h4><p>${it.area?.nome}</p></h4>
                     <ul>
-						  <li><p>${it.subArea}</p></li>
+						   <li><p>${it.area?.subArea}</p></li>
                     </ul>
-                </div>
-               </g:each>
+                     
+                    
+            </g:each>
+       
+			
                 
             </div>
             

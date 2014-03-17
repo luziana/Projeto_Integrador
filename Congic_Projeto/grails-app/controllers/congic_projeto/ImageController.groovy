@@ -2,6 +2,13 @@ package congic_projeto
 
 import org.springframework.dao.DataIntegrityViolationException
 
+import org.springframework.web.multipart.MultipartHttpServletRequest;
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
+
+import grails.plugin.springsecurity.annotation.Secured
+
+@Secured(['ROLE_ADMIN'])
+
 class ImageController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -99,4 +106,18 @@ class ImageController {
             redirect(action: "show", id: id)
         }
     }
+	
+	def imagens = {
+			def imagens = Image.get(params.id)
+			response.outputStream << imagens.arquivo // write the image to the outputstream
+			response.outputStream.flush()
+	}
+	
+	def showImage(Long id){
+		 def image = Image.get( params.id )
+		 byte[] photo = image.arquivo
+		 response.outputStream << photo
+		 [image:image]
+	}
+	
 }
