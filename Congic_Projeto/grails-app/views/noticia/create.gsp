@@ -1,3 +1,4 @@
+<%@ page import="congic_projeto.Noticia" %>
 
 		<g:set var="entityName" value="${message(code: 'noticia.label', default: 'Noticia')}" />
 		<div class="row">
@@ -32,6 +33,8 @@
 					</fieldset>
 				</g:form>
 			</div>
+		</div>
+		</div>
 		</div>
 	</body>
 </html>

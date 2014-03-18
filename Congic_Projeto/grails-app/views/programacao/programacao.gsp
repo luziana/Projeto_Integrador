@@ -7,17 +7,9 @@
 <body>
 
 	<div class="menu">
-<<<<<<< HEAD
-
-			<g:render template="/home/menu" model="[menu: menu]" />
-
-			<g:render template="/home/menu" model="[menu: menu]"/>
-
+				<g:render template="/home/menu" model="[menu: menu]"/>
 	</div>
-=======
-				<g:render template="/home/menu" model="[menu: menu]" />
-			</div>
->>>>>>> 1a90062109061e0095c931ce1c2ed177d6d2135b
+
 	
 	 <!-- Carrossel Imagens-->
 
