@@ -36,7 +36,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: minicursoInstance, field: 'evento', 'error')} required">
 	<label for="evento">
-		<g:message code="minicurso.evento.label" default="Evento" />
+		<g:message code="minicurso.evento.label" default="Data de Realização" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:select id="evento" name="evento.id" from="${congic_projeto.Evento.list()}" optionKey="id" required="" value="${minicursoInstance?.evento?.id}" class="many-to-one"/>

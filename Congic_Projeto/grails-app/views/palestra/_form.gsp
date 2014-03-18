@@ -36,10 +36,10 @@
 
 <div class="fieldcontain ${hasErrors(bean: palestraInstance, field: 'evento', 'error')} required">
 	<label for="evento">
-		<g:message code="palestra.evento.label" default="Evento" />
+		<g:message code="palestra.evento.label" default="Data de Realização" />
 		<span class="required-indicator">*</span>
 	</label>
-	<%--${myDateInstance.date.format('yyyy-MM-dd HH:mm')}--%><%--
+	<%--${eventoInstance.date.format('yyyy-MM-dd HH:mm')}--%><%--
 	<g:select id="evento" name="evento.id" from="${congic_projeto.Evento.list()}" optionKey="id" required="" value="${palestraInstance?.evento?.data.format('yyyy-MM-dd HH:mm')}" class="many-to-one"/>
 	--%><g:select id="evento" name="evento.id" from="${congic_projeto.Evento.list()}" optionKey="id" required="" value="${palestraInstance?.evento?.id}" class="many-to-one"/>
 </div>

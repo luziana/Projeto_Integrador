@@ -7,7 +7,7 @@ class Evento {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return this.data;
+		return this.data.format("dd/MM/yyyy")
 	}
 	
     static constraints = {
