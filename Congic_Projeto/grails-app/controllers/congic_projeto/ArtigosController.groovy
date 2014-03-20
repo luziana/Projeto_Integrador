@@ -1,7 +1,6 @@
 package congic_projeto
 
 import org.springframework.dao.DataIntegrityViolationException
-
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
@@ -90,12 +89,19 @@ class ArtigosController {
 	}
 
 	
-	def download = {
-			def documento = Artigos.get(params.id)
+	def download (Long id){
+			def documento = Artigos.get(id)
 			byte[] file = documento.arquivo
 			response.outputStream << file
 	}
 	
+	
+	def showImage(Long id){
+		 def image = Image.get( params.id )
+		 byte[] photo = image.arquivo
+		 response.outputStream << photo
+		 [image:image]
+	}
 	def artigos(){
 		def artigos = Artigos.list()
 		def tituloPaginas = TituloPaginas.list()

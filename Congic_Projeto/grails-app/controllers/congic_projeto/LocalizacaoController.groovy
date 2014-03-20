@@ -1,14 +1,17 @@
 package congic_projeto
+import grails.converters.*
 
 import org.springframework.dao.DataIntegrityViolationException
 
 import grails.plugin.springsecurity.annotation.Secured
 
 @Secured(['ROLE_ADMIN'])
+
 class LocalizacaoController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
+  
     def list(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         [localizacaoInstanceList: Localizacao.list(params), localizacaoInstanceTotal: Localizacao.count()]
@@ -98,12 +101,18 @@ class LocalizacaoController {
             redirect(action: "show", id: id)
         }
     }
-	
-	def index(){
-		def localizacao = Localizacao.list()
-		def tituloPaginas = TituloPaginas.list()
-		def menu = Menu.get(1)
-		render view: 'index', model: [tituloPaginas:tituloPaginas, localizacao : localizacao, menu: menu]
+	def listByLocalizacao (Long id){
+		
+		def results = Localizacao.get(id)
+		
+		render (results as JSON)
 	}
-}	
-
+	
+	def index(Long id) {
+		def localizacoes = Localizacao.get(id)
+		def menu = Menu.get(1)
+		render(view: "index", model: [localiacoes: localizacoes])
+		
+		}
+	
+}

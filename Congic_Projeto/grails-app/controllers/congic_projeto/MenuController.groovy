@@ -103,8 +103,9 @@ class MenuController {
         }
     }
 	
-	def menu() {
-		
-		render (template:"home/menu", model: [menu: new Menu(link: '#', nome_link: 'Pau dos Ferros')])
+	
+	def menu(Long id) {
+		def menu = Menu.get(id)
+		render (template:"home/menu", model: [menu:menu])
 	}
 }

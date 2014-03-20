@@ -98,6 +98,42 @@
 							</ul>
 					</li>
 					
+					
+				<center><h4><small><hr>Cadastrar MiniCursos e Palestras<hr></small></h4></center>
+					
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Data de Realização<span class="caret"></span>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="#" onClick="carregarPagina('<g:createLink controller='evento' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
+								<li><a href="#" onClick="carregarPagina('<g:createLink controller='evento' action='list' />')"> Listar</a></li>
+								<li><a href="#" onClick="carregarPagina('<g:createLink controller='evento' action='edit' />')"> Editar</a></li>
+							</ul>
+					</li>
+					
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Minicurso<span class="caret"></span>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="#" onClick="carregarPagina('<g:createLink controller='minicurso' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
+								<li><a href="#" onClick="carregarPagina('<g:createLink controller='minicurso' action='list' />')"> Listar</a></li>
+								<li><a href="#" onClick="carregarPagina('<g:createLink controller='minicurso' action='edit' />')"> Editar</a></li>
+							</ul>
+					</li>
+					
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Palestra<span class="caret"></span>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="#" onClick="carregarPagina('<g:createLink controller='palestra' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
+								<li><a href="#" onClick="carregarPagina('<g:createLink controller='palestra' action='list' />')"> Listar</a></li>
+								<li><a href="#" onClick="carregarPagina('<g:createLink controller='palestra' action='edit' />')"> Editar</a></li>
+							</ul>
+					</li>
+					
+					
+					
+					
 				<center><h4><small><hr>Programação do Evento<hr></small></h4></center>
 					
 					<li class="dropdown">
@@ -195,6 +231,7 @@
                 <h1 class="page-header">Administração,
                     <small>Criar, editar e remover dados!</small>
                 </h1>
+
                 
                 <div class="content" id="content">
             </div>

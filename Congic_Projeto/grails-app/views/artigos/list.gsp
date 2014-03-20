@@ -34,7 +34,7 @@
 				<g:each in="${artigosInstanceList}" status="i" var="artigosInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${artigosInstance.id}">${fieldValue(bean: artigosInstance, field: "arquivo")}</g:link></td>
+						<td><g:link action="show" id="${artigosInstance.id}">${message(code: 'artigos.arquivo.label', default: 'Arquivo')}</g:link></td>
 					
 						<td>${fieldValue(bean: artigosInstance, field: "descricao")}</td>
 					

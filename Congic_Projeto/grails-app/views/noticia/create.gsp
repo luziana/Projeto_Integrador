@@ -1,12 +1,10 @@
+
 <%@ page import="congic_projeto.Noticia"%>
 
-
-
-		<g:set var="entityName"
-			value="${message(code: 'noticia.label', default: 'Noticia')}" />
+<g:set var="entityName"
+	value="${message(code: 'noticia.label', default: 'Noticia')}" />
 <div class="row">
 	<div class="col-lg-12">
-
 
 		<div class="row">
 			<div class="panel-default">
@@ -43,6 +41,7 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
 </div>
 </body>
