@@ -2,17 +2,17 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: areaInstance, field: 'nome', 'error')} ">
+<div class="form-group fieldcontain ${hasErrors(bean: areaInstance, field: 'nome', 'error')} ">
 	<label for="nome">
-		<g:message code="area.nome.label" default="Nome" />
+		<g:message code="area.nome.label" default="Nome: " />
 		
 	</label>
-	<g:textField name="nome" value="${areaInstance?.nome}"/>
+	<g:textField class="form-control" name="nome" value="${areaInstance?.nome}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: areaInstance, field: 'subArea', 'error')} ">
+<div class="form-group fieldcontain ${hasErrors(bean: areaInstance, field: 'subArea', 'error')} ">
 	<label for="subArea">
-		<g:message code="area.subArea.label" default="Sub Area" />
+		<g:message code="area.subArea.label" default="Sub Area: " />
 		
 	</label>
 	

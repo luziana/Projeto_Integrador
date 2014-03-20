@@ -1,132 +1,130 @@
 <%@ page import="congic_projeto.TituloPaginas" %>
 
-
-
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'tituloInicio', 'error')} required">
+<div  class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'tituloInicio', 'error')} required">
 	<label for="tituloInicio">
-		<g:message code="tituloPaginas.tituloInicio.label" default="Titulo Inicio" />
+		<g:message code="tituloPaginas.tituloInicio.label" default="Título da Página Principal: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="tituloInicio" required="" value="${tituloPaginasInstance?.tituloInicio}"/>
+	<g:textField class="form-control" name="tituloInicio" required="" value="${tituloPaginasInstance?.tituloInicio}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloInicio', 'error')} required">
+<div  class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloInicio', 'error')} required">
 	<label for="subtituloInicio">
-		<g:message code="tituloPaginas.subtituloInicio.label" default="Subtitulo Inicio" />
+		<g:message code="tituloPaginas.subtituloInicio.label" default="Subtítulo da Página Principal: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="subtituloInicio" required="" value="${tituloPaginasInstance?.subtituloInicio}"/>
+	<g:textField class="form-control" name="subtituloInicio" required="" value="${tituloPaginasInstance?.subtituloInicio}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'titulApresentacao', 'error')} required">
+<div  class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'titulApresentacao', 'error')} required">
 	<label for="titulApresentacao">
-		<g:message code="tituloPaginas.titulApresentacao.label" default="Titul Apresentacao" />
+		<g:message code="tituloPaginas.titulApresentacao.label" default="Título da Página Apresentação: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="titulApresentacao" required="" value="${tituloPaginasInstance?.titulApresentacao}"/>
+	<g:textField class="form-control" name="titulApresentacao" required="" value="${tituloPaginasInstance?.titulApresentacao}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloApresentacao', 'error')} required">
+<div  class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloApresentacao', 'error')} required">
 	<label for="subtituloApresentacao">
-		<g:message code="tituloPaginas.subtituloApresentacao.label" default="Subtitulo Apresentacao" />
+		<g:message code="tituloPaginas.subtituloApresentacao.label" default="Subtítulo da Página Apresentação: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="subtituloApresentacao" required="" value="${tituloPaginasInstance?.subtituloApresentacao}"/>
+	<g:textField class="form-control" name="subtituloApresentacao" required="" value="${tituloPaginasInstance?.subtituloApresentacao}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'tituloOrganizacao', 'error')} required">
+<div  class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'tituloOrganizacao', 'error')} required">
 	<label for="tituloOrganizacao">
-		<g:message code="tituloPaginas.tituloOrganizacao.label" default="Titulo Organizacao" />
+		<g:message code="tituloPaginas.tituloOrganizacao.label" default="Título da Página Organização: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="tituloOrganizacao" required="" value="${tituloPaginasInstance?.tituloOrganizacao}"/>
+	<g:textField class="form-control" name="tituloOrganizacao" required="" value="${tituloPaginasInstance?.tituloOrganizacao}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloOrganizacao', 'error')} required">
+<div  class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloOrganizacao', 'error')} required">
 	<label for="subtituloOrganizacao">
-		<g:message code="tituloPaginas.subtituloOrganizacao.label" default="Subtitulo Organizacao" />
+		<g:message code="tituloPaginas.subtituloOrganizacao.label" default="Subtítulo da Página Organização: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="subtituloOrganizacao" required="" value="${tituloPaginasInstance?.subtituloOrganizacao}"/>
+	<g:textField class="form-control" name="subtituloOrganizacao" required="" value="${tituloPaginasInstance?.subtituloOrganizacao}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'tituloLocalizacao', 'error')} required">
+<div  class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'tituloLocalizacao', 'error')} required">
 	<label for="tituloLocalizacao">
-		<g:message code="tituloPaginas.tituloLocalizacao.label" default="Titulo Localizacao" />
+		<g:message code="tituloPaginas.tituloLocalizacao.label" default="Título da Página Localização: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="tituloLocalizacao" required="" value="${tituloPaginasInstance?.tituloLocalizacao}"/>
+	<g:textField class="form-control" name="tituloLocalizacao" required="" value="${tituloPaginasInstance?.tituloLocalizacao}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloLocalizacao', 'error')} required">
+<div  class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloLocalizacao', 'error')} required">
 	<label for="subtituloLocalizacao">
-		<g:message code="tituloPaginas.subtituloLocalizacao.label" default="Subtitulo Localizacao" />
+		<g:message code="tituloPaginas.subtituloLocalizacao.label" default="Subtítulo da Página Localização: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="subtituloLocalizacao" required="" value="${tituloPaginasInstance?.subtituloLocalizacao}"/>
+	<g:textField class="form-control" name="subtituloLocalizacao" required="" value="${tituloPaginasInstance?.subtituloLocalizacao}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'tituloHospedagem', 'error')} required">
+<div c class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'tituloHospedagem', 'error')} required">
 	<label for="tituloHospedagem">
-		<g:message code="tituloPaginas.tituloHospedagem.label" default="Titulo Hospedagem" />
+		<g:message code="tituloPaginas.tituloHospedagem.label" default="Título da Página Hospedagem: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="tituloHospedagem" required="" value="${tituloPaginasInstance?.tituloHospedagem}"/>
+	<g:textField class="form-control" name="tituloHospedagem" required="" value="${tituloPaginasInstance?.tituloHospedagem}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloHospedagem', 'error')} required">
+<div  class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloHospedagem', 'error')} required">
 	<label for="subtituloHospedagem">
-		<g:message code="tituloPaginas.subtituloHospedagem.label" default="Subtitulo Hospedagem" />
+		<g:message code="tituloPaginas.subtituloHospedagem.label" default="Subtítulo da Página Hospedagem: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="subtituloHospedagem" required="" value="${tituloPaginasInstance?.subtituloHospedagem}"/>
+	<g:textField class="form-control" name="subtituloHospedagem" required="" value="${tituloPaginasInstance?.subtituloHospedagem}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'tituloAreasTematicas', 'error')} required">
+<div  class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'tituloAreasTematicas', 'error')} required">
 	<label for="tituloAreasTematicas">
-		<g:message code="tituloPaginas.tituloAreasTematicas.label" default="Titulo Areas Tematicas" />
+		<g:message code="tituloPaginas.tituloAreasTematicas.label" default="Título da Página Áreas Temáticas: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="tituloAreasTematicas" required="" value="${tituloPaginasInstance?.tituloAreasTematicas}"/>
+	<g:textField class="form-control" name="tituloAreasTematicas" required="" value="${tituloPaginasInstance?.tituloAreasTematicas}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloAreasTematicas', 'error')} required">
+<div  class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloAreasTematicas', 'error')} required">
 	<label for="subtituloAreasTematicas">
-		<g:message code="tituloPaginas.subtituloAreasTematicas.label" default="Subtitulo Areas Tematicas" />
+		<g:message code="tituloPaginas.subtituloAreasTematicas.label" default="Subtítulo da Página Áreas Tematicas: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="subtituloAreasTematicas" required="" value="${tituloPaginasInstance?.subtituloAreasTematicas}"/>
+	<g:textField class="form-control" name="subtituloAreasTematicas" required="" value="${tituloPaginasInstance?.subtituloAreasTematicas}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'tituloProgramacao', 'error')} required">
+<div  class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'tituloProgramacao', 'error')} required">
 	<label for="tituloProgramacao">
-		<g:message code="tituloPaginas.tituloProgramacao.label" default="Titulo Programacao" />
+		<g:message code="tituloPaginas.tituloProgramacao.label" default="Título da Página Programação: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="tituloProgramacao" required="" value="${tituloPaginasInstance?.tituloProgramacao}"/>
+	<g:textField class="form-control" name="tituloProgramacao" required="" value="${tituloPaginasInstance?.tituloProgramacao}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloProgramacao', 'error')} required">
+<div  class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloProgramacao', 'error')} required">
 	<label for="subtituloProgramacao">
-		<g:message code="tituloPaginas.subtituloProgramacao.label" default="Subtitulo Programacao" />
+		<g:message code="tituloPaginas.subtituloProgramacao.label" default="Subtítulo da Página Programação: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="subtituloProgramacao" required="" value="${tituloPaginasInstance?.subtituloProgramacao}"/>
+	<g:textField class="form-control" name="subtituloProgramacao" required="" value="${tituloPaginasInstance?.subtituloProgramacao}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'tituloArtigos', 'error')} required">
+<div  class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'tituloArtigos', 'error')} required">
 	<label for="tituloArtigos">
-		<g:message code="tituloPaginas.tituloArtigos.label" default="Titulo Artigos" />
+		<g:message code="tituloPaginas.tituloArtigos.label" default="Título da Página Artigos: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="tituloArtigos" required="" value="${tituloPaginasInstance?.tituloArtigos}"/>
+	<g:textField class="form-control" name="tituloArtigos" required="" value="${tituloPaginasInstance?.tituloArtigos}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloArigos', 'error')} required">
+<div  class="form-group fieldcontain ${hasErrors(bean: tituloPaginasInstance, field: 'subtituloArigos', 'error')} required">
 	<label for="subtituloArigos">
-		<g:message code="tituloPaginas.subtituloArigos.label" default="Subtitulo Arigos" />
+		<g:message code="tituloPaginas.subtituloArigos.label" default="Subtítulo da Página Artigos: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="subtituloArigos" required="" value="${tituloPaginasInstance?.subtituloArigos}"/>
+	<g:textField class="form-control" name="subtituloArigos" required="" value="${tituloPaginasInstance?.subtituloArigos}"/>
 </div>
 

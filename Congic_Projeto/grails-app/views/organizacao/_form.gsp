@@ -2,17 +2,17 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: organizacaoInstance, field: 'cidade', 'error')} ">
+<div class="form-group fieldcontain ${hasErrors(bean: organizacaoInstance, field: 'cidade', 'error')} ">
 	<label for="cidade">
-		<g:message code="organizacao.cidade.label" default="Cidade" />
+		<g:message code="organizacao.cidade.label" default="Cidade: " />
 		
 	</label>
-	<g:textField name="cidade" value="${organizacaoInstance?.cidade}"/>
+	<g:textField class="form-control" name="cidade" value="${organizacaoInstance?.cidade}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: organizacaoInstance, field: 'coordenacao', 'error')} ">
+<div class="form-group fieldcontain ${hasErrors(bean: organizacaoInstance, field: 'coordenacao', 'error')} ">
 	<label for="coordenacao">
-		<g:message code="organizacao.coordenacao.label" default="Coordenacao" />
+		<g:message code="organizacao.coordenacao.label" default="Coordenacao: " />
 		
 	</label>
 	

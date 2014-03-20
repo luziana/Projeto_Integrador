@@ -2,15 +2,15 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: subAreaInstance, field: 'nome', 'error')} ">
+<div class="form-group fieldcontain ${hasErrors(bean: subAreaInstance, field: 'nome', 'error')} ">
 	<label for="nome">
 		<g:message code="subArea.nome.label" default="Nome" />
 		
 	</label>
-	<g:textField name="nome" value="${subAreaInstance?.nome}"/>
+	<g:textField class="form-control" name="nome" value="${subAreaInstance?.nome}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: subAreaInstance, field: 'area', 'error')} required">
+<div class="form-group fieldcontain ${hasErrors(bean: subAreaInstance, field: 'area', 'error')} required">
 	<label for="area">
 		<g:message code="subArea.area.label" default="Area" />
 		<span class="required-indicator">*</span>
