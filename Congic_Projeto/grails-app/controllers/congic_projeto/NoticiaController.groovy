@@ -1,10 +1,9 @@
 package congic_projeto
-
+import grails.converters.*
 import org.springframework.dao.DataIntegrityViolationException
 import grails.plugin.springsecurity.annotation.Secured
 
 @Secured(['ROLE_ADMIN'])
-
 class NoticiaController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -110,44 +109,27 @@ class NoticiaController {
 		
 	}
 	
-
-/*	def busca = {
-		def noticias = Noticia.findAllByTitulo("%${params.titulo}%")
-	  
-		render(contentType: "text/xml") {
-		   exibir_noticia_expandida() {
-			  noticias.each {
-				 noticia -> exibir_noticia_expandida() {
-					id(noticia.id)
-					titulo(noticia.titulo)
-					descricao(noticia.descricao)
-				 }
-			  }
-		   }
-		}
+	/*def busca = {
+	 def criteria = Noticia.createCriteria()
+	 def results = criteria.list {
+			 ilike('titulo',"%"+params.titulo+"%")
+	 }
+	 render view:'busca',model:[results:results]
+ 
 	 }*/
+ def busca = {
+	 
+	 def results = Noticia.findAllByTituloIlike("%"+params.titulo+"%")
+	 
+	 render (results as JSON)
+	 
+ }
+ 
+	
+	
 	def home(Long id) {
 		def noticias = Noticia.get(id)
 		render(view: "home", model: [noticias: noticias])
 		}
 
-	//def busca = {
-	//def noticias = Noticia.findAllByTituloIlike("%${params.titulo}%")
-  
-	//render(contentType: "text/xml") {
-	  // results() {
-		//  noticias.each {
-			// noticia -> result() {
-				//id(noticia.id)
-				//titulo(noticia.titulo)
-			// }
-		 // }
-	  // }
-//	}
-// }
-
-def inicio() {
-	def noticias = Noticia.list()
-	[noticias: noticias]
-	}
 }

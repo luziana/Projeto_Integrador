@@ -12,7 +12,7 @@ class Tematicas {
 		// TODO Auto-generated method stub
 		return this.descricao
 		return this.area
-		return this.subarea;
+	
 	}
 	
     static constraints = {

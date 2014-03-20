@@ -10,7 +10,7 @@ import grails.plugin.springsecurity.annotation.Secured
 @Secured(['ROLE_ADMIN'])
 class HomeController {
 	
-    def home() {
+    def home(Long id) {
 		
 		def noticias = Noticia.list()
 		def tituloPaginas = TituloPaginas.list()

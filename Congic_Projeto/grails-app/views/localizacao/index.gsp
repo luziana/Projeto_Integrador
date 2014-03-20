@@ -6,12 +6,10 @@
         <title>Congresso de Iniciação Científica do IFRN > Localização</title>  
                 
          <resource:include components="map" key="AIzaSyBS0q7wbuQAkt36ZfITUGAvULWEkgQhFi0"/>    
-                
+         
      </head>
      <body>
-     	<div class="menu">
-				<g:render template="/home/menu" model="[menu: menu]" />
-			</div>
+     	
 		
 		 <!-- Carrossel Imagens-->
 
@@ -76,18 +74,15 @@
             
             <!-- Lado direito Informações -->
             
-            <div class="row">
-
-            <div class="col-lg-8">
-            
-                 <g:each in="${localizacao?}">
-            		<div id="localizacao">		
+          	 <div class="col-lg-8">
+               <g:each in="${localizacoes?}">
+					<div id="localizacao" >		
 						<p>${it.descricao}</p>
-						<hr/>
+							
 					</div>
-               	</g:each>
-               	
-             </div>
+				</g:each>
+           </div>
+           
                	
                	<!-- Mapa Localização -->
                	
@@ -99,7 +94,7 @@
 					</div>
 				</center>
 				
-				
+			
 				<!-- Ir para outras páginas -->
                 
                 <ul class="pager">
