@@ -48,7 +48,8 @@
 				</g:if>
 
 			</ol>
-			<g:form>
+			<g:form onsubmit="Form(this);return false"
+				url="[resource:hospedagemInstance, action:'delete']">
 				<fieldset class="buttons">
 					<g:hiddenField name="id" value="${hospedagemInstance?.id}" />
 					<a href="#"

@@ -38,9 +38,11 @@
 								var="hospedagemInstance">
 								<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 
-									<td><g:link action="show" id="${hospedagemInstance.id}">
+									<td><a href="#"
+										onclick="carregarPagina('<g:createLink action="show" id="${hospedagemInstance.id}" />')">
 											${fieldValue(bean: hospedagemInstance, field: "nome_hospedagem")}
-										</g:link></td>
+									</a></td>
+
 
 									<td>
 										${fieldValue(bean: hospedagemInstance, field: "endereco")}

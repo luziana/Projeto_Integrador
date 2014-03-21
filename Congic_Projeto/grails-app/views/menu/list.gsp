@@ -35,9 +35,11 @@
 							<g:each in="${menuInstanceList}" status="i" var="menuInstance">
 								<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 
-									<td><g:link action="show" id="${menuInstance.id}">
+									<td><a href="#"
+										onclick="carregarPagina('<g:createLink action="show" id="${menuInstance.id}" />')">
 											${fieldValue(bean: menuInstance, field: "link")}
-										</g:link></td>
+									</a></td>
+
 
 									<td>
 										${fieldValue(bean: menuInstance, field: "nome_link")}

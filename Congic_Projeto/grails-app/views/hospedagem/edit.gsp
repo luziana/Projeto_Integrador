@@ -21,7 +21,7 @@
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
-			<g:form method="post" >
+			<g:form onsubmit="Form(this);return false" url="[resource:hospedagemInstance, action:'update']" >
 				<g:hiddenField name="id" value="${hospedagemInstance?.id}" />
 				<g:hiddenField name="version" value="${hospedagemInstance?.version}" />
 				<fieldset class="form">

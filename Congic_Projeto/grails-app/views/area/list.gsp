@@ -30,7 +30,10 @@
 				<g:each in="${areaInstanceList}" status="i" var="areaInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${areaInstance.id}">${fieldValue(bean: areaInstance, field: "nome")}</g:link></td>
+						<td><a href="#"
+										onclick="carregarPagina('<g:createLink action="show" id="${areaInstance.id}" />')">
+											${fieldValue(bean: areaInstance, field: "nome")}
+									</a></td>
 					
 					</tr>
 				</g:each>

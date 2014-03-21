@@ -10,3 +10,4 @@
 	<g:textField name="nomeCidade" required="" value="${cidadeInstance?.nomeCidade}"/>
 </div>
 
+	

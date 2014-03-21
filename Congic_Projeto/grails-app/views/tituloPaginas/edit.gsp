@@ -1,20 +1,18 @@
 <%@ page import="congic_projeto.TituloPaginas" %>
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta name="layout" content="main">
+
 		<g:set var="entityName" value="${message(code: 'tituloPaginas.label', default: 'TituloPaginas')}" />
-		<title><g:message code="default.edit.label" args="[entityName]" /></title>
-	</head>
-	<body>
-		<a href="#edit-tituloPaginas" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
-				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
-			</ul>
+		<div class="row">
+		
 		</div>
+			<div class="col-lg-12">
+			<div class="panel-default">
+				<div class="panel-heading">
+					<g:message code="default.edit.label" args="[entityName]" />
+				</div>
+				<div class="panel-body">
+					<g:if test="${flash.message}">
+			<div class="message" role="status">${flash.message}</div>
+			</g:if>
 		<div id="edit-tituloPaginas" class="content scaffold-edit" role="main">
 			<h1><g:message code="default.edit.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
@@ -27,7 +25,8 @@
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
-			<g:form method="post" >
+		<g:form onsubmit="Form(this);return false" url="[resource:tituloPaginasInstance, action:'update']" >
+
 				<g:hiddenField name="id" value="${tituloPaginasInstance?.id}" />
 				<g:hiddenField name="version" value="${tituloPaginasInstance?.version}" />
 				<fieldset class="form">
