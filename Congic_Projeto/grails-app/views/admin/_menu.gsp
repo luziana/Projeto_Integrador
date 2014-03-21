@@ -208,7 +208,8 @@
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Link Menu<span class="caret"></span>
 						</a>
 							<ul class="dropdown-menu">
-								<li><a href="#" onClick="carregarPagina('<g:createLink controller='menu' action='edit' />')"><span class="glyphicon glyphicon-plus"></span> Editar</a></li>
+								<li><a href="#" onClick="carregarPagina('<g:createLink controller='menu' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
+								<li><a href="#" onClick="carregarPagina('<g:createLink controller='menu' action='edit' />')"> Editar</a></li>
 								<li><a href="#" onClick="carregarPagina('<g:createLink controller='menu' action='list' />')"> Listar</a></li>
 							</ul>
 					</li>

@@ -2,18 +2,25 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: tematicasInstance, field: 'descricao', 'error')} ">
+<div class="form-group fieldcontain  ${hasErrors(bean: tematicasInstance, field: 'descricao', 'error')} ">
 	<label for="descricao">
-		<g:message code="tematicas.descricao.label" default="Descricao" />
+		<g:message code="tematicas.descricao.label" default="Descrição: " />
 		
 	</label>
-	<g:textField name="descricao" value="${tematicasInstance?.descricao}"/>
+	<g:textField class="form-control" name="descricao" value="${tematicasInstance?.descricao}"/>
 </div>
 
+<<<<<<< HEAD
 <div class="fieldcontain ${hasErrors(bean: tematicasInstance, field: 'area', 'error')} ">
 	<label for="area">
 		<g:message code="tematicas.area.label" default="Area" />
 		
+=======
+<div class="form-group fieldcontain  ${hasErrors(bean: tematicasInstance, field: 'area', 'error')} required">
+	<label for="area">
+		<g:message code="tematicas.area.label" default="Área: " />
+		<span class="required-indicator">*</span>
+>>>>>>> 385628d7e72dada11294e09824de0c9a4bda3b60
 	</label>
 	<g:select name="area" from="${congic_projeto.Area.list()}" multiple="multiple" optionKey="id" size="5" value="${tematicasInstance?.area*.id}" class="many-to-many"/>
 </div>
