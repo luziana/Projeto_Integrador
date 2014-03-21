@@ -8,6 +8,7 @@ import congic_projeto.Coordenacao;
 
 class Organizacao {
 	String cidade
+	
 	static hasMany = [coordenacao: Coordenacao] 
 	
 	@Override

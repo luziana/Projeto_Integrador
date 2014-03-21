@@ -16,4 +16,6 @@ class SubArea {
 		nome nullable:false
 		
 	}
+	
+	
 }

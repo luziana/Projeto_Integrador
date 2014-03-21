@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<%@page import="java.util.ArrayList.SubList"%>
+
 <html>
 	<head>
 		<meta name="layout" content="main"/>
@@ -11,7 +11,7 @@
     	<div class="menu">
 				<g:render template="/home/menu" model="[menu: menu]" />
 			</div>
-		
+
 		 <!-- Carrossel Imagens-->
 
 			<div id="myCarousel" class="carousel slide">
@@ -83,16 +83,21 @@
             <div class="col-lg-8">
             
              <g:each in="${tematicas?}">
-            		<br/><p>${it.descricao}</p><br/><br/>
-                    <h4><p>${it.area?.nome}</p></h4>
-                    <ul>
-						   <li><p>${it.area?.subArea}</p></li>
-                    </ul>
-                     
-                    
+           		<br/><p>${it.descricao}</p><br/>
+            	
+           		<g:each in="${tematicas.area?}" var="area">
+                   	<h4><p>${area.nome[0]}</p></h4>
+                    <g:each in="${area.subArea?}" var="subarea">
+	                    <ul>
+	                    	
+						   <li><p>${subarea.nome[0]}</p></li>
+	                    </ul>
+                     </g:each> 
+                   </g:each>
+                       
             </g:each>
        
-			
+
                 
             </div>
             
@@ -169,12 +174,12 @@
       
     
      <%--
-		
+
     
     	<div id="tematicas">
 
 			</br></br></br><center><h2>Áreas Temáticas</h2></center></br></br></br>
-		
+
 			<g:each in="${tematicas?}">
 
 			<p>Descrição: ${it.descricao}</p>
@@ -182,13 +187,13 @@
 			<p>${it.subArea}</p>
 
 			</g:each>
-	
+
 		</div>
-		
-		
-		
+
+
+
 		--%><!-- /.container -->
-	
+
 	<div class="container">
 
         <hr>

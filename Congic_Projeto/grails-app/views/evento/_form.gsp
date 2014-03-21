@@ -1,18 +1,18 @@
 <%@ page import="congic_projeto.Evento" %>
 
+<resource:dateChooser />
 
-
-<div class="fieldcontain ${hasErrors(bean: eventoInstance, field: 'data', 'error')} required">
+<div class="form-group fieldcontain  ${hasErrors(bean: eventoInstance, field: 'data', 'error')} required">
 	<label for="data">
-		<g:message code="evento.data.label" default="Data" />
+		<g:message code="evento.data.label" default="Data: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:datePicker name="data" precision="day"  value="${eventoInstance?.data}"  />
+	<richui:dateChooser class="form-control"  name="data" precision="day"  value="${eventoInstance?.data}"  />
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: eventoInstance, field: 'minicurso', 'error')} ">
+<div class="form-group fieldcontain  ${hasErrors(bean: eventoInstance, field: 'minicurso', 'error')} ">
 	<label for="minicurso">
-		<g:message code="evento.minicurso.label" default="Minicurso" />
+		<g:message code="evento.minicurso.label" default="Minicurso :" />
 		
 	</label>
 	
@@ -27,9 +27,9 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: eventoInstance, field: 'palestra', 'error')} ">
+<div class="form-group fieldcontain ${hasErrors(bean: eventoInstance, field: 'palestra', 'error')} ">
 	<label for="palestra">
-		<g:message code="evento.palestra.label" default="Palestra" />
+		<g:message code="evento.palestra.label" default="Palestra: " />
 		
 	</label>
 	

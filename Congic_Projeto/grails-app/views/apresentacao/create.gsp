@@ -33,5 +33,7 @@
 				</g:form>
 			</div>
 		</div>
+		</div>
+		</div>
 	</body>
 </html>

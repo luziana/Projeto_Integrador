@@ -1,6 +1,7 @@
 package congic_projeto
 
 import org.springframework.dao.DataIntegrityViolationException
+
 import grails.plugin.springsecurity.annotation.Secured
 
 @Secured(['ROLE_ADMIN'])
@@ -103,12 +104,10 @@ class TematicasController {
         }
     }
 	
-	def tematicas(long id) {
+	def tematicas() {
 		def tematicas = Tematicas.list()
-		def area = Area.list()
-		def subarea = SubArea.list()
 		def tituloPaginas = TituloPaginas.list()
 		def menu = Menu.get(1)
-		render view: 'tematicas', model: [area:area, subarea:subarea, tituloPaginas:tituloPaginas, tematicas: tematicas, menu: menu]
+		render view: 'tematicas', model: [tituloPaginas:tituloPaginas, tematicas: tematicas, menu: menu]
 		}
 }

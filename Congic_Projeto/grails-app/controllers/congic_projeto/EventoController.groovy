@@ -1,7 +1,6 @@
 package congic_projeto
 
 import org.springframework.dao.DataIntegrityViolationException
-
 import grails.plugin.springsecurity.annotation.Secured
 
 @Secured(['ROLE_ADMIN'])
@@ -103,4 +102,13 @@ class EventoController {
             redirect(action: "show", id: id)
         }
     }
+	
+	def evento() {
+		def evento = Evento.list()
+		def palestra = Palestra.list()
+		def minicurso = Minicurso.list()
+		def tituloPaginas = TituloPaginas.list()
+		def menu = Menu.get(1)
+		render view: 'evento', model: [minicurso:minicurso, evento:evento, palestra:palestra, tituloPaginas:tituloPaginas, menu: menu]
+		}
 }

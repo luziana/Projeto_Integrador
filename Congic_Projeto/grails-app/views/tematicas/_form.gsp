@@ -1,20 +1,17 @@
 <%@ page import="congic_projeto.Tematicas" %>
 
-
-
-<div class="form-group fieldcontain  ${hasErrors(bean: tematicasInstance, field: 'descricao', 'error')} ">
+<div class="form-group fieldcontain ${hasErrors(bean: tematicasInstance, field: 'descricao', 'error')}  required">
 	<label for="descricao">
-		<g:message code="tematicas.descricao.label" default="Descrição: " />
+		<g:message code="tematicas.descricao.label" default="Descricao da Área Temática" />
 		
 	</label>
-	<g:textField class="form-control" name="descricao" value="${tematicasInstance?.descricao}"/>
+	<g:textArea class="form-control"  name="descricao" value="${tematicasInstance?.descricao}"/>
 </div>
 
-<div class="form-group fieldcontain  ${hasErrors(bean: tematicasInstance, field: 'area', 'error')} required">
+<div class="form-group fieldcontain ${hasErrors(bean: tematicasInstance, field: 'area', 'error')}  required">
 	<label for="area">
-		<g:message code="tematicas.area.label" default="Área: " />
-		<span class="required-indicator">*</span>
+		<g:message code="tematicas.area.label" default="Área:" />
 	</label>
-	<g:select id="area" name="area.id" from="${congic_projeto.Area.list()}" optionKey="id" required="" value="${tematicasInstance?.area?.id}" class="many-to-one"/>
+	<g:select class="form-control" name="area.id" from="${congic_projeto.Area.list()}" multiple="multiple" optionKey="id" size="5" value="${tematicasInstance?.area*.id}" class="many-to-many"/>
 </div>
 

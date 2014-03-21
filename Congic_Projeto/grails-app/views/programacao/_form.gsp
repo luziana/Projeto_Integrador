@@ -1,12 +1,13 @@
 <%@ page import="congic_projeto.Programacao" %>
 
+<resource:dateChooser />
 
 <div class="form-group fieldcontain ${hasErrors(bean: programacaoInstance, field: 'horario', 'error')} required">
 	<label for="horario">
 		<g:message code="programacao.horario.label" default="Horario" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:datePicker class="form-control" name="horario" precision="minute"  value="${programacaoInstance?.horario}"  />
+	<richui:dateChooser class="form-control" name="horario" precision="minute"  value="${programacaoInstance?.horario}"  />
 </div>
 
 <div class="form-group fieldcontain ${hasErrors(bean: programacaoInstance, field: 'categoria', 'error')} required">

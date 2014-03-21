@@ -5,8 +5,6 @@ class Minicurso {
 	String nome, hora, ministrante, descricao
 	static belongsTo = [evento: Evento]
 
-
-
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub

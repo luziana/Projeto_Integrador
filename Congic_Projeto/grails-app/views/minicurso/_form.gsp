@@ -1,44 +1,43 @@
 <%@ page import="congic_projeto.Minicurso" %>
 
 
-
-<div class="fieldcontain ${hasErrors(bean: minicursoInstance, field: 'nome', 'error')} ">
+<div class="form-group fieldcontain${hasErrors(bean: minicursoInstance, field: 'nome', 'error')} ">
 	<label for="nome">
-		<g:message code="minicurso.nome.label" default="Nome" />
+		<g:message code="minicurso.nome.label" default="Nome do Minicurso: " />
 		
 	</label>
-	<g:textField name="nome" maxlength="90" value="${minicursoInstance?.nome}"/>
+	<g:textField class="form-control" name="nome" maxlength="90" value="${minicursoInstance?.nome}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: minicursoInstance, field: 'hora', 'error')} ">
+<div class="form-group fieldcontain ${hasErrors(bean: minicursoInstance, field: 'hora', 'error')} ">
 	<label for="hora">
-		<g:message code="minicurso.hora.label" default="Hora" />
+		<g:message code="minicurso.hora.label" default="Horário do Minicurso: " />
 		
 	</label>
-	<g:textField name="hora" value="${minicursoInstance?.hora}"/>
+	<g:textField class="form-control" name="hora" value="${minicursoInstance?.hora}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: minicursoInstance, field: 'ministrante', 'error')} ">
+<div class="form-group fieldcontain ${hasErrors(bean: minicursoInstance, field: 'ministrante', 'error')} ">
 	<label for="ministrante">
-		<g:message code="minicurso.ministrante.label" default="Ministrante" />
+		<g:message code="minicurso.ministrante.label" default="Ministrante do Minicurso:" />
 		
 	</label>
-	<g:textField name="ministrante" value="${minicursoInstance?.ministrante}"/>
+	<g:textField class="form-control" name="ministrante" value="${minicursoInstance?.ministrante}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: minicursoInstance, field: 'descricao', 'error')} ">
+<div class="form-group fieldcontain ${hasErrors(bean: minicursoInstance, field: 'descricao', 'error')} ">
 	<label for="descricao">
-		<g:message code="minicurso.descricao.label" default="Descricao" />
+		<g:message code="minicurso.descricao.label" default="Descrição do Minicurso:" />
 		
 	</label>
-	<g:textArea name="descricao" cols="40" rows="5" maxlength="600" value="${minicursoInstance?.descricao}"/>
+	<g:textArea class="form-control" name="descricao" cols="40" rows="5" maxlength="600" value="${minicursoInstance?.descricao}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: minicursoInstance, field: 'evento', 'error')} required">
+<div class="form-group fieldcontain ${hasErrors(bean: minicursoInstance, field: 'evento', 'error')} required">
 	<label for="evento">
-		<g:message code="minicurso.evento.label" default="Data de Realização" />
+		<g:message code="minicurso.evento.label" default="Data de Realização: " />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="evento" name="evento.id" from="${congic_projeto.Evento.list()}" optionKey="id" required="" value="${minicursoInstance?.evento?.id}" class="many-to-one"/>
+	<g:select class="form-control" id="evento" name="evento.id" from="${congic_projeto.Evento.list()}" optionKey="id" required="" value="${minicursoInstance?.evento?.id}" class="many-to-one"/>
 </div>
 

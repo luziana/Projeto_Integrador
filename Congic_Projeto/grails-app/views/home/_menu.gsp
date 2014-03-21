@@ -26,11 +26,10 @@
                     </li>
                     <li><a href="${createLink(controller:'tematicas', action:'tematicas')}">Áreas Temáticas</a></li>
 				  
-				    <li><a href="${createLink(controller:'programacao', action:'programacao')}">Programação</a></li>
+				    <li><a href="${createLink(controller:'evento', action:'evento')}">Programação Evento</a></li>
 				    
 				    <li><a href="${createLink(controller:'artigos', action:'artigos')}">Artigos</a></li>
-				    
-				    <li><a href="#">Mostra Tecnológica</a></li>
+			
                     </ul>
             </div>
             <!-- /.navbar-collapse -->

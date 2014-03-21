@@ -2,45 +2,43 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: palestraInstance, field: 'nome', 'error')} ">
+<div class="form-group fieldcontain  ${hasErrors(bean: palestraInstance, field: 'nome', 'error')} ">
 	<label for="nome">
-		<g:message code="palestra.nome.label" default="Nome" />
+		<g:message code="palestra.nome.label" default="Nome da Palestra:" />
 		
 	</label>
-	<g:textField name="nome" maxlength="90" value="${palestraInstance?.nome}"/>
+	<g:textField class="form-control" name="nome" maxlength="90" value="${palestraInstance?.nome}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: palestraInstance, field: 'hora', 'error')} ">
+<div class="form-group fieldcontain  ${hasErrors(bean: palestraInstance, field: 'hora', 'error')} ">
 	<label for="hora">
-		<g:message code="palestra.hora.label" default="Hora" />
+		<g:message code="palestra.hora.label" default="Hora da Palestra:" />
 		
 	</label>
-	<g:textField name="hora" value="${palestraInstance?.hora}"/>
+	<g:textField class="form-control" name="hora" value="${palestraInstance?.hora}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: palestraInstance, field: 'ministrante', 'error')} ">
+<div class="form-group fieldcontain ${hasErrors(bean: palestraInstance, field: 'ministrante', 'error')} ">
 	<label for="ministrante">
-		<g:message code="palestra.ministrante.label" default="Ministrante" />
+		<g:message code="palestra.ministrante.label" default="Ministrante da Palestra:" />
 		
 	</label>
-	<g:textField name="ministrante" value="${palestraInstance?.ministrante}"/>
+	<g:textField class="form-control" name="ministrante" value="${palestraInstance?.ministrante}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: palestraInstance, field: 'descricao', 'error')} ">
+<div class="form-group fieldcontain  ${hasErrors(bean: palestraInstance, field: 'descricao', 'error')} ">
 	<label for="descricao">
-		<g:message code="palestra.descricao.label" default="Descricao" />
+		<g:message code="palestra.descricao.label" default="Descrição da Palestra:" />
 		
 	</label>
-	<g:textArea name="descricao" cols="40" rows="5" maxlength="600" value="${palestraInstance?.descricao}"/>
+	<g:textArea class="form-control" name="descricao" cols="40" rows="5" maxlength="600" value="${palestraInstance?.descricao}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: palestraInstance, field: 'evento', 'error')} required">
+<div class="form-group fieldcontain  ${hasErrors(bean: palestraInstance, field: 'evento', 'error')} required">
 	<label for="evento">
-		<g:message code="palestra.evento.label" default="Data de Realização" />
+		<g:message code="palestra.evento.label" default="Data de Realização:" />
 		<span class="required-indicator">*</span>
 	</label>
-	<%--${eventoInstance.date.format('yyyy-MM-dd HH:mm')}--%><%--
-	<g:select id="evento" name="evento.id" from="${congic_projeto.Evento.list()}" optionKey="id" required="" value="${palestraInstance?.evento?.data.format('yyyy-MM-dd HH:mm')}" class="many-to-one"/>
-	--%><g:select id="evento" name="evento.id" from="${congic_projeto.Evento.list()}" optionKey="id" required="" value="${palestraInstance?.evento?.id}" class="many-to-one"/>
+	<g:select class="form-control" id="evento" name="evento.id" from="${congic_projeto.Evento.list()}" optionKey="id" required="" value="${palestraInstance?.evento?.id}" class="many-to-one"/>
 </div>
 

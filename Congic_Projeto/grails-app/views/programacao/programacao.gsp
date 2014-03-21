@@ -74,18 +74,23 @@
             
              <!-- Lado direito Informações -->
             
-            <div class="row">
-
-            <div class="col-lg-8">
-
-                 <g:each in="${programacoes?}">
-            		<div id="programacao" class="col-lg-4 col-md-4">		
-						
-						<p>Horário: ${it.horario}</p>
-						<p>Categoria: ${it.categoria}</p>
-						<p>Titulo: ${it.titulo}</p>
-						<p>Orador: ${it.orador}</p>
-						<p>Descrição: ${it.descricao}</p>
+            <div class="row">    
+            
+            
+             <div class="col-lg-8">
+                      
+                 <g:each in="${programacao?}">
+            		<div class="col-lg-4 col-md-4">		
+						<p>${it.data}</p>
+						<p>${it.evento?.nome}</p>
+						<p>${it.evento?.hora}</p>
+						<p>${it.evento?.ministrante}</p>
+						<p>${it.evento?.descricao}</p>
+					
+						<p>${it.palestra.nome}</p>
+						<p>${it.palestra.hora}</p>
+						<p>${it.palestra.ministrante}</p>
+						<p>${it.palestra.descricao}</p>
 						<hr/>
 					</div>
                	</g:each>

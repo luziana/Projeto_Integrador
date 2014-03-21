@@ -22,7 +22,7 @@
 			</g:hasErrors>
 			</div>
 			<div class="panel-body">
-				<div class="col-lg-6">
+				<div class="col-lg-6">class="form-control"
 			<g:form action="save" >
 				<fieldset class="form">
 					<g:render template="form"/>

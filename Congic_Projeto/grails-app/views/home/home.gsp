@@ -26,37 +26,7 @@
        		<!-- Wrapper for slides -->
        		
    
-            	<%--
-            	<div class="item active">
-					<div class="fill" style="background-image:url'(<g:link controller='image' action='imageShow' id='${arquivo?.id}'/>)';">
-                		<div class="carousel-caption">
-                   			<h1>Modern Business - A Bootstrap 3 Template</h1>
-                		</div>
-                		
-                		</div>
-                
-            		</div>
-            		
-        		<%--<img src="${createLink (controller:'image', action:'showImage', id:"${arquivo?.id=1}")}"/>
-            		
-            		<g:link class="edit" action="edit" id="${imageInstance?.id}">
-            		
-            		<div class="item">
-            		 <div class="fill" style="background-image:url('${createLink (controller:'image', action:'showImage',id='${imageInstance?.id}')}');">              		
-                	</div>
-                	<div class="carousel-caption">
-                    <h1>Ready to Style &amp; Add Content</h1>
-                </div>
-            </div>
-            		
-            	<div class="item">
-            		 <div class="fill" >              		
-                		<img src="${createLink (controller:'image', action:'showImage', id:'${arquivo?.id=1}'')}"/>
-                	</div>
-                	<div class="carousel-caption">
-                    <h1>Ready to Style &amp; Add Content</h1>
-                </div>
-            </div>--%>
+            	
             		       
             <div class="carousel-inner">
             	<div class="item active">
@@ -106,14 +76,18 @@
                 <h1 class="page-header">${it.tituloInicio} 
                     <small>${it.subtituloInicio}</small>
                 </h1>
-                <ol class="breadcrumb">
+                
+                </div>
+                </g:each>
+            </div>
+            <div class="row">
+           <div class="col-lg-12">
+            <ol class="breadcrumb">
                     <li><a href="${createLink(controller:'home', action:'home')}">Início</a>
                     </li>
                 </ol>
                 </div>
-                </g:each>
-            </div>
-            
+             </div>
             
            
             
@@ -127,7 +101,9 @@
 
                <g:each in="${noticias?}">
 					<div id="noticia" class="col-lg-4 col-md-4">		
-						<h3><i class="fa fa-check-circle"></i><g:link controller="noticia" action="exibir_noticia_expandida" id="${it.id}">${it.titulo}</g:link></h3>
+						<h4><i class="fa fa-check-circle"></i>
+						<g:link controller="noticia" action="exibir_noticia_expandida" id="${it.id}">${it.titulo}</g:link>
+						</h4>
 						<p>${it.descricao}</p>
 					</div>
 				</g:each>

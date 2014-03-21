@@ -5,7 +5,6 @@
 <div class="row">
 	<div class="col-lg-12">
 
-
 		<div class="row">
 			<div class="panel-default">
 				<div class="panel-heading">
@@ -41,6 +40,7 @@
 			</div>
 		</div>
 	</div>
+
 </div>
 </body>
 </html>

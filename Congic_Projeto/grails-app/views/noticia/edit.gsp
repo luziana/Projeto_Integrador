@@ -1,8 +1,8 @@
 <%@ page import="congic_projeto.Noticia" %>
 
-		<g:set var="entityName" value="${message(code: 'noticia.label', default: 'Noticia')}" />
 		<div class="row">
 		
+		<g:set var="entityName" value="${message(code: 'noticia.label', default: 'Noticia')}" />
 		</div>
 			<div class="col-lg-12">
 			<div class="panel-default">
@@ -11,8 +11,10 @@
 				</div>
 				<div class="panel-body">
 					<g:if test="${flash.message}">
+					
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
+			</div>
 		<div id="edit-noticia" class="content scaffold-edit" role="main">
 			
 			<g:hasErrors bean="${noticiaInstance}">
@@ -33,6 +35,8 @@
 					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" formnovalidate="" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 				</fieldset>
 			</g:form>
+		</div>
+		</div>
 		</div>
 	</body>
 </html>

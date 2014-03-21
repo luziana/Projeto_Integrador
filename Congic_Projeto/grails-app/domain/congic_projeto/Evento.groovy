@@ -2,6 +2,7 @@ package congic_projeto
 
 class Evento {
 	Date data
+	
 	static hasMany = [minicurso: Minicurso, palestra:Palestra]
 	
 	@Override

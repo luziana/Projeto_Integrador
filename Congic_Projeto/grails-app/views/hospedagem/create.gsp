@@ -1,7 +1,7 @@
 <%@ page import="congic_projeto.Hospedagem"%>
 
 <g:set var="entityName"
-	value="${message(code: 'hospedagem.label', default: 'Hospedagem')}" />
+	value="${message(code: 'hospedagem.label', default: 'Hospedagens')}" />
 
 
 <div class="row">

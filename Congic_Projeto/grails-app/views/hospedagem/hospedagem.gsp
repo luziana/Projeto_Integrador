@@ -63,14 +63,18 @@
                 <h1 class="page-header">${it.tituloHospedagem} 
                     <small>${it.subtituloHospedagem}</small>
                 </h1>
-                <ol class="breadcrumb">
+                </div>
+                 </g:each>
+            </div>
+            <div class="row">
+             <div class="col-lg-12">
+            <ol class="breadcrumb">
                     <li><a href="${createLink(controller:'home', action:'home')}">Início</a>
                     </li>
                     <li class="active">Hospedagem</li>
                 </ol>
                 </div>
-                 </g:each>
-            </div>
+                </div>
             
             
             
@@ -83,7 +87,7 @@
                 <g:each in="${hospedagem?}">
             		
             		<div id="hospedagem" class="col-lg-4 col-md-4">		
-					<ul><h3>${it.nome_hospedagem}</h3></ul>
+					<ul><h4>${it.nome_hospedagem}</h4></ul>
 					<ul><p>${it.endereco}</p></ul>
 					<ul><p>${it.contato}</p></ul>
 					<hr/>
