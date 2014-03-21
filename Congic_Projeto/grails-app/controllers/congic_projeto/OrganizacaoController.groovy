@@ -106,6 +106,7 @@ class OrganizacaoController {
 	
 	def organizacao() {
 		def organizacao = Organizacao.list()
+		def coordenacao = Coordenacao.list()
 		def tituloPaginas = TituloPaginas.list()
 		def menu = Menu.get(1)
 		render view: 'organizacao', model: [tituloPaginas:tituloPaginas, organizacao: organizacao, menu: menu]

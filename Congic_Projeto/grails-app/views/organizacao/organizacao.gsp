@@ -83,12 +83,15 @@
                 <g:each in="${organizacao?}">
             		
             		<div id="organizacao" class="col-lg-4 col-md-4">		
-						<h3>Equipe: </h3>
-						<ul>${it.equipe}</ul>
-						<h3>Coordenação Campus Pau dos Ferros</h3>
-						<ul>${it.coordenacaoPf}</ul>
-						<ul><h3>Coordenação Natal</h3></ul>
-						<ul>${it.coordenacaoNatal}</ul>
+						<h4>Cidade Sede</h4><br/>
+						<ul>${it.cidade}</ul><br/>
+						<h4>Cidade Sede</h4><br/>
+						<g:each in="${organizacao.coordenacao?}" var="cord">
+                   			<p>${cord.nome[0]}</p>
+                   			<p>${cord.cargo[0]}</p>
+                     </g:each> 
+                 
+						
 						<hr/>
 					</div>
                </g:each>
