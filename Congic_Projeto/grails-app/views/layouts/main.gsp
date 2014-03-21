@@ -20,29 +20,22 @@
     
 		<link href="${resource(dir: 'css', file: 'bootstrap.css')}" rel="stylesheet"/>	
 		<link href="${resource(dir: 'css', file: 'modern-business.css')}" rel="stylesheet"/>
-		<link href="${resource(dir: 'font-awesome/css', file: 'font-awesome.min.css')}" rel="stylesheet"/>
-	   	
-		<g:layoutHead />
+		<link href="${resource(dir: 'font-awesome/css', file: 'font-awesome.min.css')}" rel="stylesheet"/><%--
+	   	<resource:richTextEditor type="advanced" />
+		--%>
 		<r:require modules="bootstrap" />
-		
+ 		<g:javascript src="jquery-1.10.2.js" />
+
+		<g:layoutHead />
 		<r:layoutResources />
 
 		<!-- Add custom CSS here -->
 
-		<script src="js/jquery-1.10.2.js"></script>
    		<script src="js/modern-business.js"></script>
 
- 		<g:javascript src="jquery-1.10.2.js" />
 		<g:javascript src="modern-business.js" />
 		<g:javascript src="loadPage.js" />
 		<g:javascript src="forms.js" />
-		
-	
-
-		
-
-
-
 	</head>
 
 	<body>

@@ -1,5 +1,6 @@
 package congic_projeto
-import grails.converters.*
+import grails.converters.JSON
+import groovy.json.JsonBuilder
 import org.springframework.dao.DataIntegrityViolationException
 import grails.plugin.springsecurity.annotation.Secured
 
@@ -105,8 +106,6 @@ class NoticiaController {
 	def exibir_noticia_expandida (Long id){
 		def noticias = Noticia.get(id)
 		render(view: "exibir_noticia_expandida", model: [noticias: noticias])
-		
-		
 	}
 	
 	/*def busca = {
@@ -116,20 +115,20 @@ class NoticiaController {
 	 }
 	 render view:'busca',model:[results:results]
  
-	 }*/
+	 }
+	
  def busca = {
-	 
-	 def results = Noticia.findAllByTituloIlike("%"+params.titulo+"%")
-	 
+
+ 	 def results = Noticia.findAllByTituloIlike("%"+params.titulo+"%")	 
 	 render (results as JSON)
 	 
- }
- 
-	
-	
-	def home(Long id) {
-		def noticias = Noticia.get(id)
-		render(view: "home", model: [noticias: noticias])
+ }*/
+
+	def findNoticia(){
+		def noticias = Noticia.findAllByTitulo(params.titulo)
+		render noticias as JSON
+		//render noticias
 		}
+ 
 
 }

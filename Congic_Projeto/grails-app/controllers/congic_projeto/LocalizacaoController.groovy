@@ -11,7 +11,6 @@ class LocalizacaoController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
-  
     def list(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         [localizacaoInstanceList: Localizacao.list(params), localizacaoInstanceTotal: Localizacao.count()]
@@ -91,7 +90,7 @@ class LocalizacaoController {
             return
         }
 
-        try {
+    try {
             localizacaoInstance.delete(flush: true)
             flash.message = message(code: 'default.deleted.message', args: [message(code: 'localizacao.label', default: 'Localizacao'), id])
             redirect(action: "list")
@@ -101,18 +100,19 @@ class LocalizacaoController {
             redirect(action: "show", id: id)
         }
     }
-	def listByLocalizacao (Long id){
+	def teste(){
 		
-		def results = Localizacao.get(id)
-		
-		render (results as JSON)
+	}
+	
+	def GetCity={
+		def loc = Localizacao.findById(params.cidade)
+		render loc as JSON
 	}
 	
 	def index(Long id) {
 		def localizacoes = Localizacao.get(id)
 		def menu = Menu.get(1)
-		render(view: "index", model: [localiacoes: localizacoes])
+		render(view: "index", model: [localiacoes: localizacoes,menu:menu])
 		
 		}
-	
 }
