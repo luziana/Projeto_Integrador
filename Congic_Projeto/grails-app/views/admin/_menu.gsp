@@ -100,7 +100,7 @@
 					</li>
 					
 					
-				<center><h4><small><hr>Cadastrar MiniCursos e Palestras<hr></small></h4></center>
+				<center><h4><small><hr>Programação do Evento<hr></small></h4></center>
 					
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Data de Realização<span class="caret"></span>
@@ -132,20 +132,6 @@
 							</ul>
 					</li>
 					
-					
-					
-					
-				<center><h4><small><hr>Programação do Evento<hr></small></h4></center>
-					
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Programação<span class="caret"></span>
-						</a>
-							<ul class="dropdown-menu">
-								<li><a href="#" onClick="carregarPagina('<g:createLink controller='programacao' action='create' />')"><span class="glyphicon glyphicon-plus"></span> Criar</a></li>
-								<li><a href="#" onClick="carregarPagina('<g:createLink controller='programacao' action='list' />')"> Listar</a></li>
-								<li><a href="#" onClick="carregarPagina('<g:createLink controller='programacao' action='edit' />')"> Editar</a></li>							
-							</ul>
-					</li>
 					
 				<center><h4><small><hr>Submissão Artigos e Resultados<hr></small></h4></center>
 					

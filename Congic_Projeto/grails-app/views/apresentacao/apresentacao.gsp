@@ -57,22 +57,19 @@
         </a>
     </div>
     
-    
-    
     <!-- Titulo da Página -->
     
     <div class="container">
             <div class="row">
-                <g:each in="${tituloPaginas?}">
+            	 <g:each in="${tituloPaginas?}">
                 <div class="col-lg-12">
                 <h1 class="page-header">${it.titulApresentacao} 
                     <small>${it.subtituloApresentacao}</small>
                 </h1>
                 
                 </div>
-                </g:each>
+                 </g:each>
             </div>
-            
             <div class="row">
            <div class="col-lg-12">
             <ol class="breadcrumb">
@@ -82,14 +79,13 @@
                 </ol>
                 </div>
              </div>
-            
-             <!-- Lado direito Informações -->
-            
+                       
             <div class="row">
+                    
 
-           	 <div class="col-lg-8">
-           	 
-           	 <g:each in="${apresentacao?}">
+            <div class="col-lg-8">
+
+               <g:each in="${apresentacao?}">
             		<div id="apresentacao">	
             			<h4>Apresentação</h4>	
 						<br/>	<p>${it.descricaoEvento}</p>
@@ -101,29 +97,40 @@
 					</div>
                	</g:each>
                	
-                
-                <ul class="pager">
-                    <li class="previous"><a href="${createLink(controller:'home', action:'home')}">&larr;Voltar</a>
+               	<ul class="pager">
+                   <li class="previous"><a href="${createLink(controller:'home', action:'home')}">&larr;Voltar</a>
                     </li>
                     <li class="next"><a href="${createLink(controller:'organizacao', action:'organizacao')}">Avançar &rarr;</a>
                     </li>
+                    
                 </ul>
-                 
-                </div>
-            
-            
-            <!-- Lado esquerdo -->
+           </div>
+
+			<tbody id="result">
+				<g:each in="${noticias}" status="i" var="noticia">
+					
+						<tr>
+							<td>
+								${noticia.titulo}
+							</td>
+							<td>
+				</g:each>
+			</tbody>
+
+			<!-- Lado esquerdo -->
 
             <div class="col-lg-4">
                 <div class="well">
                     <h4>Blog Search</h4>
                     <div class="input-group">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="inTitulo">
                         <span class="input-group-btn">
-                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
+                            <button class="btn btn-default" type="button" id="find"><i class="fa fa-search"></i>
                             </button>
                         </span>
+                        
                     </div>
+                   
                     <!-- /input-group -->
                 </div>
                 
@@ -141,6 +148,7 @@
                				</ul>
                 </div>
                 
+                 
                 <!-- /well -->
                 <div class="well">
                     <h4>Popular Blog Categories</h4>
@@ -181,26 +189,4 @@
         </div>
      </div>
     
-		<!-- /.container -->
-	
-	<div class="container">
-
-        <hr>
-
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                	 <p>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte</p>
-                	<p>IFRN, Campus Pau dos Ferros</p>
-                    <p>Copyright &copy; Company 2014</p>
-                </div>
-            </div>
-        </footer>
-
-    </div>
-    
-        <!-- /.container -->
-                
-     </body>
-     
-</html>
+   </html>

@@ -21,25 +21,29 @@
             		<li data-target="#myCarousel" data-slide-to="2"></li>
        			 </ol>
 
-       		<!-- Wrapper for slides -->
        		<div class="carousel-inner">
             	<div class="item active">
-                	<div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                	<div class="fill" style="background-image:url('#');">
+                	 <img src="${createLink (controller:'image', action:'showImage', id:"${arquivo?.id=1}")}">
+                	</div>
                 		<div class="carousel-caption">
-                   			<h1>Modern Business - A Bootstrap 3 Template</h1>
+                   			<h1></h1>
                 		</div>
             		</div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="fill" style="background-image:url('#');">
+                	 <img src="${createLink (controller:'image', action:'showImage', id:"${arquivo?.id=2}")}">
+                </div>
                 <div class="carousel-caption">
-                    <h1>Ready to Style &amp; Add Content</h1>
+                    <h1></h1>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="fill" style="background-image:url('#');">
+                	 <img src="${createLink (controller:'image', action:'showImage', id:"${arquivo?.id=3}")}">
+                </div>
                 <div class="carousel-caption">
-                    <h1>Additional Layout Options at <a href="http://startbootstrap.com">http://startbootstrap.com</a>
-                    </h1>
+                    <h1></h1>
                 </div>
             </div>
         </div>
@@ -81,19 +85,30 @@
                       
                  <g:each in="${evento?}">
             		<div class="col-lg-4 col-md-4">		
-						<p>${it.data}</p><br/>
-						
+						<h3><p>${it.data}</p><br/></h3>
+						<g:each in="${evento.minicurso?}" var="minicurso">
 						<h4>Minicurso</h4><br/>
-						<p>Nome do Minicurso: ${it.minicurso.nome}</p>
-						<p>Horário: ${it.minicurso.hora}</p>
-						<p>Ministrante: ${it.minicurso.ministrante}</p>
-						<p>Descrição: ${it.minicurso.descricao}</p>
+						<h5>Titulo:</h5><br/>
+						<p>${minicurso.nome[0]}</p>
+						<br/><h5>Horario:</h5><br/>
+						<p>${minicurso.hora[0]}</p>
+						<br/><h5>Ministrante:</h5><br/>
+						<p>${minicurso.ministrante[0]}</p>
+							<br/><h5>Descrição:</h5><br/>
+						<p>${minicurso.descricao[0]}</p>
 						
-						<br/><h4>Palestra</h4><br/>
-						<p>Nome da Palestra: ${it.palestra.nome}</p>
-						<p>Horário: ${it.palestra.hora}</p>
-						<p>Ministrante: ${it.palestra.ministrante}</p>
-						<p>Descrição: ${it.palestra.descricao}</p>
+						</g:each>
+							<g:each in="${evento.palestra?}" var="palestra">
+						<br/><h3>Palestra</h3><br/>
+						<h5>Titulo:</h5><br/>
+						<p>${palestra.nome[0]}</p>
+						<br/><h5>Horario:</h5><br/>
+						<p>${palestra.hora[0]}</p>
+						<br/><h5>Ministrante:</h5><br/>
+						<p>${palestra.ministrante[0]}</p>
+						<br/><h5>Descrição:</h5><br/>
+						<p>${palestra.descricao[0]}</p>
+						</g:each>
 					</div>
                	</g:each>
                

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 	<head>
 		<meta name="layout" content="main"/>
@@ -22,25 +21,29 @@
             		<li data-target="#myCarousel" data-slide-to="2"></li>
        			 </ol>
 
-       		<!-- Wrapper for slides -->
        		<div class="carousel-inner">
             	<div class="item active">
-                	<div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                	<div class="fill" style="background-image:url('#');">
+                	 <img src="${createLink (controller:'image', action:'showImage', id:"${arquivo?.id=1}")}">
+                	</div>
                 		<div class="carousel-caption">
-                   			<h1>Modern Business - A Bootstrap 3 Template</h1>
+                   			<h1></h1>
                 		</div>
             		</div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="fill" style="background-image:url('#');">
+                	 <img src="${createLink (controller:'image', action:'showImage', id:"${arquivo?.id=2}")}">
+                </div>
                 <div class="carousel-caption">
-                    <h1>Ready to Style &amp; Add Content</h1>
+                    <h1></h1>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="fill" style="background-image:url('#');">
+                	 <img src="${createLink (controller:'image', action:'showImage', id:"${arquivo?.id=3}")}">
+                </div>
                 <div class="carousel-caption">
-                    <h1>Additional Layout Options at <a href="http://startbootstrap.com">http://startbootstrap.com</a>
-                    </h1>
+                    <h1></h1>
                 </div>
             </div>
         </div>

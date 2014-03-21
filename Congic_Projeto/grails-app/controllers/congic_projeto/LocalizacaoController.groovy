@@ -109,10 +109,12 @@ class LocalizacaoController {
 		render loc as JSON
 	}
 	
-	def index(Long id) {
-		def localizacoes = Localizacao.get(id)
+	def index() {
+		def localizacao = Localizacao.list()
+		def cidade = Cidade.list()
+		def tituloPaginas = TituloPaginas.list()
 		def menu = Menu.get(1)
-		render(view: "index", model: [localiacoes: localizacoes,menu:menu])
+		render(view: "index", model: [cidade:cidade, tituloPaginas:tituloPaginas,localizacao: localizacao,menu:menu])
 		
 		}
 }
