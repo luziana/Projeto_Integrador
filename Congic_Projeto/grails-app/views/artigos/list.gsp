@@ -37,11 +37,15 @@
 								var="artigosInstance">
 								<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 
-									<td><g:link action="show" id="${artigosInstance.id}">
+									<td><a href="#"
+										onclick="carregarPagina('<g:createLink action="show" id="${artigosInstance.id}" />')">
+											${message(code: 'artigos.arquivo.label', default: 'Arquivo')}
+									</a></td>
+									<%--<td><g:link action="show" id="${artigosInstance.id}">
 											${message(code: 'artigos.arquivo.label', default: 'Arquivo')}
 										</g:link></td>
 
-									<td>
+									--%><td>
 										${fieldValue(bean: artigosInstance, field: "descricao")}
 									</td>
 

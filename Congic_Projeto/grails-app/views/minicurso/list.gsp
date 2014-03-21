@@ -43,9 +43,11 @@
 							var="minicursoInstance">
 							<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 
-								<td><g:link action="show" id="${minicursoInstance.id}">
-										${fieldValue(bean: minicursoInstance, field: "nome")}
-									</g:link></td>
+								<td><a href="#"
+										onclick="carregarPagina('<g:createLink action="show" id="${minicursoInstance.id}" />')">
+											${fieldValue(bean: minicursoInstance, field: "nome")}
+									</a></td>
+
 
 								<td>
 									${fieldValue(bean: minicursoInstance, field: "hora")}

@@ -31,9 +31,10 @@
 								var="subAreaInstance">
 								<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 
-									<td><g:link action="show" id="${subAreaInstance.id}">
+									<td><a href="#"
+										onclick="carregarPagina('<g:createLink action="show" id="${subAreaInstance.id}" />')">
 											${fieldValue(bean: subAreaInstance, field: "nome")}
-										</g:link></td>
+									</a></td>
 
 									<td>
 										${fieldValue(bean: subAreaInstance, field: "area")}

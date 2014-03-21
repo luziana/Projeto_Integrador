@@ -26,7 +26,7 @@
 				</div>
 				<div class="panel-body">
 					<div class="col-lg-6">
-						<g:form action="save">
+						<g:form onsubmit="Form(this);return false" url="[resource:eventoInstance, action:'save']">
 							<fieldset class="form">
 								<g:render template="form" />
 							</fieldset>

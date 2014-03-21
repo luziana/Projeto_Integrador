@@ -32,7 +32,11 @@
 									<td><g:link action="show" id="${imageInstance.id}">
 											${fieldValue(bean: imageInstance, field: "arquivo")}
 										</g:link></td>
-
+							<td><a href="#"
+										onclick="carregarPagina('<g:createLink action="show" id="${imageInstance.id}" />')">
+													${fieldValue(bean: imageInstance, field: "arquivo")}
+													</a></td>
+							
 								</tr>
 							</g:each>
 						</tbody>
