@@ -131,16 +131,7 @@
 				</g:each>
            </div>
 
-			<tbody id="result">
-				<g:each in="${noticias}" status="i" var="noticia">
-					
-						<tr>
-							<td>
-								${noticia.titulo}
-							</td>
-							<td>
-				</g:each>
-			</tbody>
+			
 
 			<!-- Lado esquerdo -->
 
@@ -162,13 +153,13 @@
                 <div class="well">
                     <h4><p>Redes Sociais</p></h4>
                 			<ul class="list-unstyled list-inline list-social-icons">
-                    			<li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-3x"></i></a>
+                    			<li class="tooltip-social facebook-link"><a href="https://www.facebook.com" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-3x"></i></a>
                     			</li>
-                    			<li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                    			<li class="tooltip-social linkedin-link"><a href="https://br.linkedin.com/‎" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-3x"></i></a>
                    				</li>
-                    			<li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-3x"></i></a>
+                    			<li class="tooltip-social twitter-link"><a href="https://twitter.com/" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-3x"></i></a>
                     			</li>
-                    			<li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-3x"></i></a>
+                    			<li class="tooltip-social google-plus-link"><a href="https://plus.google.com/" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-3x"></i></a>
                     			</li>
                				</ul>
                 </div>
@@ -176,40 +167,28 @@
                  
                 <!-- /well -->
                 <div class="well">
-                    <h4>Popular Blog Categories</h4>
+                    <h4>Principais Categorias</h4>
                     <div class="row">
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
-                                <li><a href="#dinosaurs">Dinosaurs</a>
+                                <li><a href="https://www.mec.gov.br/‎">MEC</a>
                                 </li>
-                                <li><a href="#spaceships">Spaceships</a>
-                                </li>
-                                <li><a href="#fried-foods">Fried Foods</a>
-                                </li>
-                                <li><a href="#wild-animals">Wild Animals</a>
-                                </li>
+                                <li><a href="https://www.inep.gov.br/‎">Inep</a>
                             </ul>
                         </div>
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
-                                <li><a href="#alien-abductions">Alien Abductions</a>
+                                <li><a href="http://portal.ifrn.edu.br/">IFRN</a>
                                 </li>
-                                <li><a href="#business-casual">Business Casual</a>
+                                <li><a href="http://portal.ifrn.edu.br/campus/paudosferros">IFRN - Pau dos Ferros</a>
                                 </li>
-                                <li><a href="#robots">Robots</a>
-                                </li>
-                                <li><a href="#fireworks">Fireworks</a>
-                                </li>
+                                
+                                <li><a href="#business-casual"></a>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <!-- /well -->
-                <div class="well">
-                    <h4>Side Widget Well</h4>
-                    <p>Bootstrap's default well's work great for side widgets! What is a widget anyways...?</p>
-                </div>
-                <!-- /well -->
+                
             </div>
         </div>
      </div>
