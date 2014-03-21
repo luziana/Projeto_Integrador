@@ -1,7 +1,5 @@
 <%@ page import="congic_projeto.Localizacao" %>
 
-
-
 <div class="fieldcontain ${hasErrors(bean: localizacaoInstance, field: 'descricao', 'error')} required">
 	<label for="descricao">
 		<g:message code="localizacao.descricao.label" default="Descricao" />
@@ -15,6 +13,7 @@
 		<g:message code="localizacao.cidade.label" default="Cidade" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="cidade" name="cidade.id" from="${congic_projeto.Cidade.list()}" optionKey="id" required="" value="${localizacaoInstance?.cidade?.id}" class="many-to-one"/>
+	<g:select id="cidade" name="cidade.id" from="${congic_projeto.Cidade.list()}" optionKey="id" required="" value="${localizacaoInstance?.cidade?.id}"
+	 class="many-to-one"/>
 </div>
 

@@ -4,8 +4,8 @@ class Tematicas {
 	
 	String descricao
 
-	static belongsTo = [area: Area]
-	static hasMany = [area: Area]
+/*	static belongsTo = [area: Area]
+*/	static hasMany = [area: Area]
 	
 	@Override
 	public String toString() {

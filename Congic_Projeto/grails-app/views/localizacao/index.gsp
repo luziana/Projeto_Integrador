@@ -1,3 +1,5 @@
+<%@ page import="congic_projeto.Localizacao" %>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,7 +11,9 @@
          
      </head>
      <body>
-     	
+     	<div class="menu">
+				<g:render template="/home/menu" model="[menu: menu]" />
+			</div>
 		
 		 <!-- Carrossel Imagens-->
 
@@ -198,3 +202,4 @@
                 
      </body>
 </html>
+    

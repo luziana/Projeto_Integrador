@@ -26,8 +26,6 @@
 					
 						<g:sortableColumn property="descricao" title="${message(code: 'tematicas.descricao.label', default: 'Descricao')}" />
 					
-						<th><g:message code="tematicas.area.label" default="Area" /></th>
-					
 					</tr>
 				</thead>
 				<tbody>
@@ -35,8 +33,6 @@
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
 						<td><g:link action="show" id="${tematicasInstance.id}">${fieldValue(bean: tematicasInstance, field: "descricao")}</g:link></td>
-					
-						<td>${fieldValue(bean: tematicasInstance, field: "area")}</td>
 					
 					</tr>
 				</g:each>

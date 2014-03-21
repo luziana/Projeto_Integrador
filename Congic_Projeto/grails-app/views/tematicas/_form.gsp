@@ -10,11 +10,11 @@
 	<g:textField name="descricao" value="${tematicasInstance?.descricao}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: tematicasInstance, field: 'area', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: tematicasInstance, field: 'area', 'error')} ">
 	<label for="area">
 		<g:message code="tematicas.area.label" default="Area" />
-		<span class="required-indicator">*</span>
+		
 	</label>
-	<g:select id="area" name="area.id" from="${congic_projeto.Area.list()}" optionKey="id" required="" value="${tematicasInstance?.area?.id}" class="many-to-one"/>
+	<g:select name="area" from="${congic_projeto.Area.list()}" multiple="multiple" optionKey="id" size="5" value="${tematicasInstance?.area*.id}" class="many-to-many"/>
 </div>
 

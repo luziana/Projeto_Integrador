@@ -9,8 +9,7 @@ class Localizacao {
 	
 	@Override
 	String toString() {
-		return this.descricao
-		return this.cidade
+		return "${descricao}"
 	};
 	
     static constraints = {

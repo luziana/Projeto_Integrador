@@ -106,6 +106,7 @@ class MenuController {
 	
 	def menu(Long id) {
 		def menu = Menu.get(id)
+		
 		render (template:"home/menu", model: [menu:menu])
 	}
 }

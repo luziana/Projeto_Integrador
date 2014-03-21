@@ -1,9 +1,31 @@
-<%@ page import="congic_projeto.Menu" %>
+<%@ page import="congic_projeto.Menu"%>
 <!DOCTYPE html>
 <html>
 	<head>
+		
 		<meta name="layout" content="main" />
 		<title>Congresso de Iniciação Científica do IFRN</title>
+		<script type="text/javascript">
+			$(document).ready(function() {
+					$("#find").click(function(){
+						var busca = $("#inTitulo").val();
+						if(busca != ""){
+							var dados = {'titulo': busca};
+							console.log('errors')
+							$.ajax({
+								url: "<g:createLink controller='Noticia' action='findNoticia'/>",
+								data: dados,
+								success: function(dado) {
+									if(dado.titulo != null){
+										$("#result").hide("slow").html("<tr><td>"+dado.titulo+"</td><td></td></tr>").show("slow");
+										}
+								}
+							});
+						}
+					});
+				
+			});
+</script>
 	</head>
 
 	<body>
@@ -132,19 +154,32 @@
 					</div>
 				</g:each>
            </div>
-           	                       
-            <!-- Lado esquerdo -->
+
+			<tbody id="result">
+				<g:each in="${noticias}" status="i" var="noticia">
+					
+						<tr>
+							<td>
+								${noticia.titulo}
+							</td>
+							<td>
+				</g:each>
+			</tbody>
+
+			<!-- Lado esquerdo -->
 
             <div class="col-lg-4">
                 <div class="well">
                     <h4>Blog Search</h4>
                     <div class="input-group">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="inTitulo">
                         <span class="input-group-btn">
-                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
+                            <button class="btn btn-default" type="button" id="find"><i class="fa fa-search"></i>
                             </button>
                         </span>
+                        
                     </div>
+                   
                     <!-- /input-group -->
                 </div>
                 
@@ -224,5 +259,8 @@
     
         <!-- /.container -->
 
-	</body>
-</html>
+
+
+
+   	</body>
+</html> 
