@@ -1,7 +1,5 @@
 <%@ page import="congic_projeto.Organizacao" %>
 
-
-
 <div class="form-group fieldcontain ${hasErrors(bean: organizacaoInstance, field: 'cidade', 'error')} ">
 	<label for="cidade">
 		<g:message code="organizacao.cidade.label" default="Cidade: " />

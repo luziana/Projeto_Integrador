@@ -105,7 +105,10 @@ class NoticiaController {
 	
 	def exibir_noticia_expandida (Long id){
 		def noticias = Noticia.get(id)
-		render(view: "exibir_noticia_expandida", model: [noticias: noticias])
+		
+		def menu = Menu.get(1)
+		
+		render(view: "exibir_noticia_expandida", model: [ menu:menu, noticias: noticias])
 	}
 	
 	/*def busca = {
@@ -129,6 +132,8 @@ class NoticiaController {
 		render noticias as JSON
 		//render noticias
 		}
+	
+	
  
 
 }
